@@ -1,0 +1,157 @@
+/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+export void cf_assertWaitForOneJoinedEvent(long returncode)
+{
+  char buffer[256];
+  if (returncode == -2)
+  {
+    testStepFail("Resume due to constraint violation.");
+  } 
+  else if (returncode == -1)
+  {
+    testStepFail("General error, for example, functionality is not available.");
+  } 
+  else if (returncode == 0)
+  {
+    testStepFail("Resume due to timeout.");
+  } 
+  else
+  {
+    snprintf(buffer, 255, "Resume due to event occurred.");
+    testStepPass(buffer);
+  }
+}
+
+export void cf_assertWaitForAnyJoinedEvent(long returncode)
+{
+  char buffer[256];
+  if (returncode == -2)
+  {
+    testStepFail("Resume due to constraint violation.");
+  } 
+  else if (returncode == -1)
+  {
+    testStepFail("General error, for example, functionality is not available.");
+  } 
+  else if (returncode == 0)
+  {
+    testStepFail("Resume due to timeout.");
+  } 
+  else
+  {
+    snprintf(buffer, 255, "Resume due to event occurred. Number of the joined event that triggered the resolution: %d", returncode);
+    testStepPass(buffer);
+  }
+}
+
+export void cf_assertExitNotForTimeout(long returncode)
+{
+  char buffer[256];
+  if (returncode == 0)
+  {
+    testStepFail("Timeout occured, expected value not seen.");
+  } 
+  else if (returncode == 1)
+  {
+    testStepPass("linSetExpectedRespLength value seen before timeout");
+  } 
+  else
+  {
+    snprintf(buffer, 255, "Other error occured: Returncode %d", returncode);
+    testStepFail(buffer);
+  }
+}
+
+export void cf_expectValueEq(long expected, long actual, char description[])
+{
+  char buffer[256];
+  
+  snprintf(buffer, 255, "%s. Expected: %d, Actual: %d", description, expected, actual);
+  
+  if (expected != actual)
+  {
+    testStepFail(buffer);
+  }
+}
+
+export void cf_expectValueNe(long expected, long actual, char description[])
+{
+  char buffer[256];
+  
+  snprintf(buffer, 255, "%s. Not Expected: %d, Actual: %d", description, expected, actual);
+  
+  if (expected == actual)
+  {
+    testStepFail(buffer);
+  }
+}
+
+export void cf_expectValueGteq(long expected, long actual, char description[])
+{
+  char buffer[256];
+  
+  snprintf(buffer, 255, "%s. Not Expected: %d, Actual: %d", description, expected, actual);
+  
+  if (actual < expected)
+  {
+    testStepFail(buffer);
+  }
+}
+
+export void cf_assertValueEq(long expected, long actual, char description[])
+{
+  char buffer[256];
+  
+  snprintf(buffer, 255, "%s. Expected: %d, Actual: %d", description, expected, actual);
+  
+  if (expected == actual)
+  {
+    testStepPass(buffer);
+  }
+  else
+  {
+    testStepFail(buffer);
+  }
+}
+
+export void cf_assertValueNe(long expected, long actual, char description[])
+{
+  char buffer[256];
+  
+  snprintf(buffer, 255, "%s. Not Expected: %d, Actual: %d", description, expected, actual);
+  
+  if (expected != actual)
+  {
+    testStepPass(buffer);
+  } 
+  else
+  {
+    testStepFail(buffer);
+  }
+}
+
+export void cf_assertFloatValueEq(float expected, float actual, char description[])
+{
+  char buffer[256];
+  float precision = 0.009; // two decimal places
+  
+  snprintf(buffer, 255, "%s. Expected: %.4f, Actual: %.4f", description, expected, actual);
+  
+  if (abs(expected - actual) <= precision)
+  {
+    testStepPass(buffer);
+  }
+  else
+  {
+    testStepFail(buffer);
+  }
+}

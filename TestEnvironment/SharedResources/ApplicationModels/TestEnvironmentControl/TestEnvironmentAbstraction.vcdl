@@ -1,0 +1,26 @@
+version 2.0;
+
+import module "CAPL";
+
+namespace AbstractEnvironment
+{
+  [Binding="CAPL"]
+  [CommunicationPattern=SendReceive]
+  interface IFanControl
+  {
+    provided data ePowerSupplyState PowerSupply;
+    provided data uint8 DrivingCycle;
+    provided data uint16 FanSpeed;
+    provided data float FanVoltage;
+
+    consumed data uint32 PwmDutyCycle;
+    consumed data uint32 Fault;
+  }
+  IFanControl FanControl;
+
+  enum ePowerSupplyState
+  {
+    Off = 0,
+    On = 1
+  }
+}

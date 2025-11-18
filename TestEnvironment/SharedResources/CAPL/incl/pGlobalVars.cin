@@ -1,0 +1,37 @@
+/*@!Encoding:65001*/
+variables
+{
+  const int64 _TIME_SOURCECODE_ITERATION = 1100;
+  const int64 _TIME_FAN_ELECTRICAL_FAULT_CONFIRMED = 5000;
+  const int64 _TIME_FAN_ELECTRICAL_FAULT_HEALED = 10000;
+  /* EDSG-00118: Confirmation Time of DTC for erratic values */
+  const int64 _TIME_TEMP_ERRATIC_VAL_CONFIRMED = 6000;
+  /* EDSG-00119: Healing Time of DTC for erratic values */
+  const int64 _TIME_TEMP_ERRATIC_VAL_HEALED = 6000;
+
+  /* Fan Speed Signal and Heat Pump Setpoint Signal */
+  const int64 _ACTUATOR_MESSAGE_PERIOD = 100;
+
+  const int64 _MAX_PWM = 32768;
+  const int64 _MAX_SPEED = 3500;
+  const int64 _MAX_ALLOWED_TEMP = 30;
+  const int64 _MIN_ALLOWED_TEMP = 10;
+  const int64 _MIN_CABIN_TEMP = -40;
+  const int64 _MAX_CABIN_TEMP = 60;
+  const float _THERMAL_SENSOR_ACCURACY = 0.25;
+  /* DSGN-00034: In "Eco" mode, the fan speed is clipped with a hard upper limit. Trace: SPEC-00044 */
+  const float _SYSTEM_ECO_MODE_FACTOR = 0.5;
+  /* SPEC-00043: The system offers a "Power" mode. In this mode, the maximum available power of the Fan and Heat Pump are 
+      utilized to achieve the set point temperature as quickly as possible */
+  const float _SYSTEM_POWER_MODE_FACTOR = 1.0; 
+
+  const float _REFERENCE_VOLTAGE = 5.0;
+  const float _TRASNIENT_VALUE = 0.25;
+  
+  const double _FAN_MECHANICAL_DTC_HIGH_CURRENT = 0x19;
+  const double _FAN_MECHANICAL_DTC_LOW_CURRENT = 0x18;
+  const double _FAN_ELECTRICAL_DTC_OPEN_LOOP = 0x13;
+  const double _FAN_ELECTRICAL_DTC_SHORT_CIRCUIT = 0x11;
+  const float _FAN_EMERGENCY_SPEED = _MAX_SPEED * 0.102;
+}
+

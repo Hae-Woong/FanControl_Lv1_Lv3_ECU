@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <FileFormatVersion>13</FileFormatVersion>
+  <ProjectModelRoot>
+    <UniqueId>btuioiokdq8d</UniqueId>
+    <EmbeddedSysVars>
+      <ExternalFiles />
+      <MainFile>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;systemvariables version="1" /&gt;</MainFile>
+      <PersistencyGuid>1ujoq49qhouv</PersistencyGuid>
+    </EmbeddedSysVars>
+    <CANoeEmbeddedSysVars>
+      <ExternalFiles />
+      <MainFile>
+      </MainFile>
+      <PersistencyGuid>d6ou7j1ovpmd</PersistencyGuid>
+    </CANoeEmbeddedSysVars>
+    <EmbeddedBasicDiagnosisFiles />
+    <EmbeddedEthernetPortsFile>
+      <Content>
+      </Content>
+      <PersistencyGuid>moh6bjbngobu</PersistencyGuid>
+    </EmbeddedEthernetPortsFile>
+    <ExternalReferences />
+    <Libraries />
+    <ProjectRoot>
+      <TestUnits>
+        <FolderName>Test Units</FolderName>
+        <SubFolders>
+          <TestUnit>
+            <FolderName>tu_FanControlFaults</FolderName>
+            <SubFolders>
+              <UserFolder>
+                <FolderName>Parameters</FolderName>
+                <Files>
+                  <ProjectBasedFileLink>
+                    <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ShareableFolders\TestSupport\pGlobalVars.vparam" /&gt;</SerializedBasedFileName>
+                    <PersistencyGuid>2jfehsis6mgf</PersistencyGuid>
+                  </ProjectBasedFileLink>
+                </Files>
+              </UserFolder>
+            </SubFolders>
+            <Files>
+              <ProjectBasedFileLink>
+                <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="tu_FanControlFault\tt_FanTests.vtt" /&gt;</SerializedBasedFileName>
+                <PersistencyGuid>tgv689mte2vd</PersistencyGuid>
+              </ProjectBasedFileLink>
+            </Files>
+            <PersistencyGuid>sd61docogod9</PersistencyGuid>
+            <FilesExcludedFromTestTree />
+            <FilesExcludedFromBuild />
+            <EditableParameterFiles />
+            <ExcludeFromBuild>False</ExcludeFromBuild>
+            <EmbeddedTUVariantProperties>
+              <Content>&lt;TUVariantPropertyModel&gt;
+  &lt;FileFormatVersion&gt;1&lt;/FileFormatVersion&gt;
+  &lt;TUVariantPropertyValues&gt;
+    &lt;VariantPropertyRefs&gt;
+      &lt;VariantProperty&gt;
+        &lt;FullyQualifiedName&gt;vTestExpectedToFail&lt;/FullyQualifiedName&gt;
+        &lt;Modifiable&gt;true&lt;/Modifiable&gt;
+        &lt;TUStartValueRef&gt;&lt;/TUStartValueRef&gt;
+        &lt;VariantPropertyValues /&gt;
+      &lt;/VariantProperty&gt;
+    &lt;/VariantPropertyRefs&gt;
+  &lt;/TUVariantPropertyValues&gt;
+&lt;/TUVariantPropertyModel&gt;</Content>
+              <PersistencyGuid>292c3eb4mirl</PersistencyGuid>
+            </EmbeddedTUVariantProperties>
+            <EmbeddedTUProperties>
+              <Content>&lt;TUProperties&gt;
+  &lt;Caption&gt;Fan Faults&lt;/Caption&gt;
+  &lt;Description&gt;&lt;/Description&gt;
+  &lt;Version&gt;&lt;/Version&gt;
+  &lt;PreBuildEvent&gt;&lt;/PreBuildEvent&gt;
+  &lt;PostBuildEvent&gt;&lt;/PostBuildEvent&gt;
+  &lt;TestDesigners&gt;
+    &lt;Columns /&gt;
+    &lt;TestDesignerEntries /&gt;
+  &lt;/TestDesigners&gt;
+  &lt;TUInfos /&gt;
+&lt;/TUProperties&gt;</Content>
+              <PersistencyGuid>7qc12ko7q3pq</PersistencyGuid>
+            </EmbeddedTUProperties>
+            <ModellingLibraries>
+              <Files />
+            </ModellingLibraries>
+            <SystemModelingLibraries />
+          </TestUnit>
+        </SubFolders>
+      </TestUnits>
+    </ProjectRoot>
+    <ProjectSettings>
+      <NetGenerateNsNetwork>False</NetGenerateNsNetwork>
+      <NetGenerateNsDatabase>False</NetGenerateNsDatabase>
+      <NetGenerateNsNode>False</NetGenerateNsNode>
+      <NetGenerateNsFrame>False</NetGenerateNsFrame>
+      <BuildDirLocal>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="bin" /&gt;</BuildDirLocal>
+      <BuildDirPackAndGo>
+      </BuildDirPackAndGo>
+      <BuildMode>Local</BuildMode>
+      <IncludeSources>False</IncludeSources>
+      <CreateExecutableFolder>False</CreateExecutableFolder>
+      <ExportTraceabilityMatrix>False</ExportTraceabilityMatrix>
+      <GenerateXmlDocumentation>False</GenerateXmlDocumentation>
+      <EncryptCaplFiles>False</EncryptCaplFiles>
+      <TdeBreakOnFailDefault>True</TdeBreakOnFailDefault>
+      <TdePartialPathSeparator>_</TdePartialPathSeparator>
+      <TdeTcAnUseId>False</TdeTcAnUseId>
+      <StateChartAlgorithm>BreadthFirst</StateChartAlgorithm>
+      <TteTcBreakOnFailDefault>True</TteTcBreakOnFailDefault>
+      <TteTsBreakOnFailDefault>True</TteTsBreakOnFailDefault>
+      <IsIdAwareProject>True</IsIdAwareProject>
+      <FullNavigationSupported>True</FullNavigationSupported>
+      <UsesPDULayer>False</UsesPDULayer>
+      <UseAllNetworks>False</UseAllNetworks>
+      <UseOutputDirAsWorkingDir>False</UseOutputDirAsWorkingDir>
+      <NetVersion>Net47</NetVersion>
+      <TdeGenerateDescriptionFromComments>False</TdeGenerateDescriptionFromComments>
+      <IsDiagramIdAwareProject>False</IsDiagramIdAwareProject>
+      <ExportDiagramsAsImage>False</ExportDiagramsAsImage>
+      <ExportTestDesignDocumentation>False</ExportTestDesignDocumentation>
+      <CaplWarnings />
+      <AdditionalLicenseInfos />
+    </ProjectSettings>
+    <SUTEnvironment>
+      <SUTSystemVariables>
+        <FolderName>SUT System Variables</FolderName>
+        <Files>
+          <ProjectBasedFileLink>
+            <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\..\TestEnvironment\SharedResources\SysVars\TestEnvironment.vsysvar" /&gt;</SerializedBasedFileName>
+            <PersistencyGuid>vev2t37bot6b</PersistencyGuid>
+          </ProjectBasedFileLink>
+        </Files>
+      </SUTSystemVariables>
+      <DiagnosticTargets>
+        <FolderName>Diagnostic Targets</FolderName>
+      </DiagnosticTargets>
+      <SUTNetworks>
+        <FolderName>SUT Networks</FolderName>
+      </SUTNetworks>
+      <COLibParts>
+        <FolderName>CO Lib Parts</FolderName>
+      </COLibParts>
+      <ComCoDataSource>VcodmFiles</ComCoDataSource>
+      <SourceOfDescriptionFiles>EnvironmentYaml</SourceOfDescriptionFiles>
+      <EnvironmentMakeConfiguration>
+        <EnvironmentMakeFolder>.\..\..\..\TestEnvironment\</EnvironmentMakeFolder>
+        <SelectedScenario>Default</SelectedScenario>
+      </EnvironmentMakeConfiguration>
+    </SUTEnvironment>
+  </ProjectModelRoot>
+</Project>

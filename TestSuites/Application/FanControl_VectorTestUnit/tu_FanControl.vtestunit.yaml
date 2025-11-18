@@ -1,0 +1,11 @@
+version: 2.1.0
+test-unit-information:
+  caption: Fan Control Feature
+  description: This Test Suite tests the Fan Control feature
+  version: v1.0
+test-unit-implementation:
+  - source-file-path: tt_FanSpeed.vtesttree.yaml
+  - source-file-path: ca_FanControlTests.can
+  - source-file-path: ../../SharedResources/CAPL/ca_assert.can
+  - source-file-path: ../../SharedResources/CAPL/ca_Initialization.can
+

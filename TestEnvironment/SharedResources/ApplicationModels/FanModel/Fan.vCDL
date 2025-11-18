@@ -1,0 +1,27 @@
+version 2.0;
+
+namespace Fan
+{
+  interface IFan
+  {
+    internal data eCurrentLevel powerSupplyCurrent;
+    internal data eConnectorState pwmInputState;
+    internal data float pwmDutyCycle;
+    internal data float voltageOutput;
+  }
+  IFan Fan;
+
+  enum eCurrentLevel
+  {
+    Normal = 0,
+    Low = 1,
+    High = 2
+  }
+
+  enum eConnectorState
+  {
+    Normal = 0,
+    ShortCircuit = 1,
+    OpenCircuit = 2
+  }
+}

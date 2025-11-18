@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Vector.VTT.Configuration">
+  <FileFormatVersion xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework">3</FileFormatVersion>
+  <Project z:Id="2">
+    <_p z:Ref="1" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework" />
+    <CMakeRootPath z:Id="3">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name=".\CMake" /&gt;</CMakeRootPath>
+    <EcuInstanceSet z:Id="4">
+      <Content z:Id="5" z:Size="1">
+        <EcuInstance z:Id="6">
+          <A2lFilePath z:Id="7"></A2lFilePath>
+          <AdditionalCompileFlags xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="8" z:Size="0" />
+          <AdditionalCompileFlagsDebug xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="9" z:Size="0" />
+          <AdditionalCompileFlagsRelease xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="10" z:Size="0" />
+          <AdditionalLinkFlags xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="11" z:Size="0" />
+          <AdditionalLinkFlagsDebug xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="12" z:Size="0" />
+          <AdditionalLinkFlagsRelease xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="13" z:Size="0" />
+          <ApplicationLibaries z:Id="14" z:Size="0" />
+          <ApplicationLibariesBuildConfiguration z:Id="15" z:Size="0" />
+          <AutoSyncSourceFiles>true</AutoSyncSourceFiles>
+          <BasicTimingParameters z:Id="16">
+            <IsrPreAndPostExecTimeNs>1000</IsrPreAndPostExecTimeNs>
+            <TaskInitAndSwitchTimeNs>1000</TaskInitAndSwitchTimeNs>
+            <TickGranularityNs>1000</TickGranularityNs>
+          </BasicTimingParameters>
+          <BuildEvents z:Id="17" z:Size="0" />
+          <CpuSpeedFactor>1</CpuSpeedFactor>
+          <DiagnosticVariant i:nil="true" />
+          <EcuFolder z:Id="18"></EcuFolder>
+          <EcuGenerationParameters z:Id="19">
+            <GenerateBsw>true</GenerateBsw>
+            <GenerateEcuc>true</GenerateEcuc>
+            <GenerateRte>true</GenerateRte>
+          </EcuGenerationParameters>
+          <EcuSpecificPcTargetSettings i:nil="true" />
+          <EmptySourceFolders z:Id="20" z:Size="0" />
+          <FileMetadataHeader z:Id="21"></FileMetadataHeader>
+          <GenerateSwcStubs>true</GenerateSwcStubs>
+          <IsConsideredForTest>true</IsConsideredForTest>
+          <IsDummyEcu>false</IsDummyEcu>
+          <IsUserDefined>false</IsUserDefined>
+          <Name z:Id="22">Fan_ECU</Name>
+          <PowerSupplyInitValue>1</PowerSupplyInitValue>
+          <ProjectGuid z:Id="23">A663794E-3536-439D-BCBC-32E7353E3D45</ProjectGuid>
+          <SourceFiles z:Id="24" z:Size="4">
+            <BasedFileName z:Id="25">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\Software\DaVinci\Appl\Source\Main.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="26">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\Software\Source\CtApController.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="27">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\Software\Source\CtCddIoHwAb.c" /&gt;</BasedFileName>
+            <BasedFileName z:Id="28">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\Software\DaVinci\Appl\Source\Dcm_Callout_Stubs.c" /&gt;</BasedFileName>
+          </SourceFiles>
+          <SourceFolders z:Id="29" z:Size="4">
+            <PersistentString z:Id="30">SWC</PersistentString>
+            <PersistentString z:Id="31">SWC</PersistentString>
+            <PersistentString z:Id="32">SWC</PersistentString>
+            <PersistentString z:Id="33">SWC</PersistentString>
+          </SourceFolders>
+          <TaskMappingData z:Id="34" />
+          <TaskSet z:Id="35">
+            <Content z:Id="36" z:Size="6">
+              <Task z:Id="37">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="38">IdleTask_OsCore0</Name>
+              </Task>
+              <Task z:Id="39">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="40">Init_Task</Name>
+              </Task>
+              <Task z:Id="41">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="42">Rte_Task</Name>
+              </Task>
+              <Task z:Id="43">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="44">Main_Task</Name>
+              </Task>
+              <Task z:Id="45">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="46">Io_Task</Name>
+              </Task>
+              <Task z:Id="47">
+                <ComputationTime>100</ComputationTime>
+                <Name z:Id="48">SpeedTask</Name>
+              </Task>
+            </Content>
+          </TaskSet>
+          <UserDefinedIncludeFolders z:Id="49" z:Size="1">
+            <BasedFileName z:Id="50">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\Software\DaVinci\Appl\Include" /&gt;</BasedFileName>
+          </UserDefinedIncludeFolders>
+          <UserDefinedIncludeFoldersBuildConfiguration z:Id="51" z:Size="1">
+            <BuildConfigurations>All</BuildConfigurations>
+          </UserDefinedIncludeFoldersBuildConfiguration>
+          <UserPreprocessorDefinitions xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="52" z:Size="0" />
+          <UserPreprocessorDefinitionsDebug xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="53" z:Size="2">
+            <d6p1:string z:Id="54">CONSUME_TICKS_WARNING_THRESHOLD=1</d6p1:string>
+            <d6p1:string z:Id="55">VTT_ENABLE_CUSTOMVARS</d6p1:string>
+          </UserPreprocessorDefinitionsDebug>
+          <UserPreprocessorDefinitionsRelease xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="56" z:Size="2">
+            <d6p1:string z:Id="57">CONSUME_TICKS_WARNING_THRESHOLD=1</d6p1:string>
+            <d6p1:string z:Id="58">VTT_ENABLE_CUSTOMVARS</d6p1:string>
+          </UserPreprocessorDefinitionsRelease>
+        </EcuInstance>
+      </Content>
+    </EcuInstanceSet>
+    <ExecutionEnvironmentSettings z:Id="59">
+      <CommunicationDefinition>ClassicComStyle</CommunicationDefinition>
+      <EnableStandaloneSut>false</EnableStandaloneSut>
+    </ExecutionEnvironmentSettings>
+    <ExtraDllSet z:Id="60">
+      <Content z:Id="61" z:Size="0" />
+    </ExtraDllSet>
+    <GeneralPcTargetSettings z:Id="62">
+      <AutoCompiler>true</AutoCompiler>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <BuildSolution>true</BuildSolution>
+      <CanoeConfigPath z:Id="63">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\FanControl.cfg" /&gt;</CanoeConfigPath>
+      <CanoeEmuPathOption>1</CanoeEmuPathOption>
+      <CompilerId>VS2017</CompilerId>
+      <CompilerVersion z:Id="64">VS2019</CompilerVersion>
+      <CopyBswFiles>false</CopyBswFiles>
+      <CreateDebugVersion>true</CreateDebugVersion>
+      <GenerateCsvFile>false</GenerateCsvFile>
+      <GenerateSolution>true</GenerateSolution>
+      <LibraryType z:Id="65">Shared</LibraryType>
+      <Platform z:Id="66">Windows-x86</Platform>
+      <ValidateSourceFiles>false</ValidateSourceFiles>
+      <VerboseLevel>2</VerboseLevel>
+    </GeneralPcTargetSettings>
+    <IdeSolutionFile z:Id="67">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name=".\Solution\FanControl.sln" /&gt;</IdeSolutionFile>
+    <NetworkSet z:Id="68">
+      <Content z:Id="69" z:Size="1">
+        <Network z:Id="70">
+          <AdditionalDatabaseFiles z:Id="71" z:Size="0" />
+          <BusType>kCan</BusType>
+          <ChannelNumber>1</ChannelNumber>
+          <EcuInstanceSet z:Id="72">
+            <Content z:Id="73" z:Size="1">
+              <EcuInstance z:Ref="6" i:nil="true" />
+            </Content>
+          </EcuInstanceSet>
+          <Name z:Id="74">Comfort</Name>
+          <PhysicalChannelSet i:nil="true" />
+          <SimulationChannelName z:Id="75">Comfort</SimulationChannelName>
+          <VariationPoint i:nil="true" />
+        </Network>
+      </Content>
+    </NetworkSet>
+    <OutputFolder z:Id="76">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="." /&gt;</OutputFolder>
+    <RemoteSystemSet z:Id="77">
+      <Content z:Id="78" z:Size="0" />
+    </RemoteSystemSet>
+    <SimulationSetups z:Id="79">
+      <Content z:Id="80" z:Size="1">
+        <SimulationSetup z:Id="81">
+          <CanoeConfigPath z:Ref="63" i:nil="true" />
+          <DataObjectsNamespace z:Id="82">$(PROJECTNAME)DO</DataObjectsNamespace>
+          <DataTypesNamespace z:Id="83">$(PROJECTNAME)DT</DataTypesNamespace>
+          <ExtraDllSet z:Ref="60" i:nil="true" />
+          <Name z:Id="84">Setup</Name>
+          <NetworkSet z:Ref="68" i:nil="true" />
+          <ParticipantsNamespace i:nil="true" />
+          <SimulationInstanceSet z:Id="85">
+            <Content z:Id="86" z:Size="1">
+              <SimulationInstance z:Id="87">
+                <EcuProjectName z:Id="88">Fan_ECU</EcuProjectName>
+                <FileName z:Id="89">Fan_ECU</FileName>
+                <Name z:Id="90">Fan_ECU</Name>
+                <SimulationChannelMappingSet z:Id="91">
+                  <Content z:Id="92" z:Size="1">
+                    <SimulationChannelMapping z:Id="93">
+                      <ControllerIndex>0</ControllerIndex>
+                      <ControllerType>kCan</ControllerType>
+                      <SimulationChannelName z:Id="94">Comfort</SimulationChannelName>
+                    </SimulationChannelMapping>
+                  </Content>
+                </SimulationChannelMappingSet>
+                <SimulationName z:Id="95">Fan_ECU</SimulationName>
+                <VariantName z:Id="96"></VariantName>
+              </SimulationInstance>
+            </Content>
+          </SimulationInstanceSet>
+          <SutFolder z:Id="97">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name=".\SUT" /&gt;</SutFolder>
+        </SimulationSetup>
+      </Content>
+      <AutoDeriveSimulationSetup>True</AutoDeriveSimulationSetup>
+    </SimulationSetups>
+    <SipData z:Id="98">
+      <CBD z:Id="99"></CBD>
+      <DeliveryNumber>0</DeliveryNumber>
+      <Path z:Id="100">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\Software\VTT.SIP.ASR4.R29" /&gt;</Path>
+      <SipVersion z:Id="101">29.6.5</SipVersion>
+      <VttGeneratorVersion z:Id="102"></VttGeneratorVersion>
+    </SipData>
+    <SolutionGuid z:Id="103">FA4E7A82-402C-4515-A13D-AAACFBC5B5AA</SolutionGuid>
+    <SutFolder z:Id="104">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name=".\SUT" /&gt;</SutFolder>
+    <SwcInstanceSet z:Id="105">
+      <Content z:Id="106" z:Size="2">
+        <SwcInstance z:Id="107">
+          <AsrPathToRootComponentType z:Id="108">/ECUCompositionTypes/ECU_Composition</AsrPathToRootComponentType>
+          <ContainingFileGroups z:Id="109" z:Size="1">
+            <FileGroup z:Id="110">
+              <Name z:Id="111">Fan_ECU</Name>
+              <NameIsEducatedGuess>false</NameIsEducatedGuess>
+              <SystemDescriptionFiles z:Id="112" z:Size="1">
+                <BasedFileName z:Id="113">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\Software\DaVinci\FanControl.dpa" /&gt;</BasedFileName>
+              </SystemDescriptionFiles>
+            </FileGroup>
+          </ContainingFileGroups>
+          <DefiningExtract z:Id="114"></DefiningExtract>
+          <DefiningExtracts z:Id="115" z:Size="0" />
+          <Name z:Id="116">CpApController</Name>
+          <UserDefinedEcuInstance i:nil="true" />
+        </SwcInstance>
+        <SwcInstance z:Id="117">
+          <AsrPathToRootComponentType z:Id="118">/ECUCompositionTypes/ECU_Composition</AsrPathToRootComponentType>
+          <ContainingFileGroups z:Id="119" z:Size="1">
+            <FileGroup z:Ref="110" i:nil="true" />
+          </ContainingFileGroups>
+          <DefiningExtract z:Id="120"></DefiningExtract>
+          <DefiningExtracts z:Id="121" z:Size="0" />
+          <Name z:Id="122">CpCddIoHwAb</Name>
+          <UserDefinedEcuInstance i:nil="true" />
+        </SwcInstance>
+      </Content>
+    </SwcInstanceSet>
+    <SystemDescriptionFileGroups z:Id="123" z:Size="1">
+      <FileGroup z:Ref="110" i:nil="true" />
+    </SystemDescriptionFileGroups>
+    <SystemDescriptionFiles z:Id="124" z:Size="1">
+      <BasedFileName z:Id="125">&lt;VFileName v="V5" f="BQL" init="1" base="cfg" name="..\Software\DaVinci\FanControl.dpa" /&gt;</BasedFileName>
+    </SystemDescriptionFiles>
+    <VttVersionSavedWith z:Id="126">8.2.44</VttVersionSavedWith>
+  </Project>
+</ProjectModel>

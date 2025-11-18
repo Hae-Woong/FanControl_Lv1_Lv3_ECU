@@ -1,0 +1,76 @@
+version: 3.0.0
+
+scenarios:
+  - name: SUT_L1
+    variables:
+      - name: SUT_DIR
+        value: ../../SystemUnderTest/L1_BswEmulation/SUT
+      - name: Adaptation_DIR
+        value: L1_BswEmulation/AdaptationLayer
+      - name: Scalingfactor
+        value: as-fast-as-possible
+ 
+  - name: SUT_L3
+    variables:
+      - name: SUT_DIR
+        value: ../../SystemUnderTest/L3_Integration/SUT
+      - name: Adaptation_DIR
+        value: L3_Integration/AdaptationLayer
+      - name: Scalingfactor
+        value: 0.5
+
+global-settings:
+  working-mode:
+    time-source: internal-scaled
+    time-scaling-factor: ${Scalingfactor}
+    default-network-mapping: internal-simulator
+
+
+variables:
+  - name: AbstractEnv_DIR
+    type: path
+    value: ../SharedResources/ApplicationModels/TestEnvironmentControl
+    
+system-variables:
+  - file-path: ../SharedResources/SysVars/TestEnvironment.vsysvar
+  
+datasources:
+  - file-path:  ${SUT_DIR}/FanControlECU.vCODM
+    when: SCENARIO_NAME == "SUT_L1"
+  - file-path: ../SharedResources/ApplicationModels/FanModel/Fan.vcdl
+  - file-path: ${AbstractEnv_DIR}/TestEnvironmentAbstraction.vcdl
+
+application-models:
+  - file-path: ${Adaptation_DIR}/CAPLBinding.can
+  - file-path: ${SUT_DIR}/FanControlECU.vmodule
+    when: SCENARIO_NAME == "SUT_L1"
+  - file-path: ../SharedResources/ApplicationModels/FanModel/Fan.can
+  - file-path: ${AbstractEnv_DIR}/TestEnvironmentControl.can
+
+databases:
+  - name: Comfort
+    file-path: ../../SharedResources/SystemDescription/CCA_SystemDescription.arxml
+    when: SCENARIO_NAME == "SUT_L3"
+  
+can-networks:
+  - name: Comfort
+    database: Comfort
+    when: SCENARIO_NAME == "SUT_L3"
+
+simulation-nodes:
+  - name: Fan_ECU
+    network-assignments:
+      - network: Comfort
+    modeling-libraries:
+      - ${SUT_DIR}/Fan_ECU.vmodule
+    when: SCENARIO_NAME == "SUT_L3"
+  - name: VectorSimulationNode
+    network-assignments:
+      - network: Comfort
+    when: SCENARIO_NAME == "SUT_L3"
+  - name: HeadUnit_ECU
+    network-assignments:
+      - network: Comfort
+    modeling-libraries:
+      - "ASRPDUIL.vmodule"
+    when: SCENARIO_NAME == "SUT_L3"

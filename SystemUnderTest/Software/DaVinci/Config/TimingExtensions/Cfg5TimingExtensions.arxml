@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="841a5f8e-80cd-4dee-87d0-c43a114f2704">
+      <SHORT-NAME>COM</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="9b0de64b-a865-4d51-abb8-3a542ef73010">
+          <SHORT-NAME>VECTOR</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="61ad1db3-c56d-4287-9a0b-c8807d2b685f">
+              <SHORT-NAME>CFG</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="e18556d1-defd-471d-9404-634881e0435f">
+                  <SHORT-NAME>TimingExtensions</SHORT-NAME>
+                  <ELEMENTS>
+                    <ECU-TIMING UUID="844a014d-c5f7-4786-a91a-75126cab5c0c">
+                      <SHORT-NAME>Cfg5TimingExtension</SHORT-NAME>
+                    </ECU-TIMING>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

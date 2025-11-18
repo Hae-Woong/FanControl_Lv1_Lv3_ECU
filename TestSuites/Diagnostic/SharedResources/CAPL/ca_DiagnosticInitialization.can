@@ -1,0 +1,39 @@
+/*@!Encoding:65001*/
+includes
+{
+  #include "../../../../TestEnvironment/SharedResources/CAPL/incl/pGlobalVars.cin"
+}
+
+variables
+{
+  const cAccessModePhysical=1;
+  const int diagTimeout = 10000;
+}
+
+export void cf_ClearFaultMemory()
+{
+  diagRequest FanControl_ECU.FaultMemory_Clear request;
+  diagResponse FanControl_ECU.FaultMemory_Clear response;
+  
+  long diagResponseValue;
+  
+  cf_expectValueEq(0, request.SendRequest(), "Sending Diagnostic Request");
+  cf_assertValueEq(1, testWaitForDiagRequestSent(request, diagTimeout), "Waiting for Diagnostic Request Transmission");
+  cf_assertValueEq(1, testWaitForDiagResponse(request, diagTimeout), "Waiting for Diagnostic Response Reception");
+  cf_assertValueEq(-1, diagGetLastResponseCode(request), "Positive Response expected");
+}
+
+export testfunction ctf_DiagnosticSetup()
+{
+  cf_InitState();
+  cf_ClearFaultMemory();
+  cf_RestartDrivingCycle();
+  cf_CheckFailedPreconditon();
+}
+
+export testfunction ctf_DiagnosticCleanUp()
+{
+  cf_InitState();
+  cf_ClearFaultMemory();
+  cf_ResetDrivingCycle();
+}

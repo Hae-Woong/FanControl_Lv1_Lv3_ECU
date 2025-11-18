@@ -1,0 +1,11 @@
+version: 2.1.0
+test-tree:
+  - test-fixture: Check_ElectricalDtc
+    capl-preparation: ctf_DiagnosticSetup
+    capl-completion: ctf_DiagnosticCleanUp
+    elements:
+    - capl-test-sequence: cts_DtcCircuitOpen
+      params:
+        - 19
+        - 1
+        - 0

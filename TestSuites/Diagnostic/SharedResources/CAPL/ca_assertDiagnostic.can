@@ -1,0 +1,39 @@
+/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  const int diagTimeout = 10000;
+  
+  const cAccessModeNumerical=0;
+  const cAccessModePhysical=1;
+  const cAccessModeCoded=2;
+}
+
+export void cf_assertDtcEvent(double dtc, int is_pending, int is_confirmed)
+{
+  diagRequest FanControl_ECU.FaultMemory_Read_extended_data_record request;
+  diagResponse FanControl_ECU.FaultMemory_Read_extended_data_record response;
+  
+  long diagResponseValue;
+  
+  cf_expectValueGteq(0, request.SetParameter(cAccessModePhysical, "DTC", dtc), "Setting DTC to read");
+  cf_expectValueEq(0, request.SendRequest(), "Sending Diagnostic Request");
+  cf_assertValueEq(1, testWaitForDiagRequestSent(request, diagTimeout), "Waiting for Diagnostic Request Transmission");
+  cf_assertValueEq(1, testWaitForDiagResponse(request, diagTimeout), "Waiting for Diagnostic Response Reception");
+  cf_assertValueEq(-1, diagGetLastResponseCode(request), "Positive Response expected");
+  cf_expectValueEq(0, diagGetLastResponse(request, response), "Reading Diagnostic Reponse");
+  
+  
+  diagResponseValue = response.GetParameter("DTC");
+  cf_assertValueEq(dtc, diagResponseValue, "Verifying DTC Number");
+  
+  diagResponseValue = response.GetParameter("StatusOfDTC.PendingDtc");
+  cf_assertValueEq(is_pending, diagResponseValue, "Verifying DTC Status Pending");
+  
+  diagResponseValue = response.GetParameter("StatusOfDTC.ConfirmedDtc");
+  cf_assertValueEq(is_confirmed, diagResponseValue, "Verifying DTC Status Confirmed");
+}

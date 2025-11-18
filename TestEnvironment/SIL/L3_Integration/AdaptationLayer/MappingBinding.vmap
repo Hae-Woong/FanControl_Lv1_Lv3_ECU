@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Version="5">
+  <RuntimeGroup Active="True" Name="Static Mapping">
+    <LogicalGroup Active="False" Name="vECU Level 3 Mapping" IsCustomBinding="True">
+      <MappingRelation Active="True" DirectionVar1ToVar2="True" Offset="0" Factor="1" Assignment="OnChange" CyclicTimerValue="10">
+        <ValueObject1 ItemType="symFunctionBusDOMember">
+          <BusType>-1</BusType>
+          <DatabaseName>AbstractEnvironment::FanControl.PowerSupply</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>AbstractEnvironment::FanControl.PowerSupply</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>AbstractEnvironment::FanControl.PowerSupply</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>0</VariableType>
+          <FBDOVEType>1</FBDOVEType>
+        </ValueObject1>
+        <ValueObject2 ItemType="symSystemVariable">
+          <BusType>-1</BusType>
+          <DatabaseName>VTT::Fan_ECU::Controller::PowerSupply</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>VTT::Fan_ECU::Controller::PowerSupply</FullName>
+          <ID>2</ID>
+          <MessageName />
+          <Name>VTT::Fan_ECU::Controller::PowerSupply</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>1</VariableType>
+        </ValueObject2>
+      </MappingRelation>
+      <MappingRelation Active="True" DirectionVar1ToVar2="True" Offset="0" Factor="1" Assignment="OnChange" CyclicTimerValue="10">
+        <ValueObject1 ItemType="symFunctionBusDOMember">
+          <BusType>-1</BusType>
+          <DatabaseName>AbstractEnvironment::FanControl.DrivingCycle</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>AbstractEnvironment::FanControl.DrivingCycle</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>AbstractEnvironment::FanControl.DrivingCycle</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>0</VariableType>
+          <FBDOVEType>1</FBDOVEType>
+        </ValueObject1>
+        <ValueObject2 ItemType="symSignal">
+          <BusType>1</BusType>
+          <DatabaseName>Comfort</DatabaseName>
+          <Description />
+          <EnvVarName>Comfort</EnvVarName>
+          <FullName>Comfort::VectorSimulationNode::Comfort_DrivingCycle_Frame_PDU::Signal_DrivingCycle</FullName>
+          <ID>0</ID>
+          <MessageName>Comfort_DrivingCycle_Frame_PDU</MessageName>
+          <Name>Signal_DrivingCycle</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName>Comfort</NetworkName>
+          <NodeName>VectorSimulationNode</NodeName>
+          <SignalName>Signal_DrivingCycle</SignalName>
+          <VariableType>0</VariableType>
+        </ValueObject2>
+      </MappingRelation>
+      <MappingRelation Active="True" DirectionVar1ToVar2="True" Offset="0" Factor="1" Assignment="OnChange" CyclicTimerValue="10">
+        <ValueObject1 ItemType="symFunctionBusDOMember">
+          <BusType>-1</BusType>
+          <DatabaseName>AbstractEnvironment::FanControl.FanSpeed</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>AbstractEnvironment::FanControl.FanSpeed</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>AbstractEnvironment::FanControl.FanSpeed</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>0</VariableType>
+          <FBDOVEType>1</FBDOVEType>
+        </ValueObject1>
+        <ValueObject2 ItemType="symSignal">
+          <BusType>1</BusType>
+          <DatabaseName>Comfort</DatabaseName>
+          <Description />
+          <EnvVarName>Comfort</EnvVarName>
+          <FullName>Comfort::HeadUnit_ECU::Comfort_HeadUnit_Frame_PDU::Signal_Fan_Speed</FullName>
+          <ID>0</ID>
+          <MessageName>Comfort_HeadUnit_Frame_PDU</MessageName>
+          <Name>Signal_Fan_Speed</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName>Comfort</NetworkName>
+          <NodeName>HeadUnit_ECU</NodeName>
+          <SignalName>Signal_Fan_Speed</SignalName>
+          <VariableType>0</VariableType>
+        </ValueObject2>
+      </MappingRelation>
+      <MappingRelation Active="True" DirectionVar1ToVar2="True" Offset="0" Factor="1" Assignment="OnChange" CyclicTimerValue="10">
+        <ValueObject1 ItemType="symFunctionBusDOMember">
+          <BusType>-1</BusType>
+          <DatabaseName>AbstractEnvironment::FanControl.FanVoltage</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>AbstractEnvironment::FanControl.FanVoltage</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>AbstractEnvironment::FanControl.FanVoltage</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>0</VariableType>
+          <FBDOVEType>1</FBDOVEType>
+        </ValueObject1>
+        <ValueObject2 ItemType="symSystemVariable">
+          <BusType>-1</BusType>
+          <DatabaseName>VTT::Fan_ECU::Adc::AdcPower</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>VTT::Fan_ECU::Adc::AdcPower</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>VTT::Fan_ECU::Adc::AdcPower</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>2</VariableType>
+        </ValueObject2>
+      </MappingRelation>
+      <MappingRelation Active="True" DirectionVar1ToVar2="True" Offset="0" Factor="1" Assignment="OnChange" CyclicTimerValue="10">
+        <ValueObject1 ItemType="symSystemVariable">
+          <BusType>-1</BusType>
+          <DatabaseName>VTT::Fan_ECU::IoHwAb::PwmDutyCycle</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>VTT::Fan_ECU::IoHwAb::PwmDutyCycle</FullName>
+          <ID>2</ID>
+          <MessageName />
+          <Name>VTT::Fan_ECU::IoHwAb::PwmDutyCycle</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>1</VariableType>
+        </ValueObject1>
+        <ValueObject2 ItemType="symFunctionBusDOMember">
+          <BusType>-1</BusType>
+          <DatabaseName>AbstractEnvironment::FanControl.PwmDutyCycle</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>AbstractEnvironment::FanControl.PwmDutyCycle</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>AbstractEnvironment::FanControl.PwmDutyCycle</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>0</VariableType>
+          <FBDOVEType>1</FBDOVEType>
+        </ValueObject2>
+      </MappingRelation>
+      <MappingRelation Active="True" DirectionVar1ToVar2="True" Offset="0" Factor="1" Assignment="OnChange" CyclicTimerValue="10">
+        <ValueObject1 ItemType="symSignal">
+          <BusType>1</BusType>
+          <DatabaseName>Comfort</DatabaseName>
+          <Description />
+          <EnvVarName>Comfort</EnvVarName>
+          <FullName>Comfort::Fan_ECU::Comfort_Fan_Frame_PDU::Signal_Fan_Fault</FullName>
+          <ID>0</ID>
+          <MessageName>Comfort_Fan_Frame_PDU</MessageName>
+          <Name>Signal_Fan_Fault</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName>Comfort</NetworkName>
+          <NodeName>Fan_ECU</NodeName>
+          <SignalName>Signal_Fan_Fault</SignalName>
+          <VariableType>0</VariableType>
+        </ValueObject1>
+        <ValueObject2 ItemType="symFunctionBusDOMember">
+          <BusType>-1</BusType>
+          <DatabaseName>AbstractEnvironment::FanControl.Fault</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>AbstractEnvironment::FanControl.Fault</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>AbstractEnvironment::FanControl.Fault</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>0</VariableType>
+          <FBDOVEType>1</FBDOVEType>
+        </ValueObject2>
+      </MappingRelation>
+    </LogicalGroup>
+    <LogicalGroup Active="False" Name="Internal Mapping" IsCustomBinding="False">
+      <MappingRelation Active="True" DirectionVar1ToVar2="True" Offset="0" Factor="1" Assignment="OnUpdate" CyclicTimerValue="10">
+        <ValueObject1 ItemType="symFunctionBusDOMember">
+          <BusType>-1</BusType>
+          <DatabaseName>Fan::Fan.voltageOutput</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>Fan::Fan.voltageOutput</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>Fan::Fan.voltageOutput</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>0</VariableType>
+          <FBDOVEType>1</FBDOVEType>
+        </ValueObject1>
+        <ValueObject2 ItemType="symFunctionBusDOMember">
+          <BusType>-1</BusType>
+          <DatabaseName>AbstractEnvironment::FanControl.FanVoltage</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>AbstractEnvironment::FanControl.FanVoltage</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>AbstractEnvironment::FanControl.FanVoltage</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>0</VariableType>
+          <FBDOVEType>1</FBDOVEType>
+        </ValueObject2>
+      </MappingRelation>
+      <MappingRelation Active="True" DirectionVar1ToVar2="True" Offset="0" Factor="0.0030517578125" Assignment="OnChange" CyclicTimerValue="10">
+        <ValueObject1 ItemType="symFunctionBusDOMember">
+          <BusType>-1</BusType>
+          <DatabaseName>AbstractEnvironment::FanControl.PwmDutyCycle</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>AbstractEnvironment::FanControl.PwmDutyCycle</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>AbstractEnvironment::FanControl.PwmDutyCycle</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>0</VariableType>
+          <FBDOVEType>1</FBDOVEType>
+        </ValueObject1>
+        <ValueObject2 ItemType="symFunctionBusDOMember">
+          <BusType>-1</BusType>
+          <DatabaseName>Fan::Fan.pwmDutyCycle</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>Fan::Fan.pwmDutyCycle</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>Fan::Fan.pwmDutyCycle</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>0</VariableType>
+          <FBDOVEType>1</FBDOVEType>
+        </ValueObject2>
+      </MappingRelation>
+      <MappingRelation Active="True" DirectionVar1ToVar2="True" Offset="0" Factor="1" Assignment="OnChange" CyclicTimerValue="10">
+        <ValueObject1 ItemType="symSystemVariable">
+          <BusType>-1</BusType>
+          <DatabaseName>VTT::Fan_ECU::Adc::AdcPower</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>VTT::Fan_ECU::Adc::AdcPower</FullName>
+          <ID>1</ID>
+          <MessageName />
+          <Name>VTT::Fan_ECU::Adc::AdcPower</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>2</VariableType>
+        </ValueObject1>
+        <ValueObject2 ItemType="symSystemVariable">
+          <BusType>-1</BusType>
+          <DatabaseName>VTT::Fan_ECU::Adc::AdcGroupPower</DatabaseName>
+          <Description />
+          <EnvVarName />
+          <FullName>VTT::Fan_ECU::Adc::AdcGroupPower</FullName>
+          <ID>2</ID>
+          <MessageName />
+          <Name>VTT::Fan_ECU::Adc::AdcGroupPower</Name>
+          <NeedsMessage>False</NeedsMessage>
+          <NetworkName />
+          <NodeName />
+          <SignalName />
+          <VariableType>1</VariableType>
+        </ValueObject2>
+      </MappingRelation>
+    </LogicalGroup>
+  </RuntimeGroup>
+</Mapping>

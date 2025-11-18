@@ -1,0 +1,21 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  #include "../../../TestEnvironment/SharedResources/CAPL/incl/pGlobalVars.cin"
+}
+
+export testcase ctc_CheckPWMToSetpointSpeed(int fanSpeed, 
+                                            int expectedDutyCycle_low, 
+                                            int expectedDutyCycle_high)
+{
+  TestStep("1.0", "Set Speed = %d", fanSpeed);
+  $AbstractEnvironment::FanControl.FanSpeed = fanSpeed;
+  
+  TestStep("2.0", "Wait");
+  TestWaitForTimeout(_TIME_SOURCECODE_ITERATION);
+
+  TestValidatePhysValueInRangeUInt("2.1",
+                                   Fan::Fan.pwmDutyCycle,
+                                   expectedDutyCycle_low, 
+                                   expectedDutyCycle_high);
+}

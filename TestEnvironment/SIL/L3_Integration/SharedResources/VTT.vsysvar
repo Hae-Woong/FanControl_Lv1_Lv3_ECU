@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemvariables version="4">
+  <namespace name="" comment="" interface="">
+    <namespace name="VTT" comment="" interface="">
+      <namespace name="Fan_ECU" comment="" interface="">
+        <namespace name="Adc" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="AdcGroupPower" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="AdcPower" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" startValue="0" />
+        </namespace>
+        <namespace name="Controller" comment="" interface="">
+          <struct name="CoreType" isUnion="False" definedBinaryLayout="True" comment="">
+            <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="State" comment="" bitcount="32" isSigned="true" encoding="65001" type="int">
+              <valuetable name="" definesMinMax="false">
+                <valuetableentry value="0" lowerBound="0" upperBound="0" description="POWEROFF" displayString="POWEROFF" />
+                <valuetableentry value="1" lowerBound="1" upperBound="1" description="HALTED" displayString="HALTED" />
+                <valuetableentry value="2" lowerBound="2" upperBound="2" description="RUNNING" displayString="RUNNING" />
+                <valuetableentry value="3" lowerBound="3" upperBound="3" description="ERROR" displayString="ERROR" />
+                <valuetableentry value="4" lowerBound="4" upperBound="4" description="SLEEPING" displayString="SLEEPING" />
+                <valuetableentry value="5" lowerBound="5" upperBound="5" description="FREEZE" displayString="FREEZE" />
+              </valuetable>
+            </structMember>
+            <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="ErrorReason" comment="" bitcount="32" isSigned="true" encoding="65001" type="int">
+              <valuetable name="" definesMinMax="false">
+                <valuetableentry value="0" lowerBound="0" upperBound="0" description="NoError" displayString="NoError" />
+                <valuetableentry value="1" lowerBound="1" upperBound="1" description="UnspecificError" displayString="UnspecificError" />
+                <valuetableentry value="2" lowerBound="2" upperBound="2" description="AccessViolation" displayString="AccessViolation" />
+                <valuetableentry value="3" lowerBound="3" upperBound="3" description="DivisionByZero" displayString="DivisionByZero" />
+                <valuetableentry value="4" lowerBound="4" upperBound="4" description="InfiniteLoop" displayString="InfiniteLoop" />
+                <valuetableentry value="5" lowerBound="5" upperBound="5" description="StackOverflow" displayString="StackOverflow" />
+                <valuetableentry value="6" lowerBound="6" upperBound="6" description="IllegalInstruction" displayString="IllegalInstruction" />
+                <valuetableentry value="7" lowerBound="7" upperBound="7" description="PrivilegedInstruction" displayString="PrivilegedInstruction" />
+                <valuetableentry value="8" lowerBound="8" upperBound="8" description="FloatingPointException" displayString="FloatingPointException" />
+              </valuetable>
+            </structMember>
+          </struct>
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Core00" comment="" bitcount="32" isSigned="true" encoding="65001" type="struct" structDefinition="VTT::Fan_ECU::Controller::CoreType" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="PowerSupply" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1">
+            <valuetable name="" definesMinMax="false">
+              <valuetableentry value="0" lowerBound="0" upperBound="0" description="OFF" displayString="OFF" />
+              <valuetableentry value="1" lowerBound="1" upperBound="1" description="ON" displayString="ON" />
+            </valuetable>
+          </variable>
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="ResetCounter" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="ResetPin" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="State" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1">
+            <valuetable name="" definesMinMax="false">
+              <valuetableentry value="0" lowerBound="0" upperBound="0" description="INITIAL" displayString="INITIAL" />
+              <valuetableentry value="1" lowerBound="1" upperBound="1" description="NOMEASUREMENT" displayString="NOMEASUREMENT" />
+              <valuetableentry value="2" lowerBound="2" upperBound="2" description="PRESTART" displayString="PRESTART" />
+              <valuetableentry value="3" lowerBound="3" upperBound="3" description="POWEROFF" displayString="POWEROFF" />
+              <valuetableentry value="4" lowerBound="4" upperBound="4" description="PROCESSING" displayString="PROCESSING" />
+              <valuetableentry value="5" lowerBound="5" upperBound="5" description="SLEEPING" displayString="SLEEPING" />
+              <valuetableentry value="6" lowerBound="6" upperBound="6" description="FINAL" displayString="FINAL" />
+            </valuetable>
+          </variable>
+        </namespace>
+        <namespace name="Det" comment="" interface="">
+          <struct name="ErrorStruct" isUnion="False" definedBinaryLayout="True" comment="">
+            <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="Module" comment="" bitcount="16" isSigned="false" encoding="65001" type="int" />
+            <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="Instance" comment="" bitcount="8" isSigned="false" encoding="65001" type="int" />
+            <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="Function" comment="" bitcount="8" isSigned="false" encoding="65001" type="int" />
+            <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="Error" comment="" bitcount="8" isSigned="false" encoding="65001" type="int" />
+          </struct>
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="LastError" comment="" bitcount="32" isSigned="true" encoding="65001" type="struct" structDefinition="VTT::Fan_ECU::Det::ErrorStruct" />
+        </namespace>
+        <namespace name="Mcu" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="ResetReason" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="Pwm" comment="" interface="">
+          <namespace name="Types" comment="" interface="">
+            <namespace name="Pwm_PWM_FanMotor_Pin_StructDefs" comment="" interface="">
+              <struct name="pinDetails" isUnion="False" definedBinaryLayout="True" comment="">
+                <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="frequency" comment="" bitcount="32" isSigned="false" encoding="65001" type="int">
+                  <linearencoding factor="0.00025" offset="0" unit="Hz" />
+                </structMember>
+                <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="polarity" comment="" bitcount="8" isSigned="false" encoding="65001" type="int">
+                  <valuetable name="" definesMinMax="false">
+                    <valuetableentry value="0" lowerBound="0" upperBound="0" description="PWM_LOW" displayString="PWM_LOW" />
+                    <valuetableentry value="1" lowerBound="1" upperBound="1" description="PWM_HIGH" displayString="PWM_HIGH" />
+                  </valuetable>
+                </structMember>
+                <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="idle" comment="" bitcount="8" isSigned="false" encoding="65001" type="int">
+                  <valuetable name="" definesMinMax="false">
+                    <valuetableentry value="0" lowerBound="0" upperBound="0" description="RUNNING" displayString="RUNNING" />
+                    <valuetableentry value="1" lowerBound="1" upperBound="1" description="IDLE" displayString="IDLE" />
+                  </valuetable>
+                </structMember>
+              </struct>
+            </namespace>
+            <struct name="Pwm_PWM_FanMotor_Pin_StructDefs_Struct" isUnion="False" definedBinaryLayout="True" comment="">
+              <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="value" comment="" bitcount="16" isSigned="false" encoding="65001" type="int">
+                <linearencoding factor="1" offset="0" />
+              </structMember>
+              <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="dutyCycle" comment="" bitcount="16" isSigned="false" encoding="65001" type="int">
+                <linearencoding factor="0.0030517578125" offset="0" unit="%" />
+              </structMember>
+              <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="pinDetails" comment="" bitcount="32" isSigned="true" encoding="65001" type="struct" structDefinition="VTT::Fan_ECU::Pwm::Types::Pwm_PWM_FanMotor_Pin_StructDefs::pinDetails" />
+            </struct>
+          </namespace>
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="PWM_FanMotor" comment="" bitcount="32" isSigned="true" encoding="65001" type="struct" structDefinition="VTT::Fan_ECU::Pwm::Types::Pwm_PWM_FanMotor_Pin_StructDefs_Struct" />
+        </namespace>
+      </namespace>
+    </namespace>
+  </namespace>
+</systemvariables>

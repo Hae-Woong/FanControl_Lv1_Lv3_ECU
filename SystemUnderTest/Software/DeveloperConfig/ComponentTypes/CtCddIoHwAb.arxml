@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="8BB770FF-33A8-4E6C-A055-2910ECA123A4">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE UUID="38D4C976-30CC-4A79-A122-0A00186455AA">
+          <SHORT-NAME>CtCddIoHwAb</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="E59817A7-B074-419A-A7DB-C9371B9DC13B">
+              <SHORT-NAME>PpPwmDcIoHwAb</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiPwmDcIoHwAb/SetDutyCycle</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterfaces/PiPwmDcIoHwAb</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="74B66719-CF3D-4CC2-A9F9-6F73D8EC3CED">
+              <SHORT-NAME>PpPwmDeInitIoHwAb</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiPwmDeInitIoHwAb/Pwm_DeInit</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterfaces/PiPwmDeInitIoHwAb</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="1CC2C3FA-5C18-4B4D-A8A9-0DF97FEFAFCE">
+              <SHORT-NAME>PpPwmInitIoHwAb</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiPwmInitIoHwAb/Pwm_Init</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterfaces/PiPwmInitIoHwAb</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="D1E4F9DE-E3A7-4C2D-AE89-26B842AEE364">
+              <SHORT-NAME>PpAdcReadIoHwAb</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiAdcReadIoHwAb/ReadGroup</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterfaces/PiAdcReadIoHwAb</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="BF49F8B1-003E-4771-9F44-5D60458D780B">
+              <SHORT-NAME>CtCddIoHwAb_InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <OPERATION-INVOKED-EVENT UUID="02A380AE-B6C2-4E72-9F06-AB9B011C5741">
+                  <SHORT-NAME>OIT_RCtCddIoHwAb_PpPwmDcIoHwAb_SetDutyCycle_PpPwmDcIoHwAb_SetDutyCycle</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtCddIoHwAb/CtCddIoHwAb_InternalBehavior/RCtCddIoHwAb_PpPwmDcIoHwAb_SetDutyCycle</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCddIoHwAb/PpPwmDcIoHwAb</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiPwmDcIoHwAb/SetDutyCycle</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="990D06B4-5611-4DDE-AF86-44D1C07CEB25">
+                  <SHORT-NAME>OIT_RCtCddIoHwAb_PpPwmDeInitIoHwAb_Pwm_DeInit_PpPwmDeInitIoHwAb_Pwm_DeInit</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtCddIoHwAb/CtCddIoHwAb_InternalBehavior/RCtCddIoHwAb_PpPwmDeInitIoHwAb_Pwm_DeInit</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCddIoHwAb/PpPwmDeInitIoHwAb</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiPwmDeInitIoHwAb/Pwm_DeInit</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="01AC834A-4C43-4DB9-93C3-AE05D28E3309">
+                  <SHORT-NAME>OIT_RCtCddIoHwAb_PpPwmInitIoHwAb_Pwm_Init_PpPwmInitIoHwAb_Pwm_Init</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtCddIoHwAb/CtCddIoHwAb_InternalBehavior/RCtCddIoHwAb_PpPwmInitIoHwAb_Pwm_Init</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCddIoHwAb/PpPwmInitIoHwAb</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiPwmInitIoHwAb/Pwm_Init</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <INIT-EVENT UUID="F3C56D0B-D284-46F2-9F85-9770007C5ECC">
+                  <SHORT-NAME>CtCddIoHwAb_InitEvent</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtCddIoHwAb/CtCddIoHwAb_InternalBehavior/RCtCddIoHwAb_Init</START-ON-EVENT-REF>
+                </INIT-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="EBC34642-57EC-4DA1-9F7B-DA1F1AD4CA5B">
+                  <SHORT-NAME>OIT_RCtCddIoHwAb_PpAdcReadGroup_ReadGroup_PpAdcReadGroup_ReadGroup</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtCddIoHwAb/CtCddIoHwAb_InternalBehavior/RCtCddIoHwAb_PpAdcReadIoHwAb_ReadGroup</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCddIoHwAb/PpAdcReadIoHwAb</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/PiAdcReadIoHwAb/ReadGroup</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="D3B4C79B-259A-4CB0-A0EA-E86C88FA8044">
+                  <SHORT-NAME>RCtCddIoHwAb_PpPwmDcIoHwAb_SetDutyCycle</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="69C61104-19FA-48DB-83C8-F9610DBF790A">
+                  <SHORT-NAME>RCtCddIoHwAb_PpPwmDeInitIoHwAb_Pwm_DeInit</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="8587C7CD-101B-45AA-908A-53E022FD26C8">
+                  <SHORT-NAME>RCtCddIoHwAb_PpPwmInitIoHwAb_Pwm_Init</SHORT-NAME>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="69277A06-FAFA-48FE-8645-66C30F387235">
+                  <SHORT-NAME>RCtCddIoHwAb_Init</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="edve:RunnableKind">
+                        <SD>InitRunnable</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="72FD7484-5E00-40E2-966B-AC736C8F0B29">
+                  <SHORT-NAME>RCtCddIoHwAb_PpAdcReadIoHwAb_ReadGroup</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="F5ACD6FC-9248-49CB-AFF1-26338833D1FC">
+          <SHORT-NAME>CtCddIoHwAb_Implementation</SHORT-NAME>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentTypes/CtCddIoHwAb/CtCddIoHwAb_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

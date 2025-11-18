@@ -1,0 +1,82 @@
+/*@!Encoding:65001*/
+includes
+{
+  #include "../../../../TestEnvironment/SharedResources/CAPL/incl/pGlobalVars.cin"
+}
+
+variables
+{
+  const int electricalFaultConfirmationTime = 5000;
+  const int electricalFaultAgingTime = 11000;
+}
+
+export testsequence cts_DtcCircuitOpen(double dtcNumber, int setOpenLoop, int setShortCircuit)
+{
+  ctc_ConfirmationElectricalDtc(dtcNumber, setOpenLoop, setShortCircuit);
+  ctc_AgingElectricalDtc(dtcNumber);
+}
+
+
+export testcase ctc_ConfirmationElectricalDtc(double dtcNumber, int setOpenCircuit, int setShortCircuit)
+{
+  if ( (setOpenCircuit & setShortCircuit) == 1 )
+  {
+    testStepFail();
+    // Circuit cannot be short and open at the same time
+    return;
+  }
+
+  else
+  {
+    testStep("1.0", "Trigger Fault Event");
+    setSignal(Comfort::Signal_Fan_Speed, 875);
+    testWaitForTimeout(_TIME_SOURCECODE_ITERATION);
+
+    // @sysvar::TestInterface::OpenLoop = setOpenLoop;
+    // @sysvar::TestInterface::ShortCircuit = setShortCircuit;
+
+    if (setOpenCircuit)
+      $Fan::PwmInput.state = Fan::eConnectorState::OpenCircuit;
+    else if (setShortCircuit)
+      $Fan::PwmInput.state = Fan::eConnectorState::ShortCircuit;
+    else
+      $Fan::PwmInput.state = Fan::eConnectorState::Normal;
+    
+    cf_assertExitNotForTimeout(TestWaitForSignalMatch(Comfort::Signal_Fan_Fault, 1, _TIME_SOURCECODE_ITERATION));
+    cf_assertValueEq(1, $Signal_Fan_Fault, "Check that fault signal is set.");
+
+    testStep("1.1", "After 1s DTC should not be confirmed yet");
+    cf_assertDtcEvent(dtcNumber, 0, 0);
+
+    testStep("1.2", "Check for DTC confirmation");
+    testWaitForTimeout(electricalFaultConfirmationTime + _TIME_SOURCECODE_ITERATION);
+    cf_assertDtcEvent(dtcNumber, 1, 1);
+
+    testStep("1.3", "Check for active Fault Signal");
+    cf_assertValueEq(1, $Signal_Fan_Fault, "Check that fault signal is still set");
+  }
+}
+
+export testcase ctc_AgingElectricalDtc(double dtcNumber)
+{
+  testStep("1.0", "Check Confirmed DTC and active Fault");
+  cf_assertDtcEvent(dtcNumber, 1, 1);
+  cf_assertValueEq(1, $Signal_Fan_Fault, "Check that fault signal is set");
+  
+  testStep("1.1", "Stop Driving Cycle and Remove Fault");
+  setSignal(Comfort::Signal_DrivingCycle, 0);
+  cf_InitState();
+  
+  testStep("1.2", "Restart Driving Cycle and Check Aging of DTC"); // Aging => DTC is removed from Fault Memory
+  setSignal(Comfort::Signal_DrivingCycle, 1);
+  cf_assertExitNotForTimeout(TestWaitForSignalMatch(Comfort::Signal_Fan_Fault, 0, _TIME_SOURCECODE_ITERATION));
+  cf_assertValueEq(0, $Signal_Fan_Fault, "Check if fault signal is not set.");
+  
+  /* DTC should still be confirmed */
+  testWaitForTimeout(electricalFaultAgingTime-4000);
+  cf_assertDtcEvent(dtcNumber, 1, 1);
+  
+  /* DTC should be cleared */
+  testWaitForTimeout(4000 + _TIME_SOURCECODE_ITERATION);
+  cf_assertDtcEvent(dtcNumber, 0, 0);
+}

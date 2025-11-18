@@ -1,0 +1,79 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  #include "../ShareableFolders/TestSupport/pGlobalVars.cin"
+}
+
+export testfunction cf_TriggerFaultEvent(int speed, int electricFaultInjection, int psuCurrentLevel) 
+{
+  float adc;
+  long result;
+  
+  testStep("1.0", "Set Speed = %d", speed);
+  $AbstractEnvironment::FanControl.FanSpeed = speed;
+  testWaitForTimeout(_TIME_SOURCECODE_ITERATION);
+  
+  testStep("2.0", "Trigger Fault Event");
+  $Fan::Fan.pwmInputState = electricFaultInjection;
+  $Fan::Fan.powerSupplyCurrent = psuCurrentLevel;
+  
+  
+  testStep("3.0","Wait for Fault signal to be set");
+  TestWaitForPhysValueUInt(AbstractEnvironment::FanControl.Fault, 1, _TIME_SOURCECODE_ITERATION);
+  TestValidatePhysValueFloat("3.1", AbstractEnvironment::FanControl.Fault, 1);
+  
+  testStep("3.2", "Read Duty Cycle = %.0f", $AbstractEnvironment::FanControl.PwmDutyCycle);
+  testStep("3.3", "Read corresponding ADC value  = %.2f", $AbstractEnvironment::FanControl.FanVoltage);
+}
+
+
+export testcase ctc_CheckDrivingCycleInformation() 
+{
+  int speed = 1840;
+  float expectedPwm = 52.0;
+  long result;
+  
+  testStep("1.0", "Stop Driving Cycle and Set Speed = %d", speed);
+  $AbstractEnvironment::FanControl.DrivingCycle = 0;
+  $AbstractEnvironment::FanControl.FanSpeed = speed;
+  
+  testStep("1.1", "Expect no actuation of PWM");
+  testWaitForTimeout(_TIME_SOURCECODE_ITERATION);
+  testValidatePhysValueUInt("1.2", AbstractEnvironment::FanControl.PwmDutyCycle, 1);
+  
+  testStep("2.0", "Start Driving Cycle");
+  $AbstractEnvironment::FanControl.DrivingCycle = 1;
+  
+  testStep("2.1", "Expect PWM to be actuated");
+  testWaitForPhysValueUInt(AbstractEnvironment::FanControl.PwmDutyCycle, expectedPwm, _TIME_SOURCECODE_ITERATION);
+  testValidatePhysValueUInt("2.2", AbstractEnvironment::FanControl.PwmDutyCycle, expectedPwm);
+}
+
+export void tf_SpeedPwmValidation(int speed) 
+{
+  int expectedPWM;
+  expectedPWM = (speed  / _MAX_SPEED) * 100;
+  
+  testStep("1.0", "Set Speed = %d [rpm]", speed);
+  $AbstractEnvironment::FanControl.FanSpeed = speed;
+  testWaitForTimeout(_TIME_SOURCECODE_ITERATION);
+  testValidatePhysValueUInt("1.1", AbstractEnvironment::FanControl.PwmDutyCycle, expectedPWM);
+  
+  testStep("1.2", "Read ADC = %.2f [V]", $AbstractEnvironment::FanControl.FanVoltage);
+  
+  testStep("1.3", "Check that fault signal is not set");
+  cf_assertValueEq(0,  $AbstractEnvironment::FanControl.Fault, "Check that no fault exists");
+}
+
+export testfunction Initialization()
+{
+  cf_InitState();
+  cf_RestartDrivingCycle();
+  cf_CheckFailedPreconditon();
+}
+
+export testfunction Completion()
+{
+  cf_InitState();
+  cf_ResetDrivingCycle();
+}

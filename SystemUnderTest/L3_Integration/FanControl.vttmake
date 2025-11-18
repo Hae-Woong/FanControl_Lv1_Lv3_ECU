@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BuildSpecification xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="6.1">
+  <Settings>
+    <ProjectName>FanControl</ProjectName>
+  </Settings>
+  <BuildDpa>
+    <DpaPath>..\Software\DaVinci\FanControl.dpa</DpaPath>
+    <VsSolutionPath>Solution\FanControl.sln</VsSolutionPath>
+    <ExecutionEnvironment>
+      <CommunicationInterface>Classic</CommunicationInterface>
+      <DataTypesNamespace>$(PROJECTNAME)DT</DataTypesNamespace>
+      <DataObjectsNamespace>$(PROJECTNAME)DO</DataObjectsNamespace>
+    </ExecutionEnvironment>
+    <SimulationSetup>
+      <Name>Setup</Name>
+      <EcuInstance>
+        <InstanceName>Fan_ECU</InstanceName>
+        <Variant />
+        <SimulationName>Fan_ECU</SimulationName>
+        <FileName>Fan_ECU</FileName>
+        <NetworkMapping>
+          <ChannelMapping>
+            <NetworkType>CAN</NetworkType>
+            <ControllerIndex>0</ControllerIndex>
+            <NetworkName>Comfort</NetworkName>
+          </ChannelMapping>
+        </NetworkMapping>
+      </EcuInstance>
+    </SimulationSetup>
+    <BuildSettings>
+      <VerboseLevel>High</VerboseLevel>
+      <CANoeEmuPathOption>VTTInstallation</CANoeEmuPathOption>
+      <SutOutputDir>SUT</SutOutputDir>
+    </BuildSettings>
+    <RuntimeSettings>
+      <AutostartEcu>true</AutostartEcu>
+    </RuntimeSettings>
+    <GenerateRte />
+    <GenerateBsw />
+    <GenerateVcxProject>
+      <VsSolutionGuid>FA4E7A82-402C-4515-A13D-AAACFBC5B5AA</VsSolutionGuid>
+      <TargetPlatform>Windows_x86</TargetPlatform>
+      <VcxProjectGuid>A663794E-3536-439D-BCBC-32E7353E3D45</VcxProjectGuid>
+      <SourceFiles>
+        <File>..\Software\DaVinci\Appl\Source\Main.c</File>
+        <File>..\Software\Source\CtApController.c</File>
+        <File>..\Software\Source\CtCddIoHwAb.c</File>
+        <File>..\Software\DaVinci\Appl\Source\Dcm_Callout_Stubs.c</File>
+      </SourceFiles>
+      <IncludeFolders>
+        <IncludeFolder Configuration="All">..\Software\DaVinci\Appl\Include</IncludeFolder>
+      </IncludeFolders>
+      <PreprocessorDefinitions>
+        <PreprocessorDefinition Configuration="Release">CONSUME_TICKS_WARNING_THRESHOLD=1</PreprocessorDefinition>
+        <PreprocessorDefinition Configuration="Release">VTT_ENABLE_CUSTOMVARS</PreprocessorDefinition>
+        <PreprocessorDefinition Configuration="Debug">CONSUME_TICKS_WARNING_THRESHOLD=1</PreprocessorDefinition>
+        <PreprocessorDefinition Configuration="Debug">VTT_ENABLE_CUSTOMVARS</PreprocessorDefinition>
+      </PreprocessorDefinitions>
+    </GenerateVcxProject>
+    <BuildVsSolution>
+      <VsConfiguration>Debug</VsConfiguration>
+    </BuildVsSolution>
+    <GenerateZip />
+  </BuildDpa>
+</BuildSpecification>

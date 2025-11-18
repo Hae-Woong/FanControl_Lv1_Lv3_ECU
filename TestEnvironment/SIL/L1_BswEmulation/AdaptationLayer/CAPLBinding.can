@@ -1,0 +1,52 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+on transmit_value AbstractEnvironment::FanControl.PowerSupply
+{
+  $FanControl::FanControlECU.Controller.PowerRequest = $this;
+}
+
+on transmit_value AbstractEnvironment::FanControl.DrivingCycle
+{
+  $FanControl::FanControlECU.PpOBDdrivingCycle.DeOBDdrivingCycle = $this;
+}
+
+on transmit_value AbstractEnvironment::FanControl.FanSpeed
+{
+  $FanControl::FanControlECU.PpSpeed.DeSpeed = $this;
+}
+
+on transmit_value AbstractEnvironment::FanControl.FanVoltage
+{
+  @sysvar::VTT::FanControlECU::IoHwAb::Adc = $this;
+}
+
+on sysvar_update VTT::FanControlECU::IoHwAb::PwmDutyCycle
+{
+  Binding::ValueReceived(FanControl.PwmDutyCycle, @this);
+}
+
+on value_update FanControl::FanControlECU.PpFault.`DeFault
+{
+  Binding::ValueReceived(AbstractEnvironment::FanControl.Fault, (dword)$this);
+}
+
+// Internal Mappings between FanControl and Fan DO's
+
+on value_update AbstractEnvironment::FanControl.PwmDutyCycle
+{
+  $Fan::Fan.pwmDutyCycle = $this;
+}
+
+on value_update Fan::Fan.voltageOutput
+{
+  $AbstractEnvironment::FanControl.FanVoltage = $this;
+}

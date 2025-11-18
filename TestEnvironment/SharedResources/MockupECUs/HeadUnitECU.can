@@ -1,0 +1,185 @@
+/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  msTimer headunitCycle;
+  const int FAN_OFF_VAL = 0;
+  const int FAN_LOW_VAL = 1000;
+  const int FAN_MEDIUM_VAL = 2000;
+  const int FAN_HIGH_VAL = 3000;
+  const int MAX_SPEED = 3500;
+  const float SYSTEM_ECO_MODE_FACTOR = 0.5;
+  const float SYSTEM_POWER_MODE_FACTOR = 1.0;
+  float SYSTEM_MODE_FACTOR = 0.5;
+  
+  
+  int fanFault = 0;
+  int tempFault = 0;
+  int fanSpeedEncoder = 0;
+  int fanSetpoint = 0;
+  int temperatureSetpoint = 0;
+  int currentCabinTemp = 0;
+  int minTemp = 10;
+  int maxTemp = 30;
+  
+  int prevDrivingCycle = 0;
+  const float FAN_EMERGENCY_SPEED = MAX_SPEED * 0.102; /* TODO: still valid? 10,2% of maximum speed */
+  
+  const int HEATPUMP_OFF = 0;
+}
+
+on start
+{
+  setTimerCyclic(headunitCycle,100);
+}
+
+int automaticControl()
+{
+  int fanSpeed = 0;
+  currentCabinTemp = getSignal(Sensor::Signal_CabinTemperature);
+  fanSetpoint = getSignal(Comfort::Signal_Fan_Speed);
+  temperatureSetpoint = @sysvar::MockedPorts::PpTemperatureSetpoint;
+  
+  /* Execute algorithm only if thermal sensor is not faulty */
+  if (getSignal(Sensor::Signal_Temperature_Fault) == 0)
+  {
+    if (currentCabinTemp < minTemp || currentCabinTemp > maxTemp)
+    {
+      fanSpeed = MAX_SPEED * SYSTEM_MODE_FACTOR;
+    
+    }
+    else
+    {
+      /* fan speed is proportional to the abolute difference of temperatures read and required */
+      fanSpeed = abs(temperatureSetpoint - currentCabinTemp) * (MAX_SPEED * SYSTEM_MODE_FACTOR) / (maxTemp - minTemp);
+    }
+  }
+  else
+  {
+    fanSpeed = FAN_OFF;
+    @sysvar::MockedPorts::PpSystemFaultIndicator = 1;
+  }
+  
+  return fanSpeed;
+}
+
+int DecodeSpeedValue(int encoderValue)
+{
+  int fanSpeed = 0;
+  switch(encoderValue)
+  {
+  /* EDSG-00055: Fan speed is set to 0 when the Fan speed encoder is set to off. */
+    case FAN_OFF:
+      fanSpeed = FAN_OFF_VAL;
+      break;
+    case FAN_LOW:
+      fanSpeed = FAN_LOW_VAL;
+      break;     
+    case FAN_MEDIUM:
+      fanSpeed = FAN_MEDIUM_VAL;
+      break;
+    case FAN_HIGH:
+      fanSpeed = FAN_HIGH_VAL;
+      break;
+    case AUTOMATIC:
+      fanSpeed = automaticControl();
+      break;
+    default:
+      fanSpeed = FAN_OFF_VAL;
+      break;
+  }
+  return fanSpeed;
+}
+
+on timer headunitCycle
+{
+  check_new_driving_cycle();
+  
+  if (getSignal(Comfort::Signal_DrivingCycle) == 1)
+  {
+    /* ---INIT MODE--- */
+    
+    fanFault = getSignal(Comfort::Signal_Fan_Fault);
+    tempFault = getSignal(Sensor::Signal_Temperature_Fault);
+    if (fanFault)
+    {
+      /* EDSG-00046: The ECU provides a fault indicator light to show whether any fault in the system was detected. */
+      @sysvar::MockedPorts::PpSystemFaultIndicator = 1;
+      cut_actuator_power();
+    }
+    else if (tempFault)
+    {
+      Write("____________TEMP FAULT_______________");
+      @sysvar::MockedPorts::PpSystemFaultIndicator = 1;
+      enter_emergency_mode();
+    }
+    else
+    {
+      if (@sysvar::MockedPorts::PpSystemEnableButton == ENABLE)
+      {
+        if (@sysvar::MockedPorts::PpSystemModeButton == POWER)
+        {
+          /* ---POWER MODE--- 
+            SPEC-00043: The system offers a "Power" mode. In this mode, the maximum available power of the Fan and 
+              Heat Pump are utilized to achieve the set point temperature as quickly as possible. */
+          SYSTEM_MODE_FACTOR = SYSTEM_POWER_MODE_FACTOR;
+        }
+        else if (@sysvar::MockedPorts::PpSystemModeButton == ECO)
+        {
+          /* ---ECO MODE--- 
+            DSGN-00034: In "Eco" mode, the fan speed is clipped with a hard upper limit. Trace: SPEC-00044 */
+          SYSTEM_MODE_FACTOR = SYSTEM_ECO_MODE_FACTOR;
+        }
+        
+        @sysvar::MockedPorts::PpSystemFaultIndicator = 0;
+        /* EDSG-00054: Fan speed is set to values from a predefined table when the Fan speed encoder is set to a constant speed */
+        fanSetpoint = DecodeSpeedValue(@sysvar::MockedPorts::PpFanSpeedEncoder);
+      }
+      else
+      {
+        /* ---INACTIVE MODE--- 
+          DSGN-00041: In the "Inactive" state, power is cut to the Heat Pump. Trace: SPEC-00047 
+          DSGN-00042: In the "Inactive" state, power is cut to the Fan. Trace: SPEC-00047 */
+        cut_actuator_power();
+      }
+    }
+    setSignal(Comfort::Signal_Fan_Speed,fanSetpoint);  
+  }
+  else
+  {
+    /* ---OFF MODE---
+      DSGN-00043: In the "Off" state, power is cut to the Heat Pump. Trace: SPEC-00048
+      DSGN-00044: In the "Off" state, power is cut to the Fan. Trace: SPEC-00048 */
+    cut_actuator_power();
+  }
+}
+
+void cut_actuator_power()
+{
+  fanSetpoint = FAN_OFF_VAL;
+  setSignal(Comfort::Signal_HeatPump_Setpoint, HEATPUMP_OFF);
+}
+
+void enter_emergency_mode()
+{
+  /* ---EMERGENCY MODE---
+    DSGN-00040: In the "Emergency Operation" state, fan power is set to the minimal power for sustained operation. Trace: SPEC-00046
+    DSGN-00039: In the "Emergency Operation" state, power is cut to the Heat Pump. Trace: SPEC-00046 */
+  fanSetpoint = FAN_EMERGENCY_SPEED;
+  setSignal(Comfort::Signal_HeatPump_Setpoint, HEATPUMP_OFF);
+}
+
+void check_new_driving_cycle() {
+  if (getSignal(Comfort::Signal_DrivingCycle) == 1 && getSignal(Comfort::Signal_DrivingCycle) != prevDrivingCycle)
+  {
+    /* ---Start of new Driving Cycle---
+      SPEC-00053: At the start of a driving cycle, the settings for operation mode, setpoint temperature and fan configuration 
+      from the previous driving cycle are restored, with the execption of Eco Mode/Power Mode. */
+    @sysvar::MockedPorts::PpSystemModeButton = ECO;
+  }
+  prevDrivingCycle = getSignal(Comfort::Signal_DrivingCycle);
+}

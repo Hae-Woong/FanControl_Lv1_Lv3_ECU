@@ -1,0 +1,91 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  #include "../../../TestEnvironment/SharedResources/CAPL/incl/pGlobalVars.cin"
+}
+
+variables
+{
+  
+}
+
+export testcase ctc_TriggerFaultEvent(int speed, int setOpenLoop, int setShortCircuit, int setHighCurrent, int setLowCurrent) 
+{
+  float adc;
+  long result;
+  
+  testStep("1.0", "Set Speed = %d", speed);
+  $EnvironmentAdaptation::FanControlTester.FanSpeed = speed;
+  testWaitForTimeout(_TIME_SOURCECODE_ITERATION);
+  
+  testStep("2.0", "Trigger Fault Event");
+  @sysvar::TestInterface::OpenLoop = setOpenLoop;
+  @sysvar::TestInterface::ShortCircuit = setShortCircuit;
+  @sysvar::TestInterface::HighCurrent = setHighCurrent;
+  @sysvar::TestInterface::LowCurrent = setLowCurrent;
+  
+  testStep("3.0","Check if fault signal is set");
+  testJoinImplValueUInt(EnvironmentAdaptation::FanControlTester.Fault, 1);
+  result = TestWaitForAnyJoinedEvent(_TIME_SOURCECODE_ITERATION);
+  cf_assertWaitForOneJoinedEvent(result);
+  cf_assertValueEq(1, $EnvironmentAdaptation::FanControlTester.Fault, "Check Fault value");
+  
+  testStep("3.1", "Read Duty Cycle = %.0f", $EnvironmentAdaptation::FanControlTester.PwmDutyCycle);
+  testStep("3.2", "Read corresponding ADC value  = %.2f", $EnvironmentAdaptation::FanControlTester.FanVoltage);
+}
+
+
+export testcase ctc_CheckDrivingCycleInformation() 
+{
+  int speed = 1840;
+  float expectedPwm = 52.0;
+  long result;
+  
+  testStep("1.0", "Stop Driving Cycle and Set Speed = %d", speed);
+  $EnvironmentAdaptation::FanControlTester.DrivingCycle = 0;
+  $EnvironmentAdaptation::FanControlTester.FanSpeed = speed;
+  
+  testStep("1.1", "Expect no actuation of PWM");
+  testWaitForTimeout(_TIME_SOURCECODE_ITERATION);
+  cf_assertValueEq(0, $EnvironmentAdaptation::FanControlTester.PwmDutyCycle, "Check PWM value");
+  
+  testStep("2.0", "Start Driving Cycle");
+  $EnvironmentAdaptation::FanControlTester.DrivingCycle = 1;
+  
+  testStep("2.1", "Expect PWM to be actuated");
+  testJoinImplValueUInt(EnvironmentAdaptation::FanControlTester.PwmDutyCycle, expectedPwm);
+  result = TestWaitForAnyJoinedEvent(_TIME_SOURCECODE_ITERATION);
+  cf_assertWaitForOneJoinedEvent(result);
+  cf_assertValueEq(1, $EnvironmentAdaptation::FanControlTester.PwmDutyCycle, "Check PWM value");
+}
+
+export void tf_SpeedPwmValidation(int speed) 
+{
+  int expectedPWM;
+  expectedPWM = (speed  / _MAX_SPEED) * 100;
+  
+  testStep("1.0", "Set Speed = %d [rpm]", speed);
+  $EnvironmentAdaptation::FanControlTester.FanSpeed = speed;
+  testWaitForTimeout(_TIME_SOURCECODE_ITERATION);
+  
+  testStep("1.1", "Read PWM Duty Cycle = %d [%%]", $EnvironmentAdaptation::FanControlTester.PwmDutyCycle);
+  cf_assertValueEq(expectedPWM, $EnvironmentAdaptation::FanControlTester.PwmDutyCycle, "Check Duty Cycle value");
+  
+  testStep("1.2", "Read ADC = %.2f [V]", $EnvironmentAdaptation::FanControlTester.FanVoltage);
+  
+  testStep("1.3", "Check that fault signal is not set");
+  cf_assertValueEq(0,  $EnvironmentAdaptation::FanControlTester.Fault, "Check that no fault exists");
+}
+
+export testfunction Initialization()
+{
+  cf_InitState();
+  cf_RestartDrivingCycle();
+  cf_CheckFailedPreconditon();
+}
+
+export testfunction Completion()
+{
+  cf_InitState();
+  cf_ResetDrivingCycle();
+}

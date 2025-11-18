@@ -1,0 +1,14 @@
+Vector Parameter	1.0
+
+ScalarSingleRecord
+
+Name	Type	Info	Value
+sourceCodeIterationTime	Integer	time in ms 	1000
+maxPwm	Auto		32768
+maxSpeed	Auto	rpm	3500
+ConnectorState::cCorrectState	Auto		0
+ConnectorState::cOpenCircuit	Auto		2
+PsuCurrentSupplyLevel::cNormalCurrentLevel	Auto		0
+FailureStates::cNormalOperation	Auto		0
+FailureStates::cFault	Auto		1
+

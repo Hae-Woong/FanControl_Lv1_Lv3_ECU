@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectVariantPropertyModel>
+  <FileFormatVersion>3</FileFormatVersion>
+  <ProjectVariantProperties>
+    <VariantProperties>
+      <VariantProperty>
+        <Name>vTestExpectedToFail</Name>
+        <Info>Test Cases that are known not to pass using CANoe4SW SE, due to a missing feature or a problem with the test implementation, should be marked with ExpectedToFail, all others with ExpectedToSucceed</Info>
+        <ValueType>Integer</ValueType>
+        <Modifiable>false</Modifiable>
+        <TUStartValueRef></TUStartValueRef>
+        <PreDefinedValues />
+        <PossibleValues />
+        <ValueTable>
+          <RestrictValuesToValueTable>false</RestrictValuesToValueTable>
+          <ValueTableEntries>
+            <ValueTableEntry>
+              <IntValue>0</IntValue>
+              <StrValue>ExpectedToSucceed</StrValue>
+              <IsHexValue>false</IsHexValue>
+            </ValueTableEntry>
+            <ValueTableEntry>
+              <IntValue>1</IntValue>
+              <StrValue>ExpectedToFail</StrValue>
+              <IsHexValue>false</IsHexValue>
+            </ValueTableEntry>
+          </ValueTableEntries>
+        </ValueTable>
+      </VariantProperty>
+    </VariantProperties>
+    <ModifiableParameters />
+  </ProjectVariantProperties>
+</ProjectVariantPropertyModel>

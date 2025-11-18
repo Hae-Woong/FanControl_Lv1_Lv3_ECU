@@ -1,0 +1,1 @@
+svn checkout https://vistrpndsvn1.vi.vector.int/svn/vVIRTUALtarget_SIPs/SIPs/trunk/VTT.SIP.ASR4.R29.patched/@1776 ./VTT.SIP.ASR4.R29

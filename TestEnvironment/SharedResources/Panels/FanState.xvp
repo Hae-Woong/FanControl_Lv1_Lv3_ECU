@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Panel" ControlName="FanState">
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xdd9b6c56e525ae45d8ea2d9eb736cfc99fd5" ControlName="ResetButton">
+      <Property Name="Name">Xdd9b6c56e525ae45d8ea2d9eb736cfc99fd5</Property>
+      <Property Name="Size">94, 43</Property>
+      <Property Name="Location">336, 259</Property>
+      <Property Name="TabIndex">0</Property>
+      <Property Name="Text">Reset All</Property>
+      <Property Name="SymbolConfiguration">8;16;TestEnvironment;;;TriggerReset;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xf988b2aee07d6e47f5ebd95efeeeb5724da2" ControlName="Group_Consumed">
+      <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xa9331fb3ec969e4b2aea378e98921ae6f136" ControlName="Input/Output Box 2">
+        <Property Name="Name">Xa9331fb3ec969e4b2aea378e98921ae6f136</Property>
+        <Property Name="Size">81, 21</Property>
+        <Property Name="Location">102, 72</Property>
+        <Property Name="AlarmGeneralSettings">1;0;0;100</Property>
+        <Property Name="AlarmLowerBkgColor">Salmon</Property>
+        <Property Name="AlarmLowerTextColor">Black</Property>
+        <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+        <Property Name="AlarmUpperTextColor">Black</Property>
+        <Property Name="BoxBorderStyle">FixedSingle</Property>
+        <Property Name="DisplayLabel">Left</Property>
+        <Property Name="BoxTextAlign">Center</Property>
+        <Property Name="TabIndex">0</Property>
+        <Property Name="DescriptionText"></Property>
+        <Property Name="ValueDecimalPlaces">0</Property>
+        <Property Name="ValueDisplay">Double</Property>
+        <Property Name="UsedValueTable">RawValue</Property>
+        <Property Name="DescriptionSize">5, 21</Property>
+        <Property Name="SymbolConfiguration">8;4096;Fan;Fan.pwmDutyCycle;;1;2;;;-1;;;Value;;;16</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X4911cb27e23d9e4c96eaf4ce1ea2abe225f0" ControlName="Group_Fault">
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xca672960effc3e48ebeb728e9aab2ddd3b2e" ControlName="LED Control 2">
+          <Property Name="Name">Xca672960effc3e48ebeb728e9aab2ddd3b2e</Property>
+          <Property Name="Size">51, 51</Property>
+          <Property Name="Location">96, 33</Property>
+          <Property Name="ReadOnlyControl">True</Property>
+          <Property Name="TabIndex">0</Property>
+          <Property Name="TabStopActive">False</Property>
+          <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;Color&gt;255, 152, 152, 152&lt;/Color&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;&lt;Color&gt;Red&lt;/Color&gt;</Property>
+          <Property Name="SymbolConfiguration">8;4096;AbstractEnvironment;FanControl.Fault;;1;1;;;-1;;;Value;;;8</Property>
+        </Object>
+        <Property Name="Name">X4911cb27e23d9e4c96eaf4ce1ea2abe225f0</Property>
+        <Property Name="Size">243, 103</Property>
+        <Property Name="Location">2, 128</Property>
+        <Property Name="Text">Fault</Property>
+        <Property Name="TabIndex">0</Property>
+        <Property Name="UseWindowsStyle">False</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.ProgressBarControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X4d6719bee4ef1e4a9ae84cde11fd169f1fa1" ControlName="Progress Bar 1">
+        <Property Name="Name">X4d6719bee4ef1e4a9ae84cde11fd169f1fa1</Property>
+        <Property Name="Size">135, 28</Property>
+        <Property Name="Location">102, 38</Property>
+        <Property Name="ShowBorder">True</Property>
+        <Property Name="ValueSize">40, 12</Property>
+        <Property Name="OriginValue">0</Property>
+        <Property Name="SymbolConfiguration">8;4096;Fan;Fan.pwmDutyCycle;;1;2;;;-1;;;Value;;;16</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X3885f73ee503de428cebdf0e46b3e751a521" ControlName="Static Text 4">
+        <Property Name="Name">X3885f73ee503de428cebdf0e46b3e751a521</Property>
+        <Property Name="Size">91, 15</Property>
+        <Property Name="Location">5, 45</Property>
+        <Property Name="Text">PWM Duty Cycle</Property>
+      </Object>
+      <Property Name="Name">Xf988b2aee07d6e47f5ebd95efeeeb5724da2</Property>
+      <Property Name="Size">248, 234</Property>
+      <Property Name="Location">248, 13</Property>
+      <Property Name="Text">Consumed</Property>
+      <Property Name="TabIndex">0</Property>
+      <Property Name="UseWindowsStyle">False</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X8e013bbfead6be484fe80e4e03836a3082bd" ControlName="Group_Provided">
+      <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xc48b2f5fe20dae4746eb1fbecf90746ade05" ControlName="Radio Button 3">
+        <Property Name="Name">Xc48b2f5fe20dae4746eb1fbecf90746ade05</Property>
+        <Property Name="Size">87, 17</Property>
+        <Property Name="Location">110, 253</Property>
+        <Property Name="Text">Open Circuit</Property>
+        <Property Name="TabIndex">0</Property>
+        <Property Name="SwitchValueVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;RxValue&gt;OpenCircuit&lt;/RxValue&gt;</Property>
+        <Property Name="SwitchValueVT">1;Lower;OpenCircuit</Property>
+        <Property Name="SwitchValue">2</Property>
+        <Property Name="SymbolConfiguration">8;4096;Fan;Fan.pwmInputState;;1;512;;;-1;;;Value;;;16</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X8562bee2e3e59e4679eb0ece37a2af284b5b" ControlName="Radio Button 2">
+        <Property Name="Name">X8562bee2e3e59e4679eb0ece37a2af284b5b</Property>
+        <Property Name="Size">86, 17</Property>
+        <Property Name="Location">110, 233</Property>
+        <Property Name="Text">Short Circuit</Property>
+        <Property Name="TabIndex">0</Property>
+        <Property Name="SwitchValueVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;RxValue&gt;ShortCircuit&lt;/RxValue&gt;</Property>
+        <Property Name="SwitchValueVT">1;Lower;ShortCircuit</Property>
+        <Property Name="SwitchValue">1</Property>
+        <Property Name="SymbolConfiguration">8;4096;Fan;Fan.pwmInputState;;1;512;;;-1;;;Value;;;16</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X9ec21b31e9274e4ae6eaee8e8c5a515236c7" ControlName="Radio Button 1">
+        <Property Name="Name">X9ec21b31e9274e4ae6eaee8e8c5a515236c7</Property>
+        <Property Name="Size">40, 17</Property>
+        <Property Name="Location">110, 213</Property>
+        <Property Name="Text">Off</Property>
+        <Property Name="TabIndex">0</Property>
+        <Property Name="SwitchValueVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;RxValue&gt;Normal&lt;/RxValue&gt;</Property>
+        <Property Name="SwitchValueVT">1;Lower;Normal</Property>
+        <Property Name="SwitchValue">0</Property>
+        <Property Name="SymbolConfiguration">8;4096;Fan;Fan.pwmInputState;;1;512;;;-1;;;Value;;;16</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xecb82545e8f60e4857eb5bfe423eee137873" ControlName="Static Text 6">
+        <Property Name="Name">Xecb82545e8f60e4857eb5bfe423eee137873</Property>
+        <Property Name="Size">99, 15</Property>
+        <Property Name="Location">11, 215</Property>
+        <Property Name="Text">Fan Fault Injection</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X3272beade9e3ee4a5eeb416e6f86dcd51b2a" ControlName="Input/Output Box 1">
+        <Property Name="Name">X3272beade9e3ee4a5eeb416e6f86dcd51b2a</Property>
+        <Property Name="Size">81, 21</Property>
+        <Property Name="Location">110, 155</Property>
+        <Property Name="AlarmGeneralSettings">1;0;0;100</Property>
+        <Property Name="AlarmLowerBkgColor">Salmon</Property>
+        <Property Name="AlarmLowerTextColor">Black</Property>
+        <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+        <Property Name="AlarmUpperTextColor">Black</Property>
+        <Property Name="BoxBorderStyle">FixedSingle</Property>
+        <Property Name="DisplayLabel">Left</Property>
+        <Property Name="BoxTextAlign">Center</Property>
+        <Property Name="TabIndex">0</Property>
+        <Property Name="DescriptionText"></Property>
+        <Property Name="ValueDecimalPlaces">0</Property>
+        <Property Name="ValueDisplay">Decimal</Property>
+        <Property Name="UsedValueTable">RawValue</Property>
+        <Property Name="DescriptionSize">5, 21</Property>
+        <Property Name="SymbolConfiguration">8;4096;AbstractEnvironment;FanControl.FanSpeed;;1;1;;;-1;;;Value;;;16</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X914b51fbe7cb5e4457e86e5e16c0fe9855cb" ControlName="Static Text 2">
+        <Property Name="Name">X914b51fbe7cb5e4457e86e5e16c0fe9855cb</Property>
+        <Property Name="Size">73, 30</Property>
+        <Property Name="Location">11, 119</Property>
+        <Property Name="Text">Requested Fan Speed</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X568dcc91e354ce4936eaedde18e84d921c8d" ControlName="Track Bar 1">
+        <Property Name="Name">X568dcc91e354ce4936eaedde18e84d921c8d</Property>
+        <Property Name="Size">106, 30</Property>
+        <Property Name="Location">100, 119</Property>
+        <Property Name="TabIndex">0</Property>
+        <Property Name="MaximumDouble">3500</Property>
+        <Property Name="SmallChangeDouble">5</Property>
+        <Property Name="LargeChangeDouble">10</Property>
+        <Property Name="TickFrequencyDouble">5</Property>
+        <Property Name="MaximumSize">100000, 30</Property>
+        <Property Name="Maximum">3500</Property>
+        <Property Name="SmallChange">5</Property>
+        <Property Name="LargeChange">10</Property>
+        <Property Name="TickFrequency">5</Property>
+        <Property Name="SymbolConfiguration">8;4096;AbstractEnvironment;FanControl.FanSpeed;;1;1;;;-1;;;Value;;;16</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X3dc6565ae2e6be4ed6e8e11e93d00baa2f90" ControlName="Static Text 1">
+        <Property Name="Name">X3dc6565ae2e6be4ed6e8e11e93d00baa2f90</Property>
+        <Property Name="Size">73, 15</Property>
+        <Property Name="Location">11, 46</Property>
+        <Property Name="Text">Driving Cycle</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X386f5291e23ade4df3e8238ecb1c17dabad4" ControlName="Switch / Indicator 1">
+        <Property Name="Name">X386f5291e23ade4df3e8238ecb1c17dabad4</Property>
+        <Property Name="Size">38, 50</Property>
+        <Property Name="Location">100, 25</Property>
+        <Property Name="SymbolConfiguration">8;4096;AbstractEnvironment;FanControl.DrivingCycle;;1;1;;;-1;;;Value;;;16</Property>
+        <Property Name="TabIndex">0</Property>
+        <Property Name="Activation">Left</Property>
+        <Property Name="Epsilon">0</Property>
+        <Property Name="Increment">1</Property>
+        <Property Name="StartValue">0</Property>
+        <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;</Property>
+        <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+        <Property Name="SwitchValues">1;2;0;1</Property>
+        <Property Name="SwitchValuesRx">1;2;0;1</Property>
+      </Object>
+      <Property Name="Name">X8e013bbfead6be484fe80e4e03836a3082bd</Property>
+      <Property Name="Size">226, 289</Property>
+      <Property Name="Location">16, 13</Property>
+      <Property Name="Text">Provided</Property>
+      <Property Name="TabIndex">0</Property>
+      <Property Name="UseWindowsStyle">False</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">518, 303</Property>
+    <Property Name="Location">0, 0</Property>
+    <Property Name="BackColor">255, 255, 255, 255</Property>
+  </Object>
+</Panel>

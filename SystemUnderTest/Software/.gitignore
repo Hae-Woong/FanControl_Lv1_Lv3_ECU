@@ -1,0 +1,130 @@
+# VS Code
+.vs
+
+# Visual Studio
+.vscode
+
+# DaVinci Configurator
+DVCfgCmd.log
+**/GenDataVtt/**
+**/GenData/**
+**/McData/**
+!Master.a2l
+*.~lock
+*_workingCopy.*
+*.dcusr
+
+# Davinci Developer Files
+#*.xsd
+*.dvg
+
+# DaVinci Team + Gradle
+.gradle/
+**/**_ECU/build
+
+# VTT Files
+**/*VTT/*.zip
+MakeParameters.xml
+**/**/**/Log
+SUT
+Solution
+DVT_CI_*
+**/**/*.ini
+FanControlECU/FanControl_ECU/*.zip
+
+# Canoe Files
+**/*CANoe/**/_COData_*
+*.sttse
+*.stcfg 
+**/*CANoe/**/*.settings
+
+# vTESTStudio Temporary and local files
+**/*_Testing/*.settings
+**/*_Testing/*.lastbuild
+**/*_Testing/obj_*
+*.vtuexe
+*.*.settings
+
+## Test execution
+*.vtestreport
+*.vtesettings
+
+# CANoe Compilation Temporary Files
+**/*CANoe/**/.run
+
+# CANoe Output Files
+**/CANoe/**/Report_*.html
+**/CANoe/**/Report_*.xml
+
+# CANoe4SW SE Compilation Temporary Files
+*.vscenario
+*.vtestunit
+*.venvironment
+
+# CANoe4SW SE Runtime files
+canoe4sw-se-runtime
+nodelayer
+*.wlog
+
+# CAPL
+*.cbf
+
+# Backup Files
+*.bak
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.dll.gen
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Don't delete folders with gitkeep
+!.gitkeep

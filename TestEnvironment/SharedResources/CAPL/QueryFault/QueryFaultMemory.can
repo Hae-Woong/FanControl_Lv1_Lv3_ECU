@@ -1,0 +1,25 @@
+/*@!Encoding:1252*/
+variables
+{
+  MsTimer updateTimer;
+}
+
+on Start
+{
+  setTimer(updateTimer, 500); 
+}
+
+on stopMeasurement
+{
+  cancelTimer(updateTimer);
+}
+
+on timer updateTimer
+{
+  diagRequest FanControl_ECU.FaultMemory_ReadAllIdentified req;
+  diagSetParameter( req, "DTCStatusMask", 0xFF);
+  diagSendRequest (req);
+  setTimer(updateTimer, 500); 
+}
+
+

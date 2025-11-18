@@ -1,0 +1,3537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TraceItems>
+  <FileFormatVersion>4</FileFormatVersion>
+  <TraceItemsRoot>
+    <Folder>
+      <UniqueID>ClimateControlAdvanced v2</UniqueID>
+      <Product>ClimateControlAdvanced v2</Product>
+      <Name>ClimateControlAdvanced v2</Name>
+      <Folder>
+        <UniqueID>DemonstratorSpecification.md</UniqueID>
+        <ReadableID>DemonstratorSpecification.md</ReadableID>
+        <Product>ClimateControlAdvanced v2</Product>
+        <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+        <Name>DemonstratorSpecification.md</Name>
+        <DataSource>Spec\DemonstratorSpecification.md</DataSource>
+        <TraceItem>
+          <UniqueID>SPEC-00001</UniqueID>
+          <ReadableID>SPEC-00001</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00001</Name>
+          <Description>There are multiple development teams tasked with independently developing the source code for the individual ECUs.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\DemonstratorSpecification.md#SPEC-00001</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00002</UniqueID>
+          <ReadableID>SPEC-00002</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00002</Name>
+          <Description>Furthermore, there is an integration and test team that focuses on combining the individual software contributions and that provides test results to the development teams.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\DemonstratorSpecification.md#SPEC-00002</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00003</UniqueID>
+          <ReadableID>SPEC-00003</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00003</Name>
+          <Description>Development teams want to make progress independently from one another. This means that they should be able to use stubs or a simulation of the software parts developed by other teams.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\DemonstratorSpecification.md#SPEC-00003</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00004</UniqueID>
+          <ReadableID>SPEC-00004</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00004</Name>
+          <Description>The organization wants to employ a DevOps workflow, where every developer has the ability to modify any part of the system but in turn can get fast and complete test feedback across all test stages for a given change. This means that all tests must be executed automatically and that results are provided in a way and format that is understandable to everyone involved with the project.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\DemonstratorSpecification.md#SPEC-00004</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00005</UniqueID>
+          <ReadableID>SPEC-00005</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00005</Name>
+          <Description>The system shown on the main branch implements the features specified in the [System Specification](SystemSpecification.md/#ClimateControlAdvanced-System-Specification).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\DemonstratorSpecification.md#SPEC-00005</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00006</UniqueID>
+          <ReadableID>SPEC-00006</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00006</Name>
+          <Description>The demonstrator shall show system testing of individual ECUs at the SWC level.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\DemonstratorSpecification.md#SPEC-00006</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00076</UniqueID>
+          <ReadableID>SPEC-00076</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00076</Name>
+          <Description>The demonstrator shall show system testing of multiple ECUs at the SWC level.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\DemonstratorSpecification.md#SPEC-00076</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00077</UniqueID>
+          <ReadableID>SPEC-00077</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00077</Name>
+          <Description>The demonstrator shall show system testing of individual ECUs at the BSW level.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\DemonstratorSpecification.md#SPEC-00077</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00078</UniqueID>
+          <ReadableID>SPEC-00078</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00078</Name>
+          <Description>The demonstrator shall show system testing of multiple ECUs, where at least one ECU is at the BSW level.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\DemonstratorSpecification.md#SPEC-00078</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00007</UniqueID>
+          <ReadableID>SPEC-00007</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00007</Name>
+          <Description>The demonstrator shall be useable as a stand-alone demonstration for self-study by customers. To this end, the provided scenario must be intuitively understandable by its users. It can be expected that the average user is familiar with the features and functionality available in cars built between 2010 and 2020.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\DemonstratorSpecification.md#SPEC-00007</Reference>
+        </TraceItem>
+      </Folder>
+      <Folder>
+        <UniqueID>ErrorHandlingDesign.md</UniqueID>
+        <ReadableID>ErrorHandlingDesign.md</ReadableID>
+        <Product>ClimateControlAdvanced v2</Product>
+        <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+        <Name>ErrorHandlingDesign.md</Name>
+        <DataSource>Spec\ErrorHandlingDesign.md</DataSource>
+        <TraceItem>
+          <UniqueID>ERRD-00141</UniqueID>
+          <ReadableID>ERRD-00141</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00141</Name>
+          <Description>Every ECU monitors its local peripherals and its bus communication for faults.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00141</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00073</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00142</UniqueID>
+          <ReadableID>ERRD-00142</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00142</Name>
+          <Description>When beginning operation, every ECU determines whether it is in a fully functional state or in a state of reduced or no functionality by examining its diagnostic error memory.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00142</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00060, SPEC-00061, SPEC-00065</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00143</UniqueID>
+          <ReadableID>ERRD-00143</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00143</Name>
+          <Description>Every ECU observes the Bus for messages from other ECUs that might report a state of reduced functionality or no functionality and adjusts its behavior accordingly.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00143</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00060, SPEC-00061, SPEC-00065</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00144</UniqueID>
+          <ReadableID>ERRD-00144</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00144</Name>
+          <Description>An ECU does not actively probe for faults in its local peripherals. Fault detection is performed only when the respective peripheral is used (e.g., sensor being read or motor being actuated).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00144</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00073</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00145</UniqueID>
+          <ReadableID>ERRD-00145</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00145</Name>
+          <Description>An ECU suppresses accessing a local peripheral when a fault was detected that can currently not be recovered from. See [Fault Recovery Scenarios](#fault-recovery-scenarios) for details of which kind of fault can be recovered when.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00145</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00061</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00146</UniqueID>
+          <ReadableID>ERRD-00146</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00146</Name>
+          <Description>When an ECU does not access its peripherals, no information regarding detection of a fault or recovery from a fault is produced.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00146</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00073</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00149</UniqueID>
+          <ReadableID>ERRD-00149</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00149</Name>
+          <Description>The system shall detect if the temperature sensor in the cabin stops provding readings.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00149</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00055</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00150</UniqueID>
+          <ReadableID>ERRD-00150</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00150</Name>
+          <Description>The system shall detect if the temperature sensor provides erratic readings (i.e., value repeatedly jumps back and forth by more than the specified inaccuracy of the sensor hardware).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00150</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00055</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00151</UniqueID>
+          <ReadableID>ERRD-00151</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00151</Name>
+          <Description>The system shall detect when the Head Unit ECU no longer outputs control values.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00151</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00058</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00152</UniqueID>
+          <ReadableID>ERRD-00152</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00152</Name>
+          <Description>The system shall detect electrical faults in the circuitry driving the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00152</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00057</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00154</UniqueID>
+          <ReadableID>ERRD-00154</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00154</Name>
+          <Description>The system shall detect when the heat pump does not operate at the specified power level.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00154</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00057</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00155</UniqueID>
+          <ReadableID>ERRD-00155</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00155</Name>
+          <Description>The system shall detect electrical faults in the circuitry driving the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00155</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00056</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00157</UniqueID>
+          <ReadableID>ERRD-00157</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00157</Name>
+          <Description>The system shall detect when the fan does not operate at the specified power level. This could indicate a failure of the motor as well as a physical failure of the fan assembly, e.g., a cracked blade.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00157</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00056</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00158</UniqueID>
+          <ReadableID>ERRD-00158</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00158</Name>
+          <Description>The system shall detect a lack of connection to the communication busses required for system operation.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00158</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00059</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00159</UniqueID>
+          <ReadableID>ERRD-00159</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00159</Name>
+          <Description>The system shall detect intermittent connection loss on any communication bus required for system operation.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00159</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00059</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00160</UniqueID>
+          <ReadableID>ERRD-00160</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00160</Name>
+          <Description>An intermittent connection loss is considered to be present if no expected data is received for more than 3 out of 10 message cycles.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00160</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00059</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00161</UniqueID>
+          <ReadableID>ERRD-00161</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00161</Name>
+          <Description>Any part of the system shall detect a lack of input data, e.g., due to a failure in bus communication or the failure of an earlier part in the control loop.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00161</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00059, SPEC-00058</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00162</UniqueID>
+          <ReadableID>ERRD-00162</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00162</Name>
+          <Description>Every ECU in the system shall report to other ECUs whether it is currently in a faulty state, either due to a fault detected in its local peripherals or due to a fault stored in the diagnostic error memory that has not been recovered from.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00162</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00059, SPEC-00060, SPEC-00061, SPEC-00062, SPEC-00063, SPEC-00064</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00163</UniqueID>
+          <ReadableID>ERRD-00163</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00163</Name>
+          <Description>When a fault in the bus communication is resolved, the system shall recover immediately, unless other faults are present that shall not be recovered immediately (Online Recovery).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00163</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00063</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00164</UniqueID>
+          <ReadableID>ERRD-00164</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00164</Name>
+          <Description>When an electrical fault is detected in any part, the system shall recover from this fault at the start of the next driving cycle, unless other faults are present that cannot be recovered (Offline Recovery).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00164</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00063, SPEC-00061</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00165</UniqueID>
+          <ReadableID>ERRD-00165</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00165</Name>
+          <Description>When a mechanical fault is detected, the system shall remain in an error state until the mechanical fault is removed and the corresponding DTCs are reset using diagnostic commands (no recovery).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00165</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00064, SPEC-00064</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00166</UniqueID>
+          <ReadableID>ERRD-00166</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00166</Name>
+          <Description>Every fault shall be recovered from at the earliest point in time that is possible and that is permitted under this specification.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00166</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00063, SPEC-00064</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00167</UniqueID>
+          <ReadableID>ERRD-00167</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00167</Name>
+          <Description>Every Device that can detect a fault in it local peripherals or in the bus communcation shall have a dedicated DTC for each type of fault that can be identified.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00167</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00065</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>ERRD-00168</UniqueID>
+          <ReadableID>ERRD-00168</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>ERRD-00168</Name>
+          <Description>Faults that are reported by other ECUs and are observed through the contents of bus messages shall not be stored as DTCs.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ErrorHandlingDesign.md#ERRD-00168</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00065</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+      </Folder>
+      <Folder>
+        <UniqueID>SystemDesign.md</UniqueID>
+        <ReadableID>SystemDesign.md</ReadableID>
+        <Product>ClimateControlAdvanced v2</Product>
+        <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+        <Name>SystemDesign.md</Name>
+        <DataSource>Spec\SystemDesign.md</DataSource>
+        <TraceItem>
+          <UniqueID>DSGN-00001</UniqueID>
+          <ReadableID>DSGN-00001</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00001</Name>
+          <Description>The system contains a Temperature Sensor ECU.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00001</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00039</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00002</UniqueID>
+          <ReadableID>DSGN-00002</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00002</Name>
+          <Description>This ECU is connected to a temperature sensor measuring the vehicle cabin interior temperature.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00002</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00039</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00003</UniqueID>
+          <ReadableID>DSGN-00003</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00003</Name>
+          <Description>The Temperature Sensor ECU contains Error Detection algorithms to detect faults in the temperature sensing hardware.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00003</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00055</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00004</UniqueID>
+          <ReadableID>DSGN-00004</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00004</Name>
+          <Description>The system contains a Head Unit ECU.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00004</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00074</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00005</UniqueID>
+          <ReadableID>DSGN-00005</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00005</Name>
+          <Description>The Head Unit ECU is connected to a Human Interface Device for Input and Output to occupants of the cabin.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00005</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00074</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00006</UniqueID>
+          <ReadableID>DSGN-00006</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00006</Name>
+          <Description>The Head Unit ECU executes the control algorithms and defines the operation parameters of the actuators.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00006</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00038</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00007</UniqueID>
+          <ReadableID>DSGN-00007</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00007</Name>
+          <Description>The system contains a Heat Pump ECU.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00007</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00041</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00008</UniqueID>
+          <ReadableID>DSGN-00008</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00008</Name>
+          <Description>The Heat Pump ECU is connected to an electric motor for a heat pump.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00008</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00041</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00010</UniqueID>
+          <ReadableID>DSGN-00010</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00010</Name>
+          <Description>The Heat Pump ECU performs an independent fault reaction to faults in the heat pump motor or circuitry.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00010</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00060, SPEC-00061</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00011</UniqueID>
+          <ReadableID>DSGN-00011</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00011</Name>
+          <Description>In absence of control input from the Head Unit ECU, the Heat Pump ECU performs an independent fault reaction.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00011</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00060, SPEC-00061</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00012</UniqueID>
+          <ReadableID>DSGN-00012</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00012</Name>
+          <Description>The system contains a Fan ECU.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00012</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00040</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00013</UniqueID>
+          <ReadableID>DSGN-00013</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00013</Name>
+          <Description>The Fan ECU is connected to an electric motor for a fan.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00013</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00040</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00015</UniqueID>
+          <ReadableID>DSGN-00015</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00015</Name>
+          <Description>The Fan ECU performs an independent fault reaction to faults in the heat pump motor or circuitry.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00015</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00060, SPEC-00061</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00016</UniqueID>
+          <ReadableID>DSGN-00016</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00016</Name>
+          <Description>In absence of control input from the Head Unit ECU, the Fan ECU performs an independent fault reaction.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00016</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00060, SPEC-00061</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00017</UniqueID>
+          <ReadableID>DSGN-00017</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00017</Name>
+          <Description>The system interfaces with a Battery Control ECU to obtian the current charge level of the vehicle traction battery.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00017</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00045</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00018</UniqueID>
+          <ReadableID>DSGN-00018</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00018</Name>
+          <Description>The system interfaces with a connectivity ECU. No functionality is currently provided.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00018</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00066</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00019</UniqueID>
+          <ReadableID>DSGN-00019</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00019</Name>
+          <Description>The system interacts with a steering wheel ECU to forward input from the human interafce device.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00019</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00075</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00020</UniqueID>
+          <ReadableID>DSGN-00020</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00020</Name>
+          <Description>The system interacts with a seat control ECU to forward input from the human interface device.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00020</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00075</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00021</UniqueID>
+          <ReadableID>DSGN-00021</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00021</Name>
+          <Description>The Temperature Sensor is connected to the Head Unit ECU via a "Sensor" CAN bus.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00021</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00039</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00022</UniqueID>
+          <ReadableID>DSGN-00022</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00022</Name>
+          <Description>The Head Unit ECU and all Actuator ECUs and all Heat Source ECUs are connected through a dedicated "comfort" CAN bus.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00022</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00040, SPEC-00041</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00023</UniqueID>
+          <ReadableID>DSGN-00023</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00023</Name>
+          <Description>The Head Unit ECU and the Battery ECU are connected to a "drivetrain" CAN.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00023</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00045</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00024</UniqueID>
+          <ReadableID>DSGN-00024</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00024</Name>
+          <Description>The Head Unit ECU offers a connection via Ethernet for an (optional) connectvitiy unit.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00024</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00066</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00025</UniqueID>
+          <ReadableID>DSGN-00025</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00025</Name>
+          <Description>The temperature sensor reports a temperature reading every 1s.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00025</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00039, SPEC-00059</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00026</UniqueID>
+          <ReadableID>DSGN-00026</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00026</Name>
+          <Description>The Head Unit ECU provides control output to the actuator ECUs every 100ms.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00026</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00040, SPEC-00041, SPEC-00054, SPEC-00059</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00027</UniqueID>
+          <ReadableID>DSGN-00027</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00027</Name>
+          <Description>The Head Unit ECU provides forwarding of human interface device information every 100ms.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00027</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00054, SPEC-00075</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00028</UniqueID>
+          <ReadableID>DSGN-00028</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00028</Name>
+          <Description>The System as a whole has the following states: Init, Inactive, Eco, Power, Low Battery, Emergency Operation, Off. It acceptable but is not required that system states are realized as individual states in one or more ECUs.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00028</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00043, SPEC-00044, SPEC-00045, SPEC-00046, SPEC-00047, SPEC-00048</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00029</UniqueID>
+          <ReadableID>DSGN-00029</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00029</Name>
+          <Description>State transitions happen transitively and instantly, whenever the condition for a state transition is fulfilled. This means that the state machine continues to transition through states for as long as tranisition conditions are fulfilled. The observed 'next' state from the state machine is the state that is reached when no further transitions can currently be made.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00029</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00079, SPEC-00080</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00030</UniqueID>
+          <ReadableID>DSGN-00030</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00030</Name>
+          <Description>State transitions are specified as follows. Note that in the state machine, (*) is a wildcard, denoting any state.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00030</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00043, SPEC-00044, SPEC-00045, SPEC-00046, SPEC-00047, SPEC-00048, SPEC-00079, SPEC-00080</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00031</UniqueID>
+          <ReadableID>DSGN-00031</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00031</Name>
+          <Description>The fan speed is controlled using a limited growth function.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00031</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00038, SPEC-00042</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00032</UniqueID>
+          <ReadableID>DSGN-00032</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00032</Name>
+          <Description>Parameters of the fan control function shall be selected so that when the setpoint temperature is reached, fans run at a minimal level, replacing the air volume of the cabin once every hour.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00032</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00038, SPEC-00042</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00033</UniqueID>
+          <ReadableID>DSGN-00033</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00033</Name>
+          <Description>Parameters of the fan control function shall be selected to that when the setpoint temperature differs from the actual temperature by at least 5K, fans run at their rated maximum power for sustained operation.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00033</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00038, SPEC-00042</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00034</UniqueID>
+          <ReadableID>DSGN-00034</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00034</Name>
+          <Description>In "Eco" mode, the fan speed is clipped with a hard upper limit.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00034</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00044</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00035</UniqueID>
+          <ReadableID>DSGN-00035</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00035</Name>
+          <Description>The power of the heat pump is controlled using a PID regulator.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00035</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00038, SPEC-00042</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00036</UniqueID>
+          <ReadableID>DSGN-00036</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00036</Name>
+          <Description>The heat pump control algorithm uses different parameters for "Power" mode and for "Eco" mode. In addition, in "Eco" mode, the power of the heat pump is clipped with a hard upper limit.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00036</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00044</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00037</UniqueID>
+          <ReadableID>DSGN-00037</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00037</Name>
+          <Description>In "Low-Battery" Mode, the power of the heat pump is clipped to its minimal power for sustained operation.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00037</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00045</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00038</UniqueID>
+          <ReadableID>DSGN-00038</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00038</Name>
+          <Description>In "Low-Battery" Mode, the power of the fan is clipped to 10% of its rated maximum power for sustained operation.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00038</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00045</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00039</UniqueID>
+          <ReadableID>DSGN-00039</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00039</Name>
+          <Description>In the "Emergency Operation" state, power is cut to the Heat Pump.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00039</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00046</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00040</UniqueID>
+          <ReadableID>DSGN-00040</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00040</Name>
+          <Description>In the "Emergency Operation" state, fan power is set to the minimal power for sustained operation.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00040</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00046</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00041</UniqueID>
+          <ReadableID>DSGN-00041</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00041</Name>
+          <Description>In the "Inactive" state, power is cut to the Heat Pump.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00041</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00047</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00042</UniqueID>
+          <ReadableID>DSGN-00042</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00042</Name>
+          <Description>In the "Inactive" state, power is cut to the Fan.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00042</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00047</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00043</UniqueID>
+          <ReadableID>DSGN-00043</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00043</Name>
+          <Description>In the "Off" state, power is cut to the Heat Pump.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00043</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00048</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>DSGN-00044</UniqueID>
+          <ReadableID>DSGN-00044</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>DSGN-00044</Name>
+          <Description>In the "Off" state, power is cut to the Fan.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemDesign.md#DSGN-00044</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00048</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+      </Folder>
+      <Folder>
+        <UniqueID>SystemSpecification.md</UniqueID>
+        <ReadableID>SystemSpecification.md</ReadableID>
+        <Product>ClimateControlAdvanced v2</Product>
+        <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+        <Name>SystemSpecification.md</Name>
+        <DataSource>Spec\SystemSpecification.md</DataSource>
+        <TraceItem>
+          <UniqueID>SPEC-00038</UniqueID>
+          <ReadableID>SPEC-00038</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00038</Name>
+          <Description>The goal of the ClimateControlAdvanced System is to provide the comfort function "Automatic Climate Control" to a fleet of mid-level and high-class vehicles.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00038</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00075</UniqueID>
+          <ReadableID>SPEC-00075</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00075</Name>
+          <Description>The system also offers a control interface for other heat sources such as front window heaters, rear window heaters, heated seats, a heated steerring wheel and heated rear view mirrors.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00075</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00039</UniqueID>
+          <ReadableID>SPEC-00039</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00039</Name>
+          <Description>The system measures the interior temperature of the cabin.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00039</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00040</UniqueID>
+          <ReadableID>SPEC-00040</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00040</Name>
+          <Description>The system controls a fan to push air into the cabin.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00040</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00041</UniqueID>
+          <ReadableID>SPEC-00041</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00041</Name>
+          <Description>The system controls a heat pump to adjust the temperature of the air pushed into the cabin by the fan.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00041</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00042</UniqueID>
+          <ReadableID>SPEC-00042</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00042</Name>
+          <Description>The system is designed to provide an interior temperature in the range of +10Â°C to +30Â°C in temperate climate.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00042</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00079</UniqueID>
+          <ReadableID>SPEC-00079</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00079</Name>
+          <Description>Unless specific conditions apply, the system operates in a user-selectable operation mode.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00079</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00080</UniqueID>
+          <ReadableID>SPEC-00080</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00080</Name>
+          <Description>When the vehicle enters a specific state or a fault is detected in the system, the system overrides the user selection and continues to operate in an appropriate non-user-selectable operation mode.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00080</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00043</UniqueID>
+          <ReadableID>SPEC-00043</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00043</Name>
+          <Description>The system offers a "Power" mode. In this mode, the maximum available power of the Fan and Heat Pump are utilized to achieve the set point temperature as quickly as possible.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00043</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00044</UniqueID>
+          <ReadableID>SPEC-00044</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00044</Name>
+          <Description>The system offers an "Eco" mode. In this mode, the power to fan and heat pump is limited. This increases the duration until the setpoint temperature can be reached, but limits the overall power consumption of the climate control system.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00044</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00047</UniqueID>
+          <ReadableID>SPEC-00047</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00047</Name>
+          <Description>The system provides an "Inactive" mode. In this mode, all actuators must be disabled. This mode is typically used when the system is operable, but the user requests that no temperature control be excerted.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00047</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00045</UniqueID>
+          <ReadableID>SPEC-00045</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00045</Name>
+          <Description>The system offers a "Low-Battery" mode. In this mode, the heat pump is limited to its minimal power level. The power to the fan is limited. It may not be possible for the system to achieve the requested setpoint temperature. This mode is intended to be used when an electric vehicle runs low on electric power.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00045</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00046</UniqueID>
+          <ReadableID>SPEC-00046</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00046</Name>
+          <Description>The system offers an "Emergency Operation" mode. In this mode, the heat pump is disabled and the fan is set to the minimum power level. Emergency Operation mode is intended for scenarios where the proper functionality of the system cannot be performed due to a technical fault of the components involved. Instead of disabling the system altogether, a degraded functionality can be performed. Note that depending on the actual fault, Emergency Operation Mode may not be available.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00046</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00048</UniqueID>
+          <ReadableID>SPEC-00048</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00048</Name>
+          <Description>The system offers an "Off" mode. In this mode, all actuators must be disabled. The associated ECUs may be disabled as well. This mode is typically used when the ignition is turned off or when a high-severity fault is encountered.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00048</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00049</UniqueID>
+          <ReadableID>SPEC-00049</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00049</Name>
+          <Description>At the start of a driving cycle, the system must not start in "Power" mode. This is to comply with legal regulations.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00049</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00074</UniqueID>
+          <ReadableID>SPEC-00074</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00074</Name>
+          <Description>The system provides a user interface.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00074</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00050</UniqueID>
+          <ReadableID>SPEC-00050</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00050</Name>
+          <Description>In the user interface, the user-selectable operation modes can be selected.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00050</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00051</UniqueID>
+          <ReadableID>SPEC-00051</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00051</Name>
+          <Description>In the user interface, the setpoint temperature can be selected.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00051</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00052</UniqueID>
+          <ReadableID>SPEC-00052</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00052</Name>
+          <Description>In the user interface, the fan can be configured for a fixed speed or for automatic speed control.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00052</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00053</UniqueID>
+          <ReadableID>SPEC-00053</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00053</Name>
+          <Description>At the start of a driving cycle, the settings for operation mode, setpoint temperature and fan configuration from the previous driving cycle are restored, with the execption of Eco Mode/Power Mode.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00053</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00072</UniqueID>
+          <ReadableID>SPEC-00072</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00072</Name>
+          <Description>The system never enters Power Mode unless explicitly configured by the user during the same driving cycle.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00072</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00054</UniqueID>
+          <ReadableID>SPEC-00054</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00054</Name>
+          <Description>The system shall react to a user interaction with a delay of at most 100ms.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00054</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00068</UniqueID>
+          <ReadableID>SPEC-00068</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00068</Name>
+          <Description>Air moved into the cabin must not be so hot as to cause burns to an inhabitant of the cabin or to cause damage to other components of the vehicle.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00068</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00069</UniqueID>
+          <ReadableID>SPEC-00069</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00069</Name>
+          <Description>Air moved into the cabin must not be so cold as to cause frostbite to an inhabitant of the cabin or to cause damage to other components of the vehicle.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00069</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00070</UniqueID>
+          <ReadableID>SPEC-00070</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00070</Name>
+          <Description>The sustained fan speed must be limited to the rated safe speeds for sustained operation of the part, e.g., to not wear out the mechanical components within the expected lifetime of the part.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00070</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00071</UniqueID>
+          <ReadableID>SPEC-00071</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00071</Name>
+          <Description>The sustained power of the Heat Pump must be limited to the rated safe power for sustained operation of the part, e.g., to not cause excessive material stress within the expected lifetime of the part.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00071</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00073</UniqueID>
+          <ReadableID>SPEC-00073</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00073</Name>
+          <Description>The system shall be capable of detecting and handling a number of faults.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00073</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00055</UniqueID>
+          <ReadableID>SPEC-00055</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00055</Name>
+          <Description>The system shall detect faults in the temperature sensor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00055</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00056</UniqueID>
+          <ReadableID>SPEC-00056</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00056</Name>
+          <Description>The system shall detect faults in the fan actuation.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00056</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00057</UniqueID>
+          <ReadableID>SPEC-00057</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00057</Name>
+          <Description>The system shall detect faults in the heat pump actuation.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00057</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00058</UniqueID>
+          <ReadableID>SPEC-00058</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00058</Name>
+          <Description>The system shall detect if the Head Unit ECU has stopped.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00058</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00059</UniqueID>
+          <ReadableID>SPEC-00059</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00059</Name>
+          <Description>The system shall detect intermittent or continuous problems in the bus communication.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00059</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00060</UniqueID>
+          <ReadableID>SPEC-00060</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00060</Name>
+          <Description>If a fault occurs and the system can continue in a degraded operating mode without risk to occupants of the vehicle or further risk to the system itself, it should continue to operate in a degraded state.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00060</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00061</UniqueID>
+          <ReadableID>SPEC-00061</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00061</Name>
+          <Description>If a fault occurs and the system cannot continue without either risk to the occupants or further risk to itself, it should cease operation immediately.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00061</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00062</UniqueID>
+          <ReadableID>SPEC-00062</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00062</Name>
+          <Description>If any fault occurs, the driver must be notified that the system is not fault-free. The notification must be explicit, a failure of the entire system is not considered a notification.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00062</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00063</UniqueID>
+          <ReadableID>SPEC-00063</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00063</Name>
+          <Description>If a fault is healed, the system must offer an automatic recovery strategy.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00063</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00064</UniqueID>
+          <ReadableID>SPEC-00064</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00064</Name>
+          <Description>If a fault occurs persistently, the system must not attempt to heal the fault until it is explicitly told that the fault has been repaired by a workshop. </Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00064</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00065</UniqueID>
+          <ReadableID>SPEC-00065</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00065</Name>
+          <Description>Faults shall be stored using an AUTOSAR Diagnostic Error Memory.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00065</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>SPEC-00066</UniqueID>
+          <ReadableID>SPEC-00066</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>SPEC-00066</Name>
+          <Description>The system is connected to a connectivity unit. No functionality is currently offered via the connectivity unit. Future updates to the system may enable features such as smartphone control of the climate control system.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\SystemSpecification.md#SPEC-00066</Reference>
+        </TraceItem>
+      </Folder>
+      <Folder>
+        <UniqueID>BatterySpecification.md</UniqueID>
+        <ReadableID>BatterySpecification.md</ReadableID>
+        <Product>ClimateControlAdvanced v2</Product>
+        <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+        <Name>BatterySpecification.md</Name>
+        <DataSource>Spec\ECU\BatterySpecification.md</DataSource>
+        <TraceItem>
+          <UniqueID>EDSG-00001</UniqueID>
+          <ReadableID>EDSG-00001</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00001</Name>
+          <Description>The Battery ECU provides information on the current charge level of the battery.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\BatterySpecification.md#EDSG-00001</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00017, DSGN-00028, DSGN-00037, DSGN-00038</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00002</UniqueID>
+          <ReadableID>EDSG-00002</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00002</Name>
+          <Description>The Battery ECU provides information on the current charging state (charging/discharging) of the battery.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\BatterySpecification.md#EDSG-00002</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00080, SPEC-00045</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00003</UniqueID>
+          <ReadableID>EDSG-00003</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00003</Name>
+          <Description>The Battery ECU provides information whether an external power source is available, e.g., when the car is plugged into a charging station.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\BatterySpecification.md#EDSG-00003</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00080, SPEC-00045</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00004</UniqueID>
+          <ReadableID>EDSG-00004</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00004</Name>
+          <Description>Information by the Battery ECU is published every second.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\BatterySpecification.md#EDSG-00004</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00037, DSGN-00038</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00005</UniqueID>
+          <ReadableID>EDSG-00005</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00005</Name>
+          <Description>In addition, changes to the availability of an external power source are published instantly on change.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\BatterySpecification.md#EDSG-00005</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00037, DSGN-00038</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00006</UniqueID>
+          <ReadableID>EDSG-00006</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00006</Name>
+          <Description>The Car Model observes the power draw by heat pump and fans and computes an according discharge of the battery.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\BatterySpecification.md#EDSG-00006</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00007</UniqueID>
+          <ReadableID>EDSG-00007</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00007</Name>
+          <Description>The Car Model can charge the battery on request.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\BatterySpecification.md#EDSG-00007</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00008</UniqueID>
+          <ReadableID>EDSG-00008</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00008</Name>
+          <Description>When powered, the battery ECU causes a constant current draw from the battery.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\BatterySpecification.md#EDSG-00008</Reference>
+        </TraceItem>
+      </Folder>
+      <Folder>
+        <UniqueID>FanSpecification.md</UniqueID>
+        <ReadableID>FanSpecification.md</ReadableID>
+        <Product>ClimateControlAdvanced v2</Product>
+        <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+        <Name>FanSpecification.md</Name>
+        <DataSource>Spec\ECU\FanSpecification.md</DataSource>
+        <TraceItem>
+          <UniqueID>EDSG-00009</UniqueID>
+          <ReadableID>EDSG-00009</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00009</Name>
+          <Description>The Fan ECU receives a fan speed setpoint.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00009</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00006</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00010</UniqueID>
+          <ReadableID>EDSG-00010</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00010</Name>
+          <Description>The Fan ECU uses PWM to drive a motor to the received setpoint speed. See the image below for a schematic.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00010</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00013</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00011</UniqueID>
+          <ReadableID>EDSG-00011</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00011</Name>
+          <Description>The function to compute the PWM ratio for the setpoint speed is set from the factory.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00011</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00013</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00012</UniqueID>
+          <ReadableID>EDSG-00012</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00012</Name>
+          <Description>The Fan ECU observes the current draw of the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00012</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00155, ERRD-00157, ERRD-00141</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00013</UniqueID>
+          <ReadableID>EDSG-00013</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00013</Name>
+          <Description>The Fan ECU identifies an open loop in the power circuit for the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00013</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00155</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00014</UniqueID>
+          <ReadableID>EDSG-00014</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00014</Name>
+          <Description>In case of an open loop, the Fan ECU writes a DTC indicating an electrical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00014</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00015</UniqueID>
+          <ReadableID>EDSG-00015</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00015</Name>
+          <Description>The Fan ECU identifies a short circuit in the power circuit for the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00015</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00155</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00016</UniqueID>
+          <ReadableID>EDSG-00016</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00016</Name>
+          <Description>In case of a short circuit, the Fan ECU writes a DTC indicating an electrical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00016</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00018</UniqueID>
+          <ReadableID>EDSG-00018</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00018</Name>
+          <Description>The Fan ECU identifies overly high current draw of the motor for the current PWM ratio, e.g., due to a blockage in the air duct.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00018</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00157</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00019</UniqueID>
+          <ReadableID>EDSG-00019</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00019</Name>
+          <Description>In case of overly high current draw, the Fan ECU writes a DTC indicating a mechanical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00019</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00020</UniqueID>
+          <ReadableID>EDSG-00020</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00020</Name>
+          <Description>The Fan ECU identifies unexpectedly low current draw of the motor for the current PRM ratio, e.g., due to broken fan blades.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00020</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00157</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00021</UniqueID>
+          <ReadableID>EDSG-00021</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00021</Name>
+          <Description>In case of unexpectedly low current draw, the Fan ECU writes a DTC indicating a mechanical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00021</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00123</UniqueID>
+          <ReadableID>EDSG-00123</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00123</Name>
+          <Description>When a fault in the motor is observed in the current driving cycle, the motor is no longer actuated until the end of the current driving cycle.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00123</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00145, ERRD-00145</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00022</UniqueID>
+          <ReadableID>EDSG-00022</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00022</Name>
+          <Description>When a confirmed DTC indicating a mechanical fault is present, the fan ECU does not actuate the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00022</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00165, ERRD-00142, ERRD-00145</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00023</UniqueID>
+          <ReadableID>EDSG-00023</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00023</Name>
+          <Description>DTCs are confirmed if the same fault was observed in 3 consecutive driving cycles, where an attempt was made to actuate the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00023</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00172</UniqueID>
+          <ReadableID>EDSG-00172</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00172</Name>
+          <Description>DTCs for faults other than mechanical faults are confirmed if the fault persists for at least 5 seconds.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00172</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00173</UniqueID>
+          <ReadableID>EDSG-00173</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00173</Name>
+          <Description>DTCs for faults other than mechanical faults are healed when the fault is absent for at least 10 seconds at the start of the next driving cycle.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00173</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00164</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00025</UniqueID>
+          <ReadableID>EDSG-00025</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00025</Name>
+          <Description>When a fault in the motor has been observed in the current driving cycle or when a confirmed DTC is present, the Fan ECU publishes information on the malfunction on the bus.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00025</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00026</UniqueID>
+          <ReadableID>EDSG-00026</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00026</Name>
+          <Description>When no fan speed setpoint has been received for at least 3 out of the last 10 message cycles, the Fan ECU enters the "Emergency Operation" state.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00026</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00158, ERRD-00159, ERRD-00160, ERRD-00161, ERRD-00143, ERRD-00151</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00027</UniqueID>
+          <ReadableID>EDSG-00027</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00027</Name>
+          <Description>The Fan ECU publishes on the bus whether it is in normal operation or in an "Emergency Operation" state.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00027</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00137</UniqueID>
+          <ReadableID>EDSG-00137</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00137</Name>
+          <Description>The Fan ECU publishes on the bus when it has detected an electrical fault or has stored a confirmed DTC indicating an electrical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00137</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00138</UniqueID>
+          <ReadableID>EDSG-00138</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00138</Name>
+          <Description>The Fan ECU publishes on the bus when it has detected a mechanical fault or has stored a confirmed DTC indicating a mechanical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00138</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00028</UniqueID>
+          <ReadableID>EDSG-00028</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00028</Name>
+          <Description>The Fan ECU publishes all information every 1 second or immedaitely on change.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00028</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00158, ERRD-00159</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00029</UniqueID>
+          <ReadableID>EDSG-00029</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00029</Name>
+          <Description>The Demonstrator has a model for the fan.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00029</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00030</UniqueID>
+          <ReadableID>EDSG-00030</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00030</Name>
+          <Description>The fan model takes the PWM ratio as an input from the Fan ECU.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00030</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00031</UniqueID>
+          <ReadableID>EDSG-00031</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00031</Name>
+          <Description>The fan model outputs the air volume transported per second to the cabin model of the demonstrator.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00031</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00032</UniqueID>
+          <ReadableID>EDSG-00032</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00032</Name>
+          <Description>The fan model takes modifications of the motor function as user input (open loop, short circuit, increased current, lowered current).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00032</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00033</UniqueID>
+          <ReadableID>EDSG-00033</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00033</Name>
+          <Description>The fan model provides the current motor current to the Fan ECU.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00033</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00124</UniqueID>
+          <ReadableID>EDSG-00124</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00124</Name>
+          <Description>When powered, the fan motor causes a current draw from the battery, proportional to the current PWM ratio.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00124</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00034</UniqueID>
+          <ReadableID>EDSG-00034</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00034</Name>
+          <Description>When powered, the fan ECU causes a constant current draw from the battery.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00034</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00178</UniqueID>
+          <ReadableID>EDSG-00178</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00178</Name>
+          <Description>The Fan ECU receives information when a driving cycle has been started or stopped.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\FanSpecification.md#EDSG-00178</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00015</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+      </Folder>
+      <Folder>
+        <UniqueID>HeadUnitSpecification.md</UniqueID>
+        <ReadableID>HeadUnitSpecification.md</ReadableID>
+        <Product>ClimateControlAdvanced v2</Product>
+        <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+        <Name>HeadUnitSpecification.md</Name>
+        <DataSource>Spec\ECU\HeadUnitSpecification.md</DataSource>
+        <TraceItem>
+          <UniqueID>EDSG-00127</UniqueID>
+          <ReadableID>EDSG-00127</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00127</Name>
+          <Description>The Head Unit receives temperature measurements from the Temperature Sensor ECU.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00127</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00006</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00035</UniqueID>
+          <ReadableID>EDSG-00035</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00035</Name>
+          <Description>The Head Unit executes the control algorithm for heat pump temperature output.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00035</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00006</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00036</UniqueID>
+          <ReadableID>EDSG-00036</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00036</Name>
+          <Description>The Head Unit executes the control algorithm for automatic fan speed.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00036</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00006</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00037</UniqueID>
+          <ReadableID>EDSG-00037</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00037</Name>
+          <Description>The ECU provides a button to enable/disable the temperature control.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00037</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00050</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00038</UniqueID>
+          <ReadableID>EDSG-00038</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00038</Name>
+          <Description>The ECU provides an encoder to adjust the setpoint for the cabin temperature.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00038</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00051</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00039</UniqueID>
+          <ReadableID>EDSG-00039</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00039</Name>
+          <Description>The ECU provides a display to show the current setpoint for the cabin temperature.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00039</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00051</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00040</UniqueID>
+          <ReadableID>EDSG-00040</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00040</Name>
+          <Description>The ECU provides an encoder to set the fan speed to automatic control, off, or to a certain constant speed.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00040</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00052</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00041</UniqueID>
+          <ReadableID>EDSG-00041</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00041</Name>
+          <Description>A manual specification of the fan speed by an occupant of the car overrides the fan speed determined by the systems control algorithms.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00041</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00052</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00042</UniqueID>
+          <ReadableID>EDSG-00042</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00042</Name>
+          <Description>At the start of a driving cycle, the values for "Enable/Disable", Temperature Setpoint and Fan operation are restored to their values from the end of the previous driving cycle.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00042</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00053</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00043</UniqueID>
+          <ReadableID>EDSG-00043</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00043</Name>
+          <Description>The ECU provides a button to select "Power" mode or "Eco" mode.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00043</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00050</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00044</UniqueID>
+          <ReadableID>EDSG-00044</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00044</Name>
+          <Description>The ECU provides a mode indicator light to show whether "Power" mode or "Eco" mode was selected.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00044</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00050</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00045</UniqueID>
+          <ReadableID>EDSG-00045</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00045</Name>
+          <Description>The mode indicator light is always updated to reflect the operation mode of the system.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00045</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00050</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00046</UniqueID>
+          <ReadableID>EDSG-00046</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00046</Name>
+          <Description>The ECU provides a fault indicator light to show whether any fault in the system was detected.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00046</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00062</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00047</UniqueID>
+          <ReadableID>EDSG-00047</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00047</Name>
+          <Description>The fault indicator light is always updated to reflect the presence or absence of faults in the system.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00047</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00062</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00048</UniqueID>
+          <ReadableID>EDSG-00048</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00048</Name>
+          <Description>The ECU provides a button to turn on or off the heater in the steering wheel.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00048</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00050</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00049</UniqueID>
+          <ReadableID>EDSG-00049</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00049</Name>
+          <Description>The ECU provides a button to set the heated seats to off or one of three power levels.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00049</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00050</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00050</UniqueID>
+          <ReadableID>EDSG-00050</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00050</Name>
+          <Description>At the start of a driving cycle, the button for "Power"/"Eco" is set to ECO.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00050</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00053, SPEC-00072, SPEC-00049</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00170</UniqueID>
+          <ReadableID>EDSG-00170</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00170</Name>
+          <Description>All buttons and indicator lights are connected to the ECU through Digital IO ports (AUTOSAR DIO module).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00170</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00005</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00171</UniqueID>
+          <ReadableID>EDSG-00171</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00171</Name>
+          <Description>Encoders and Displays are read/controlled through a Complex Device Driver (CDD).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00171</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00005</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00051</UniqueID>
+          <ReadableID>EDSG-00051</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00051</Name>
+          <Description>The Head Unit ECU outputs a requested heat pump output temperature.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00051</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00006</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00052</UniqueID>
+          <ReadableID>EDSG-00052</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00052</Name>
+          <Description>The Head Unit ECU outputs a fan speed.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00052</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00006</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00053</UniqueID>
+          <ReadableID>EDSG-00053</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00053</Name>
+          <Description>Fan speed is computed from the control algorithm when the Fan speed encoder is set to "automatic".</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00053</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00006</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00054</UniqueID>
+          <ReadableID>EDSG-00054</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00054</Name>
+          <Description>Fan speed is set to values from a predefined table when the Fan speed encoder is set to a constant speed.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00054</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00006, SPEC-00052</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00055</UniqueID>
+          <ReadableID>EDSG-00055</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00055</Name>
+          <Description>Fan speed is set to 0 when the Fan speed encoder is set to off.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00055</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00006</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00056</UniqueID>
+          <ReadableID>EDSG-00056</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00056</Name>
+          <Description>The selected state for the steering wheel heating is passed to the steering wheel ECU every 100ms.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00056</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00054</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00057</UniqueID>
+          <ReadableID>EDSG-00057</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00057</Name>
+          <Description>The selected state for the seat heating is passed to the seat ECU every 100ms.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00057</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00054</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00058</UniqueID>
+          <ReadableID>EDSG-00058</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00058</Name>
+          <Description>The Head Unit ECU sends messages to the Fan every 100ms.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00058</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00054</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00059</UniqueID>
+          <ReadableID>EDSG-00059</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00059</Name>
+          <Description>The Head Unit ECU sends messages to the Heat Pump every 100ms.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00059</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00054</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00128</UniqueID>
+          <ReadableID>EDSG-00128</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00128</Name>
+          <Description>The Head Unit observes the bus for error notifications from other ECUs.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00128</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162, ERRD-00143</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00129</UniqueID>
+          <ReadableID>EDSG-00129</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00129</Name>
+          <Description>When no messages from the Temperature Sensor ECU have been received for at least 3 out of 10 message periods, the Head Unit enters "Emergency Operation" mode.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00129</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00158, ERRD-00159, ERRD-00160, SPEC-00061</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00174</UniqueID>
+          <ReadableID>EDSG-00174</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00174</Name>
+          <Description>When messages from the Temperature Sensor ECU have been received for more than 7 out of 10 consecutive message periods, the communication to the Temperature Sensor ECU is considered healed.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00174</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00158, ERRD-00159, ERRD-00160, ERRD-00163</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00130</UniqueID>
+          <ReadableID>EDSG-00130</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00130</Name>
+          <Description>When the Fan ECU reports a fault of any kind, the Head Unit enters "Inactive" mode and overrides the outputs of the control algorithms accordingly.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00130</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00061</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00131</UniqueID>
+          <ReadableID>EDSG-00131</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00131</Name>
+          <Description>When no status messages from the Fan ECU have been received for at least 3 out of 10 message periods, the Head Unit enters "Inactive" mode.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00131</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00158, ERRD-00159, ERRD-00160, SPEC-00061</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00132</UniqueID>
+          <ReadableID>EDSG-00132</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00132</Name>
+          <Description>When status messages from the Fan ECU have been received for more than 7 out of 10 consecutive message periods, the communication to the Fan ECU is considered healed.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00132</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00158, ERRD-00159, ERRD-00160, ERRD-00163</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00133</UniqueID>
+          <ReadableID>EDSG-00133</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00133</Name>
+          <Description>When the Heat Pump ECU reports a fault of any kind, the Head Unit enters "Emergency Operation" mode and overrides the outputs of the control algorithms accordingly.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00133</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00060</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00134</UniqueID>
+          <ReadableID>EDSG-00134</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00134</Name>
+          <Description>When no status messages from the Heat Pump ECU have been received for at least 3 out of 10 message periods, the Head Unit enters "Emergency Operation" mode.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00134</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00158, ERRD-00159, ERRD-00160, SPEC-00060</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00135</UniqueID>
+          <ReadableID>EDSG-00135</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00135</Name>
+          <Description>When status messages from the Heat Pump ECU have been received for more than 7 out of 10 consecutive message periods, the Fan ECU is considered healed.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00135</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00158, ERRD-00159, ERRD-00160, ERRD-00163</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00136</UniqueID>
+          <ReadableID>EDSG-00136</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00136</Name>
+          <Description>When all faults are observed to be healed, and no non-online recoverable faults were present in the system during the same driving cycle, the Head Unit ECU determines the current operation mode according to the system state machine (see DSGN-00030).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00136</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00166</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00060</UniqueID>
+          <ReadableID>EDSG-00060</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00060</Name>
+          <Description>When powered, the head unit ECU causes a constant current draw from the battery.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00060</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00177</UniqueID>
+          <ReadableID>EDSG-00177</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00177</Name>
+          <Description>The CDD mentioned in DSGN-00005 shall not be implemented. Instead, the RTE Hook functionality of VTT shall be used to directly export the encoder/display I/O to CANoe system variables.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeadUnitSpecification.md#EDSG-00177</Reference>
+        </TraceItem>
+      </Folder>
+      <Folder>
+        <UniqueID>HeatPumpSpecification.md</UniqueID>
+        <ReadableID>HeatPumpSpecification.md</ReadableID>
+        <Product>ClimateControlAdvanced v2</Product>
+        <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+        <Name>HeatPumpSpecification.md</Name>
+        <DataSource>Spec\ECU\HeatPumpSpecification.md</DataSource>
+        <TraceItem>
+          <UniqueID>EDSG-00061</UniqueID>
+          <ReadableID>EDSG-00061</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00061</Name>
+          <Description>The Heat Pump ECU receives an output temperature setpoint.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00061</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00006</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00062</UniqueID>
+          <ReadableID>EDSG-00062</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00062</Name>
+          <Description>The Heat Pump ECU uses PWM to adjust the power of an electric motor to achieve the desired output temperature of a heat pump. See the image below for a schematic.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00062</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00008</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00063</UniqueID>
+          <ReadableID>EDSG-00063</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00063</Name>
+          <Description>The function to compute the PWM ratio for the setpoint speed is set from the factory.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00063</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00008</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00064</UniqueID>
+          <ReadableID>EDSG-00064</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00064</Name>
+          <Description>The Heat Pump ECU observes the current draw of the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00064</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00141, ERRD-00152</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00065</UniqueID>
+          <ReadableID>EDSG-00065</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00065</Name>
+          <Description>The Heat Pump ECU identifies an open loop in the power circuit for the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00065</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00152</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00066</UniqueID>
+          <ReadableID>EDSG-00066</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00066</Name>
+          <Description>In case of an open loop, the Heat Pump ECU writes a DTC indicating an electrical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00066</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00067</UniqueID>
+          <ReadableID>EDSG-00067</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00067</Name>
+          <Description>The Heat Pump ECU identifies a short circuit in the power circuit for the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00067</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00152</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00068</UniqueID>
+          <ReadableID>EDSG-00068</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00068</Name>
+          <Description>In case of a short circuit, the Heat Pump ECU writes a DTC indicating an electrical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00068</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00070</UniqueID>
+          <ReadableID>EDSG-00070</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00070</Name>
+          <Description>The Heat Pump ECU identifies overly high current draw of the motor for the current PWM ratio.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00070</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00154</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00071</UniqueID>
+          <ReadableID>EDSG-00071</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00071</Name>
+          <Description>In case of overly high current draw, the Heat Pump ECU writes a DTC indicating a mechanical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00071</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00072</UniqueID>
+          <ReadableID>EDSG-00072</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00072</Name>
+          <Description>The Heat Pump ECU identifies unexpectedly low current draw of the motor for the current PRM ratio, e.g., due to broken mechanics.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00072</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00154</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00073</UniqueID>
+          <ReadableID>EDSG-00073</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00073</Name>
+          <Description>In case of unexpectedly low current draw, the Heat Pump ECU writes a DTC indicating a mechanical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00073</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167, ERRD-00145</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00125</UniqueID>
+          <ReadableID>EDSG-00125</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00125</Name>
+          <Description>When a fault in the motor is observed in the current driving cycle, the motor is no longer actuated until the end of the current driving cycle.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00125</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00010, ERRD-00145</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00074</UniqueID>
+          <ReadableID>EDSG-00074</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00074</Name>
+          <Description>When a confirmed DTC indicating a mechanical fault is present, the Heat Pump ECU does not actuate the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00074</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00010, ERRD-00142, ERRD-00145, ERRD-00165</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00075</UniqueID>
+          <ReadableID>EDSG-00075</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00075</Name>
+          <Description>DTCs for mechanical faults are confirmed if the same fault was observed in 3 consecutive driving cycles, where an attempt was made to actuate the motor.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00075</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00175</UniqueID>
+          <ReadableID>EDSG-00175</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00175</Name>
+          <Description>DTCs for faults other than mechanical faults are confirmed if the fault persists for at least 5 seconds.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00175</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00176</UniqueID>
+          <ReadableID>EDSG-00176</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00176</Name>
+          <Description>DTCs for faults other than mechanical faults are healed when the fault is absent for at least 10 seconds at the start of the next driving cycle.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00176</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00164</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00077</UniqueID>
+          <ReadableID>EDSG-00077</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00077</Name>
+          <Description>When a fault in the motor has been observed in the current driving cycle or when a confirmed DTC is present, the Heat Pump ECU publishes information on the malfunction on the bus.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00077</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00078</UniqueID>
+          <ReadableID>EDSG-00078</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00078</Name>
+          <Description>When no heat pump power setpoint has been received for at least 3 out of the last 10 message cycles, the Heat Pump ECU enters the "Emergency Operation" state.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00078</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00158, ERRD-00159, ERRD-00160, ERRD-00161, ERRD-00143, ERRD-00151</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00079</UniqueID>
+          <ReadableID>EDSG-00079</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00079</Name>
+          <Description>The Heat Pump ECU publishes on the bus whether it is in normal operation or in an "Emergency Operation" state.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00079</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00139</UniqueID>
+          <ReadableID>EDSG-00139</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00139</Name>
+          <Description>The Heat Pump ECU publishes on the bus when it has detected an electrical fault or has stored a confirmed DTC indicating an electrical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00139</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00140</UniqueID>
+          <ReadableID>EDSG-00140</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00140</Name>
+          <Description>The Heat Pump ECU publishes on the bus when it has detected a mechanical fault or has stored a confirmed DTC indicating a mechanical fault.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00140</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00080</UniqueID>
+          <ReadableID>EDSG-00080</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00080</Name>
+          <Description>The Heat Pump ECU publishes all information every 1 second or immedaitely on change.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00080</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00158, ERRD-00159</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00081</UniqueID>
+          <ReadableID>EDSG-00081</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00081</Name>
+          <Description>The Demonstrator has a model for the heat pump.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00081</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00082</UniqueID>
+          <ReadableID>EDSG-00082</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00082</Name>
+          <Description>The heat pump model takes the PWM ratio as an input from the Heat Pump ECU.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00082</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00083</UniqueID>
+          <ReadableID>EDSG-00083</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00083</Name>
+          <Description>The heat pump model outputs the output air temperature to the cabin model of the demonstrator.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00083</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00084</UniqueID>
+          <ReadableID>EDSG-00084</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00084</Name>
+          <Description>The heat pump model takes modifications of the motor function as user input (open loop, short circuit, increased current, lowered current).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00084</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00085</UniqueID>
+          <ReadableID>EDSG-00085</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00085</Name>
+          <Description>The heat pump model provides the current motor current to the Heat Pump ECU.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00085</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00126</UniqueID>
+          <ReadableID>EDSG-00126</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00126</Name>
+          <Description>When powered, the heat pump causes a current draw from the battery, proportional to the current PWM ratio.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00126</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00086</UniqueID>
+          <ReadableID>EDSG-00086</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00086</Name>
+          <Description>When powered, the heat pump ECU causes a constant current draw from the battery.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\HeatPumpSpecification.md#EDSG-00086</Reference>
+        </TraceItem>
+      </Folder>
+      <Folder>
+        <UniqueID>SeatSpecification.md</UniqueID>
+        <ReadableID>SeatSpecification.md</ReadableID>
+        <Product>ClimateControlAdvanced v2</Product>
+        <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+        <Name>SeatSpecification.md</Name>
+        <DataSource>Spec\ECU\SeatSpecification.md</DataSource>
+        <TraceItem>
+          <UniqueID>EDSG-00087</UniqueID>
+          <ReadableID>EDSG-00087</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00087</Name>
+          <Description>The Seat ECU receives a message specifying the level of heating for a seat.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SeatSpecification.md#EDSG-00087</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00020</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00088</UniqueID>
+          <ReadableID>EDSG-00088</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00088</Name>
+          <Description>The Seat ECU provides four levels of heating: Level 0 (Off) through Level 3 (Maximum heating).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SeatSpecification.md#EDSG-00088</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00089</UniqueID>
+          <ReadableID>EDSG-00089</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00089</Name>
+          <Description>When requested, the Seat ECU heats the seat through a resistive heater with constant current.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SeatSpecification.md#EDSG-00089</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00090</UniqueID>
+          <ReadableID>EDSG-00090</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00090</Name>
+          <Description>The heating current is determined from the requested heating level by a constant lookup table.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SeatSpecification.md#EDSG-00090</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00091</UniqueID>
+          <ReadableID>EDSG-00091</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00091</Name>
+          <Description>When the signal for the heating level is not received for 5 signal cycles, the seat heating heating is disabled. </Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SeatSpecification.md#EDSG-00091</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00058</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00092</UniqueID>
+          <ReadableID>EDSG-00092</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00092</Name>
+          <Description>When heated, the seat provides a given (tiny) amount of heat to the cabin model, proportional to the current level of heating.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SeatSpecification.md#EDSG-00092</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00093</UniqueID>
+          <ReadableID>EDSG-00093</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00093</Name>
+          <Description>When heated, the seat causes a constant current draw from the battery, proportional to the current level of heating.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SeatSpecification.md#EDSG-00093</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00094</UniqueID>
+          <ReadableID>EDSG-00094</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00094</Name>
+          <Description>When powered, the seat ECU causes a constant current draw from the battery.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SeatSpecification.md#EDSG-00094</Reference>
+        </TraceItem>
+      </Folder>
+      <Folder>
+        <UniqueID>SteeringWheelSpecification.md</UniqueID>
+        <ReadableID>SteeringWheelSpecification.md</ReadableID>
+        <Product>ClimateControlAdvanced v2</Product>
+        <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+        <Name>SteeringWheelSpecification.md</Name>
+        <DataSource>Spec\ECU\SteeringWheelSpecification.md</DataSource>
+        <TraceItem>
+          <UniqueID>EDSG-00095</UniqueID>
+          <ReadableID>EDSG-00095</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00095</Name>
+          <Description>The Steering Wheel ECU receives the request to heat the steering wheel or to stop heating the steering wheel.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SteeringWheelSpecification.md#EDSG-00095</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00019, SPEC-00075</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00096</UniqueID>
+          <ReadableID>EDSG-00096</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00096</Name>
+          <Description>When requested, the Steering Wheel ECU heats the steering wheel through a resistive heater with constant current.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SteeringWheelSpecification.md#EDSG-00096</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00075</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00097</UniqueID>
+          <ReadableID>EDSG-00097</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00097</Name>
+          <Description>When no request signal is received for 5 signal cycles, the steering wheel heating is disabled.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SteeringWheelSpecification.md#EDSG-00097</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>SPEC-00058</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00098</UniqueID>
+          <ReadableID>EDSG-00098</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00098</Name>
+          <Description>When heated, the steering wheel provides a given (tiny) amount of heat to the cabin model.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SteeringWheelSpecification.md#EDSG-00098</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00099</UniqueID>
+          <ReadableID>EDSG-00099</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00099</Name>
+          <Description>When heated, the steering wheel causes a constant current draw from the battery.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SteeringWheelSpecification.md#EDSG-00099</Reference>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00100</UniqueID>
+          <ReadableID>EDSG-00100</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00100</Name>
+          <Description>When powered, the steering wheel ECU causes a constant current draw from the battery.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\SteeringWheelSpecification.md#EDSG-00100</Reference>
+        </TraceItem>
+      </Folder>
+      <Folder>
+        <UniqueID>ThermalSensorSpecification.md</UniqueID>
+        <ReadableID>ThermalSensorSpecification.md</ReadableID>
+        <Product>ClimateControlAdvanced v2</Product>
+        <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+        <Name>ThermalSensorSpecification.md</Name>
+        <DataSource>Spec\ECU\ThermalSensorSpecification.md</DataSource>
+        <TraceItem>
+          <UniqueID>EDSG-00101</UniqueID>
+          <ReadableID>EDSG-00101</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00101</Name>
+          <Description>The Thermal Sensor ECU reads the current ambient temperature of the cabin from a thermal sensor. See the image below for a schematic.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00101</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00002</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00102</UniqueID>
+          <ReadableID>EDSG-00102</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00102</Name>
+          <Description>The Thermal Sensor ECU sends the current ambient temperature of the cabin on the bus.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00102</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00006</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00103</UniqueID>
+          <ReadableID>EDSG-00103</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00103</Name>
+          <Description>The Thermal Sensor ECU employs a smoothing algorithm over temperature readings before transmitting them.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00103</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00002</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00169</UniqueID>
+          <ReadableID>EDSG-00169</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00169</Name>
+          <Description>The Termal Sensor ECU transmits a Fault Indication on the bus, indicating whether the ECU is operating normally or whether the ECU or its peripherals are currently faulty.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00169</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00105</UniqueID>
+          <ReadableID>EDSG-00105</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00105</Name>
+          <Description>All signals are transmitted at 1 second intervals.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00105</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>DSGN-00025</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00106</UniqueID>
+          <ReadableID>EDSG-00106</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00106</Name>
+          <Description>The Fault Indication is also transmitted on change.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00106</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00107</UniqueID>
+          <ReadableID>EDSG-00107</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00107</Name>
+          <Description>The Thermal Sensor ECU monitors the Thermal Sensor for faults.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00107</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00149, ERRD-00150, ERRD-00141</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00108</UniqueID>
+          <ReadableID>EDSG-00108</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00108</Name>
+          <Description>The Thermal Sensor ECU monitors the Thermal Sensor for a short circuit.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00108</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00149</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00109</UniqueID>
+          <ReadableID>EDSG-00109</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00109</Name>
+          <Description>When a short circuit is detected, the Thermal Sensor writes a DTC.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00109</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00110</UniqueID>
+          <ReadableID>EDSG-00110</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00110</Name>
+          <Description>The DTC for short circuit is confirmed when the short circuit persists for more than 5 seconds.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00110</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00111</UniqueID>
+          <ReadableID>EDSG-00111</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00111</Name>
+          <Description>The DTC for short circuit is healed when the short circuit is absent for at least 10 seconds at the start of the next driving cycle.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00111</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00164</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00112</UniqueID>
+          <ReadableID>EDSG-00112</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00112</Name>
+          <Description>The Thermal Sensor ECU monitors the Thermal Sensor for an open loop (e.g., sensor was disconnected).</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00112</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00149</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00113</UniqueID>
+          <ReadableID>EDSG-00113</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00113</Name>
+          <Description>When an open loop is detected, the Thermal Sensor writes a DTC.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00113</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00114</UniqueID>
+          <ReadableID>EDSG-00114</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00114</Name>
+          <Description>The DTC for open loop is confirmed when the open loop persists for more than 5 seconds.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00114</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00115</UniqueID>
+          <ReadableID>EDSG-00115</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00115</Name>
+          <Description>The DTC for open loop is healed when the open loop is absent for at least 10 seconds at the start of the next driving cycle.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00115</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00164</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00116</UniqueID>
+          <ReadableID>EDSG-00116</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00116</Name>
+          <Description>The Thermal Sensor ECU monitors the Thermal Sensor for erratic values. Values are deemed erratic, when in a period of 10 seconds more than one third of readings are above the smoothed value and more than one third of readings are below the current smoothed value by more than the part tolerance of the physical thermal sensor part.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00116</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00150</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00117</UniqueID>
+          <ReadableID>EDSG-00117</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00117</Name>
+          <Description>When erratic values are detected, the Thermal Sensor writes a DTC.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00117</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00118</UniqueID>
+          <ReadableID>EDSG-00118</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00118</Name>
+          <Description>The DTC for erratic values is confirmed when the erratic value condition persists for at least 1 minute.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00118</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00119</UniqueID>
+          <ReadableID>EDSG-00119</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00119</Name>
+          <Description>The DTC for erratic values is healed when the erratic value condition is absent for at least 1 minute.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00119</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00167</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00120</UniqueID>
+          <ReadableID>EDSG-00120</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00120</Name>
+          <Description>While a fault is detected, the Sensor ECU transmits "faulty" as its Fault Indication.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00120</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00121</UniqueID>
+          <ReadableID>EDSG-00121</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00121</Name>
+          <Description>When a confirmed DTC exists, the Sensor ECU transmits "faulty" as its Fault Indication.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00121</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+        <TraceItem>
+          <UniqueID>EDSG-00122</UniqueID>
+          <ReadableID>EDSG-00122</ReadableID>
+          <Product>ClimateControlAdvanced v2</Product>
+          <VersionIdentification>28/04/2023 14:42:21</VersionIdentification>
+          <Name>EDSG-00122</Name>
+          <Description>When there is no reason to transmit "faulty" in the Fault Indication, the Thermal Sensor ECU transmits "normal operation" in its Fault Indication.</Description>
+          <Reference>https://github1.vg.vector.int/pnd/cdevops-climate-control-advanced/tree/ccav2/Spec\ECU\ThermalSensorSpecification.md#EDSG-00122</Reference>
+          <AdditionalInformation>
+            <Property>
+              <Name>Traces</Name>
+              <Value>ERRD-00162</Value>
+            </Property>
+          </AdditionalInformation>
+        </TraceItem>
+      </Folder>
+    </Folder>
+  </TraceItemsRoot>
+</TraceItems>

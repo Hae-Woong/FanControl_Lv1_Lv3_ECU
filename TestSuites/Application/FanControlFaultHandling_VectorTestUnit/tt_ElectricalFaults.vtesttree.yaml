@@ -1,0 +1,14 @@
+version: 2.2.0
+test-tree:
+  - test-fixture: Check Fan Control Fault Handling Functionality
+    capl-preparation: cf_InitState
+    capl-completion: ctf_Completion
+    elements:
+    - capl-test-case: ctc_TriggerFaultEvent
+      title: Check Open Circuit Fault
+      params:
+        - 875
+        - 1
+        - 0
+        - 0
+        - 0

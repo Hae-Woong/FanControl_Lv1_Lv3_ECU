@@ -1,0 +1,152 @@
+/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  msTimer thermalCycle;
+  
+  /* min max specified in CCAv2 specs. */
+  const int specifiedMin = -40;
+  const int specifiedMax = 60;
+
+  const int arraySize = 10;
+  int tempDataArray[arraySize];
+  int tempCycleErraticLog[arraySize];
+  
+  const float SENSORTOLERANCE = 0.25;
+  const int windowSize = 10; /* 10 measurements */
+  int tempCycleCounter = 0;
+  
+  /* Vars for Error Detection */
+  int erraticFault = 0;
+  int erraticDTC = 0;
+  int prevExceedingDirection = 0; /* previous exceeded direction of smoothed value: 1=positive, -1=negative */
+}
+
+on start 
+{
+  setTimerCyclic(thermalCycle,1000);
+}
+
+void checkEndOfArrays()
+{
+  int i;
+  
+  if (tempCycleCounter > (arraySize - 1))
+  {
+    for (i = 1; i <= (arraySize - 1); i++)
+    {
+      /* Start at beginning of array(s) --> Copy last 10 elements to the beginning */
+      tempDataArray[i-1] = tempDataArray[i];
+      tempCycleErraticLog[i-1] = tempCycleErraticLog[i];
+    }
+    tempCycleCounter = (arraySize - 1);
+  }
+}
+
+float calcSmoothedTempValue(int rawTemp)
+{
+  float smoothedTemp;
+  int sumTemps;
+  int i;
+
+  sumTemps = 0;
+  for (i = tempCycleCounter; i > (tempCycleCounter - windowSize) && i >= 0; i--)
+  {
+    write("TempData [%d]: %d", i, tempDataArray[i]);
+    sumTemps = sumTemps + tempDataArray[i];
+  }
+  smoothedTemp = (1.0 / windowSize) * sumTemps;
+
+  /* Adjust the smoothing algorithm for the first 9 temperature readings, because not enough data available */
+  if (tempCycleCounter < (windowSize - 1)){
+    smoothedTemp = (1.0 / (tempCycleCounter + 1)) * sumTemps;
+  }
+  
+  write("Raw Temp: %d", rawTemp);
+  write("Smoothed Temp: %.2f", smoothedTemp);
+  return smoothedTemp;
+}
+
+on timer thermalCycle
+{
+  int temperature = 0;
+  float smoothedTemp = 0;
+  int i = 0;
+  int erraticCounter;
+  
+  erraticCounter = 0;
+  
+  /* Check if max num of elements for tempDataArray and tempCycleErraticLog reached */
+  checkEndOfArrays();
+  
+  temperature = @sysvar::MockedPorts::PpThermalSensor;
+  tempDataArray[tempCycleCounter] = temperature;
+  smoothedTemp = calcSmoothedTempValue(temperature);
+  
+  /* Check if temp exceeds current smoothed value by more than the part tolerance of the physical thermal sensor in alternate directions. */
+  tempCycleErraticLog[tempCycleCounter] = 0;
+  if (abs(temperature - smoothedTemp) > SENSORTOLERANCE)
+  {
+    if (temperature < smoothedTemp && prevExceedingDirection >= 0)
+    {
+      write("erratic value direction (-1)");
+      tempCycleErraticLog[tempCycleCounter] = 1;
+      prevExceedingDirection = -1;
+    } 
+    else if (temperature > smoothedTemp && prevExceedingDirection <= 0)
+    {
+      write("erratic value direction (+1)");
+      tempCycleErraticLog[tempCycleCounter] = 1;
+      prevExceedingDirection = 1;
+    }
+  }
+  write("****************************************************");
+  
+  /* check last 10 temp cycles for faults */
+  for (i = tempCycleCounter; i >= (tempCycleCounter - 9) && i >= 0; i--)
+  {
+    if (tempCycleErraticLog[i] == 1)
+    {
+      erraticCounter++;
+    }
+  }
+  
+  
+  /* Erratic values: when in a period of 10 seconds the current smoothed value is exceeded 5 
+    times by more than the part tolerance in alternate directions */
+  if (erraticCounter >= 5)
+  {
+    write("%d Erratic Fault(s) in the past 10 seconds.", erraticCounter);
+    erraticFault = 1;
+  }
+  else if (tempCycleErraticLog[tempCycleCounter] != 1 && erraticFault)
+  {
+    write("Erratic Fault(s) in the past 10 seconds beneath threshold: %d/5", erraticCounter);
+    erraticFault = 0;
+  }
+  else if (erraticCounter == 0)
+  {
+    /* Reset fault direction */
+    prevExceedingDirection = 0;
+    erraticFault = 0;
+  }
+
+  
+  if (erraticFault == 1 || erraticDTC == 1)
+  {
+    setSignal(Sensor::Signal_Temperature_Fault, 1);
+  }
+  else
+  {
+    setSignal(Sensor::Signal_Temperature_Fault, 0);
+  }
+  
+  /* EDSG-00102: The Thermal Sensor ECU sends the current ambient temperature of the cabin on the bus. */
+  setSignal(Sensor::Signal_CabinTemperature, smoothedTemp);
+  
+  tempCycleCounter++;
+}

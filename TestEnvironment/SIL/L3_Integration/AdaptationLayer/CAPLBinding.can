@@ -1,0 +1,55 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+on transmit_value AbstractEnvironment::FanControl.PowerSupply
+{
+  @sysvar::VTT::Fan_ECU::Controller::PowerSupply = $this;
+}
+
+on transmit_value AbstractEnvironment::FanControl.DrivingCycle
+{
+  $Comfort::VectorSimulationNode::Signal_DrivingCycle = $this;
+}
+
+on transmit_value AbstractEnvironment::FanControl.FanSpeed
+{
+  $Comfort::HeadUnit_ECU::Signal_Fan_Speed = $this;
+}
+
+on transmit_value AbstractEnvironment::FanControl.FanVoltage
+{
+  @sysvar::VTT::Fan_ECU::Adc::AdcGroupPower = $this;
+  @sysvar::VTT::Fan_ECU::Adc::AdcPower = $this;
+}
+
+//on sysvar_update sysvar::VTT::Fan_ECU::IoHwAb::PwmDutyCycle
+on sysvar_update sysvarMember::VTT::Fan_ECU::Pwm::PWM_FanMotor.dutyCycle
+{
+  //write("Time : %f ms, (CAPLBinding)VTT::Fan_ECU::Pwm::PWM_FanMotor.dutyCycle %d",timeNow()/100.0, @this);
+  Binding::ValueReceived(FanControl.PwmDutyCycle, @this);
+}
+
+on pdu Comfort_Fan_Frame_PDU
+{
+  Binding::ValueReceived(AbstractEnvironment::FanControl.Fault, (dword)this.Signal_Fan_Fault);
+}
+
+// Internal Mappings between FanControl and Fan DO's
+
+on value_update AbstractEnvironment::FanControl.PwmDutyCycle
+{
+  $Fan::Fan.pwmDutyCycle = $this * 0.0030517578125;
+}
+
+on value_update Fan::Fan.voltageOutput
+{
+  $AbstractEnvironment::FanControl.FanVoltage = $this;
+}

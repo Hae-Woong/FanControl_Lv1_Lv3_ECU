@@ -1,0 +1,54 @@
+/*@!Encoding:65001*/
+includes
+{
+  #include "../../../TestEnvironment/SharedResources/CAPL/incl/pGlobalVars.cin"
+}
+
+variables
+{
+}
+
+export void cf_InitState()
+{
+  /* Set a valid speed signal value */
+  $AbstractEnvironment::FanControl.FanSpeed = 1750;
+
+  /* reset test variables */
+  $Fan::Fan.powerSupplyCurrent = Fan::eCurrentLevel::Normal;
+  $Fan::Fan.pwmInputState = Fan::eConnectorState::Normal;
+  
+
+  testWaitForTimeout(_TIME_SOURCECODE_ITERATION + 1000); /* Give ECU more time to return to valid state */
+}
+
+export void cf_CheckFailedPreconditon()
+{
+  cf_expectValueNe(1, $AbstractEnvironment::FanControl.Fault,  "Fault signal is active!");
+}
+
+export void cf_ResetDrivingCycle()
+{
+  cf_RestartDrivingCycle();
+  $AbstractEnvironment::FanControl.FanSpeed = 0;
+}
+
+export void cf_RestartDrivingCycle()
+{
+  $AbstractEnvironment::FanControl.DrivingCycle = 0;
+  testWaitForTimeout(_TIME_SOURCECODE_ITERATION);
+  $AbstractEnvironment::FanControl.DrivingCycle = 1;
+  testWaitForTimeout(_TIME_SOURCECODE_ITERATION);
+}
+
+export testfunction ctf_Initialization()
+{
+  cf_InitState();
+  cf_RestartDrivingCycle();
+  cf_CheckFailedPreconditon();
+}
+
+export testfunction ctf_Completion()
+{
+  cf_InitState();
+  cf_ResetDrivingCycle();
+}

@@ -1,0 +1,12 @@
+version: 2.1.0
+test-unit-information:
+  caption: Diagnostic_Tests
+  description: FanControl_Diagnostic_ECU_Tests
+  version: v1.0
+test-unit-implementation:
+  - source-file-path: tt_DTCs.vtesttree.yaml
+  - source-file-path: ../../SharedResources/CAPL/ca_Initialization.can
+  - source-file-path: ../../SharedResources/CAPL/ca_assert.can
+  - source-file-path: ../SharedResources/CAPL/ca_assertDiagnostic.can
+  - source-file-path: ../SharedResources/CAPL/ca_diagnostic.can
+  - source-file-path: ../SharedResources/CAPL/ca_DiagnosticInitialization.can

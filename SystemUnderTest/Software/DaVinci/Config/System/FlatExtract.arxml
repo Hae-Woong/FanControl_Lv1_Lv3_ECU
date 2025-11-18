@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="841a5f8e-80cd-4dee-87d0-c43a114f2704">
+      <SHORT-NAME>COM</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="9b0de64b-a865-4d51-abb8-3a542ef73010">
+          <SHORT-NAME>VECTOR</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="61ad1db3-c56d-4287-9a0b-c8807d2b685f">
+              <SHORT-NAME>CFG</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="e320cf37-0429-4e0e-9639-23ead60935be">
+                  <SHORT-NAME>WORKFLOW</SHORT-NAME>
+                  <AR-PACKAGES>
+                    <AR-PACKAGE UUID="caf452c3-bb73-4854-8f73-52aa2c756815">
+                      <SHORT-NAME>SYSDESC</SHORT-NAME>
+                      <AR-PACKAGES>
+                        <AR-PACKAGE UUID="95bf619b-58fa-427e-bd67-5145d61e4b2a">
+                          <SHORT-NAME>SYNC</SHORT-NAME>
+                          <ELEMENTS>
+                            <SYSTEM UUID="09bbcef3-3bc5-40a2-9f89-d27e59b24ff1">
+                              <SHORT-NAME>SYSTEM</SHORT-NAME>
+                              <CATEGORY>ECU_EXTRACT</CATEGORY>
+                              <FIBEX-ELEMENTS>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-CLUSTER">/VectorAutosarExplorerGeneratedObjects/Comfort/Comfort</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="ECU-INSTANCE">/VectorAutosarExplorerGeneratedObjects/ECU_INSTANCES/Fan_ECU</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/VectorAutosarExplorerGeneratedObjects/FRAME/Comfort_HeadUnit_Frame</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/VectorAutosarExplorerGeneratedObjects/PDUS/Comfort_HeadUnit_Frame_PDU</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/VectorAutosarExplorerGeneratedObjects/PDU_GROUP/PduGroup_0d620c5c31e9468c805e953e49743e0a_Rx</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/VectorAutosarExplorerGeneratedObjects/I_SIGNALS/Signal_HeatPump_Setpoint</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/VectorAutosarExplorerGeneratedObjects/PDU_GROUP/PduGroup_74671e2bef9a450f9b76d8edb8306b91_Tx</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/VectorAutosarExplorerGeneratedObjects/I_SIGNALS/Signal_Fan_Speed</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/VectorAutosarExplorerGeneratedObjects/I_SIGNALS/Signal_Fan_Fault</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/VectorAutosarExplorerGeneratedObjects/FRAME/Comfort_Fan_Frame</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/VectorAutosarExplorerGeneratedObjects/PDUS/Comfort_Fan_Frame_PDU</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/VectorAutosarExplorerGeneratedObjects/I_SIGNALS/Signal_Seat_HeatLevel</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/VectorAutosarExplorerGeneratedObjects/I_SIGNALS/Signal_SteeringWheel_HeatControl</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/VectorAutosarExplorerGeneratedObjects/FRAME/Comfort_Fan_NM_Tx</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="NM-PDU">/VectorAutosarExplorerGeneratedObjects/PDUS/Comfort_Fan_NM_PDU_Tx</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/VectorAutosarExplorerGeneratedObjects/FRAME/Comfort_Fan_NM_Rx</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="NM-PDU">/VectorAutosarExplorerGeneratedObjects/PDUS/Comfort_Fan_NM_PDU_Rx</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="DCM-I-PDU">/VectorAutosarExplorerGeneratedObjects/PDUS/Diag_Request_Fan_ECU_PDU</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="DCM-I-PDU">/VectorAutosarExplorerGeneratedObjects/PDUS/Diag_Response_Fan_ECU_PDU</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/VectorAutosarExplorerGeneratedObjects/FRAME/Comfort_TP_Diag_Request_Fan_ECU_Frame</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="N-PDU">/VectorAutosarExplorerGeneratedObjects/PDUS/Comfort_TP_Diag_Request_Fan_ECU_Frame_PDU</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/VectorAutosarExplorerGeneratedObjects/FRAME/Comfort_TP_Diag_Response_Fan_ECU_Frame</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="N-PDU">/VectorAutosarExplorerGeneratedObjects/PDUS/Comfort_TP_Diag_Response_Fan_ECU_Frame_PDU</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/VectorAutosarExplorerGeneratedObjects/FRAME/Comfort_DrivingCycle_Frame</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/VectorAutosarExplorerGeneratedObjects/I_SIGNALS/Signal_DrivingCycle</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/VectorAutosarExplorerGeneratedObjects/PDUS/Comfort_DrivingCycle_Frame_PDU</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/VectorAutosarExplorerGeneratedObjects/PDU_GROUP/PduGroup_e08cbf222c5049fa934c8feff94811d6_Rx</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                              </FIBEX-ELEMENTS>
+                              <MAPPINGS>
+                                <SYSTEM-MAPPING UUID="2aca10a0-76a9-4654-b2b8-0dbce8d47a1d">
+                                  <SHORT-NAME>MAPPINGS</SHORT-NAME>
+                                  <DATA-MAPPINGS>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpFault</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiFault/DeFault</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/VectorAutosarExplorerGeneratedObjects/SYSTEM_SIGNALS/Signal_Fan_Fault_f777c54e31a89d5c</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpSpeed</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiSpeed/DeSpeed</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/VectorAutosarExplorerGeneratedObjects/SYSTEM_SIGNALS/Signal_Fan_Setpoint_7226b1dfc825beac</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpOBDdrivingCycle</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiOBDdrivingCycle/DeOBDdrivingCycle</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/VectorAutosarExplorerGeneratedObjects/SYSTEM_SIGNALS/Signal_Comfort_DrivingCycle_d5cecd98dc1c368d</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                  </DATA-MAPPINGS>
+                                </SYSTEM-MAPPING>
+                              </MAPPINGS>
+                              <ROOT-SOFTWARE-COMPOSITIONS>
+                                <ROOT-SW-COMPOSITION-PROTOTYPE UUID="6e41eedf-f3ef-44b6-9f91-16c35e44ae64">
+                                  <SHORT-NAME>COMPOSITIONTYPE</SHORT-NAME>
+                                  <FLAT-MAP-REF DEST="FLAT-MAP">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</FLAT-MAP-REF>
+                                  <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SOFTWARE-COMPOSITION-TREF>
+                                </ROOT-SW-COMPOSITION-PROTOTYPE>
+                              </ROOT-SOFTWARE-COMPOSITIONS>
+                            </SYSTEM>
+                            <COMPOSITION-SW-COMPONENT-TYPE UUID="dfb0ae5a-8768-49d1-a84d-6bef36246c7c">
+                              <SHORT-NAME>COMPOSITIONTYPE</SHORT-NAME>
+                              <ADMIN-DATA/>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                                <ANNOTATION>
+                                  <LABEL>
+                                    <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                  </LABEL>
+                                  <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                              <PORTS>
+                                <P-PORT-PROTOTYPE UUID="93107ab9-d6cd-42ae-a407-f2c2e21b422d">
+                                  <SHORT-NAME>PpFault</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDED-COM-SPECS>
+                                    <NONQUEUED-SENDER-COM-SPEC>
+                                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiFault/DeFault</DATA-ELEMENT-REF>
+                                      <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                          <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                      </INIT-VALUE>
+                                    </NONQUEUED-SENDER-COM-SPEC>
+                                  </PROVIDED-COM-SPECS>
+                                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiFault</PROVIDED-INTERFACE-TREF>
+                                </P-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="17359bda-10ca-40ab-9442-f3bb40ccb74d">
+                                  <SHORT-NAME>PpSpeed</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <REQUIRED-COM-SPECS>
+                                    <NONQUEUED-RECEIVER-COM-SPEC>
+                                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiSpeed/DeSpeed</DATA-ELEMENT-REF>
+                                      <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                      <FILTER>
+                                        <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                                      </FILTER>
+                                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                      <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                          <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                      </INIT-VALUE>
+                                    </NONQUEUED-RECEIVER-COM-SPEC>
+                                  </REQUIRED-COM-SPECS>
+                                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiSpeed</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="48722b39-e13a-4482-8450-3193724b6a3e">
+                                  <SHORT-NAME>PpOBDdrivingCycle</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD/>
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <REQUIRED-COM-SPECS>
+                                    <NONQUEUED-RECEIVER-COM-SPEC>
+                                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiOBDdrivingCycle/DeOBDdrivingCycle</DATA-ELEMENT-REF>
+                                      <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                      <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                          <VALUE>1</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                      </INIT-VALUE>
+                                    </NONQUEUED-RECEIVER-COM-SPEC>
+                                  </REQUIRED-COM-SPECS>
+                                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiOBDdrivingCycle</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                              </PORTS>
+                              <COMPONENTS>
+                                <SW-COMPONENT-PROTOTYPE UUID="765d310c-dc2e-4c5f-99de-a9f1cf9cb0dd">
+                                  <SHORT-NAME>Det</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Det_swc/ComponentTypes/Det</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="c7edb6aa-7b3b-4c99-80dd-7ce00894ebc5">
+                                  <SHORT-NAME>ComM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/ComM_swc/ComponentTypes/ComM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="edf608c4-b592-4d87-9efa-104759ad1728">
+                                  <SHORT-NAME>EcuM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/EcuM_swc/ComponentTypes/EcuM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="cb09edf9-f43e-4494-a950-c99c2685a207">
+                                  <SHORT-NAME>BswM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="474e3334-0058-4a90-836b-9027f84b5eb7">
+                                  <SHORT-NAME>CpCddIoHwAb</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/CtCddIoHwAb</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="021afc87-3591-4a3a-9f44-4e29cd4ae697">
+                                  <SHORT-NAME>CpApController</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/CtApController</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="a4f41572-0a05-45d3-bdb8-23c4516dfe87">
+                                  <SHORT-NAME>DemMaster_0</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="26e424e3-e26b-4483-828d-b5a09ac124d4">
+                                  <SHORT-NAME>DemSatellite_0</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="04c75117-a786-4219-90af-226fcddbf5f5">
+                                  <SHORT-NAME>NvM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/NvM_swc/ComponentTypes/NvM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="4b3366a2-c6bf-44a2-88f9-844ea882fed6">
+                                  <SHORT-NAME>Dcm</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                              </COMPONENTS>
+                              <CONNECTORS>
+                                <ASSEMBLY-SW-CONNECTOR UUID="487c1816-c71a-4235-9517-c9aaaa2b135d">
+                                  <SHORT-NAME>CpCddIoHwAb_PpPwmDcIoHwAb_CpApController_PpPwmDcIoHwAb</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpCddIoHwAb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCddIoHwAb/PpPwmDcIoHwAb</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/PpPwmDcIoHwAb</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="a389fe1f-bc76-47f5-a455-7687b6562f63">
+                                  <SHORT-NAME>CpCddIoHwAb_PpPwmDeInitIoHwAb_CpApController_PpPwmDeInitIoHwAb</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpCddIoHwAb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCddIoHwAb/PpPwmDeInitIoHwAb</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/PpPwmDeInitIoHwAb</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="b0ed95ee-ecb8-49cf-9e44-8faba37e9c6d">
+                                  <SHORT-NAME>CpCddIoHwAb_PpPwmInitIoHwAb_CpApController_PpPwmInitIoHwAb</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpCddIoHwAb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCddIoHwAb/PpPwmInitIoHwAb</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/PpPwmInitIoHwAb</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="07f10868-b9e7-49f3-aa8a-cfbeceb51006">
+                                  <SHORT-NAME>CpCddIoHwAb_PpAdcReadIoHwAb_CpApController_PpAdcReadIoHwAb</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpCddIoHwAb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCddIoHwAb/PpAdcReadIoHwAb</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/PpAdcReadIoHwAb</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="0a1b728d-aac2-448f-8b09-fdaf8dd56f66">
+                                  <SHORT-NAME>CpApController_PpBswMRunRequestCtApController_BswM_Request_ESH_RunRequest_0</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApController/PpBswMRunRequestCtApController</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_RunRequest_0</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="5aedc510-e58f-4533-91b3-3ca534229c1c">
+                                  <SHORT-NAME>CpApController_PpBswMPostRunRequestCtApController_BswM_Request_ESH_PostRunRequest_0</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApController/PpBswMPostRunRequestCtApController</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_PostRunRequest_0</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="f636b926-874b-411a-b37d-dd320e9f9c3a">
+                                  <SHORT-NAME>CpApController_PpFault_PpFault</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <INNER-PORT-IREF>
+                                    <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                      <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApController/PpFault</TARGET-P-PORT-REF>
+                                    </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  </INNER-PORT-IREF>
+                                  <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpFault</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="fcac4e6f-f447-485e-97c5-bd00a4b2133a">
+                                  <SHORT-NAME>PpSpeed_CpApController_PpSpeed</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <INNER-PORT-IREF>
+                                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/PpSpeed</TARGET-R-PORT-REF>
+                                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  </INNER-PORT-IREF>
+                                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpSpeed</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="570f9a45-5947-422f-aad7-75ea3be173a5">
+                                  <SHORT-NAME>ComM_UR_Connector_Fan_ECU_fbc5880ce1a0cdea_1e36b570_CpApController_PpComMUserRequestCtApController</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/ComM_swc/ComponentTypes/ComM/UR_Connector_Fan_ECU_fbc5880ce1a0cdea_1e36b570</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/PpComMUserRequestCtApController</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="f24982a1-adc5-42bf-a8d9-89e4d0f2bd4b">
+                                  <SHORT-NAME>BswM_Switch_ESH_ModeSwitch_BswM_Notification_ESH_ModeNotification</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Switch_ESH_ModeSwitch</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_ESH_ModeNotification</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="1f3db8f7-5cf1-42e0-a2cd-b68f100dbe9b">
+                                  <SHORT-NAME>CpApController_DataServices_Fan_Current_Power_Current_Dcm_DataServices_Fan_Current_Power_Current</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApController/DataServices_Fan_Current_Power_Current</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Fan_Current_Power_Current</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="37577146-26fe-4ad0-bca7-cf7035aa2520">
+                                  <SHORT-NAME>CpApController_CBReadData_DID_0x2_Current_DemMaster_0_CBReadData_DID_0x2_Current</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApController/CBReadData_DID_0x2_Current</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemMaster_0</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/CBReadData_DID_0x2_Current</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="c45fb23b-d7ba-4dbd-8811-9dbab82d5b1d">
+                                  <SHORT-NAME>DemMaster_0_OpCycle_OBD_driving_cycle_CpApController_OpCycle_OBD_driving_cycle</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemMaster_0</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/OpCycle_OBD_driving_cycle</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/OpCycle_OBD_driving_cycle</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="2384afbb-f32d-4f41-8622-e76e64bd13a2">
+                                  <SHORT-NAME>DemSatellite_0_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open_CpApController_Event_Electrical_Fault_Fan_Motor_Contro</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemSatellite_0</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="1bc701d0-5791-40c8-960a-a4c68cf0a600">
+                                  <SHORT-NAME>DemSatellite_0_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short_CpApController_Event_Electrical_Fault_Fan_Motor_Contr</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemSatellite_0</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="482680bf-6bb7-414d-9e89-6e41e2fe1591">
+                                  <SHORT-NAME>DemSatellite_0_Event_Mechanical_Fault_Unexpected_High_Current_CpApController_Event_Mechanical_Fault_Unexpected_High_Current</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemSatellite_0</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/Event_Mechanical_Fault_Unexpected_High_Current</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/Event_Mechanical_Fault_Unexpected_High_Current</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="84231571-5489-4ff0-9d1e-dd28b80f4f2b">
+                                  <SHORT-NAME>DemSatellite_0_Event_Mechanical_Fault_Unexpected_Low_Current_CpApController_Event_Mechanical_Fault_Unexpected_Low_Current</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemSatellite_0</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/Event_Mechanical_Fault_Unexpected_Low_Current</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/Event_Mechanical_Fault_Unexpected_Low_Current</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="746c9607-68c1-44b1-9d68-8ec8d87107fd">
+                                  <SHORT-NAME>PpOBDdrivingCycle_CpApController_PpOBDdrivingCycle</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <INNER-PORT-IREF>
+                                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</CONTEXT-COMPONENT-REF>
+                                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApController/PpOBDdrivingCycle</TARGET-R-PORT-REF>
+                                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  </INNER-PORT-IREF>
+                                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpOBDdrivingCycle</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                              </CONNECTORS>
+                            </COMPOSITION-SW-COMPONENT-TYPE>
+                            <END-TO-END-PROTECTION-SET UUID="a0f347c7-8996-475e-b62b-4af203e63717">
+                              <SHORT-NAME>E2EPROTECTIONSET</SHORT-NAME>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                            </END-TO-END-PROTECTION-SET>
+                            <PORT-INTERFACE-MAPPING-SET UUID="99c38007-08f0-476c-b0bc-88577f82c084">
+                              <SHORT-NAME>PORTINTERFACEMAPPINGSET</SHORT-NAME>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                            </PORT-INTERFACE-MAPPING-SET>
+                          </ELEMENTS>
+                          <AR-PACKAGES>
+                            <AR-PACKAGE UUID="b2d45958-60bb-45c2-81ab-157eccb11d8b">
+                              <SHORT-NAME>REFERENCES</SHORT-NAME>
+                              <ADMIN-DATA>
+                                <SDGS>
+                                  <SDG GID="DV:CfgReferences">
+                                    <SD GID="dfb0ae5a-8768-49d1-a84d-6bef36246c7c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
+                                    <SD GID="cb09edf9-f43e-4494-a950-c99c2685a207">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
+                                    <SD GID="c7edb6aa-7b3b-4c99-80dd-7ce00894ebc5">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
+                                    <SD GID="021afc87-3591-4a3a-9f44-4e29cd4ae697">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApController</SD>
+                                    <SD GID="474e3334-0058-4a90-836b-9027f84b5eb7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpCddIoHwAb</SD>
+                                    <SD GID="4b3366a2-c6bf-44a2-88f9-844ea882fed6">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</SD>
+                                    <SD GID="a4f41572-0a05-45d3-bdb8-23c4516dfe87">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemMaster_0</SD>
+                                    <SD GID="26e424e3-e26b-4483-828d-b5a09ac124d4">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemSatellite_0</SD>
+                                    <SD GID="765d310c-dc2e-4c5f-99de-a9f1cf9cb0dd">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
+                                    <SD GID="edf608c4-b592-4d87-9efa-104759ad1728">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
+                                    <SD GID="04c75117-a786-4219-90af-226fcddbf5f5">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/NvM</SD>
+                                    <SD GID="93107ab9-d6cd-42ae-a407-f2c2e21b422d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpFault</SD>
+                                    <SD GID="48722b39-e13a-4482-8450-3193724b6a3e">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpOBDdrivingCycle</SD>
+                                    <SD GID="17359bda-10ca-40ab-9442-f3bb40ccb74d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpSpeed</SD>
+                                    <SD GID="6bfe4502-8660-405e-89be-a1cd57d15342">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
+                                    <SD GID="09bbcef3-3bc5-40a2-9f89-d27e59b24ff1">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM</SD>
+                                    <SD GID="6e41eedf-f3ef-44b6-9f91-16c35e44ae64">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</SD>
+                                    <SD GID="0CB11FB4-E8F7-406B-AE49-00B986FCDA34">/ComponentTypes/CtApController</SD>
+                                    <SD GID="52F9EE8C-28ED-4CC3-90C2-0791DB0F5E29">/ComponentTypes/CtApController/CBReadData_DID_0x2_Current</SD>
+                                    <SD GID="9B0FAFCE-0CCE-4B48-9040-206AC86B7191">/ComponentTypes/CtApController/CtApController_InternalBehavior/CtApController_InitEvent</SD>
+                                    <SD GID="A5B08349-4915-45F3-B088-7B66F19387B2">/ComponentTypes/CtApController/CtApController_InternalBehavior/ExArFanCurrent</SD>
+                                    <SD GID="40A14C0A-80FA-4F8D-83C7-D914959B6F00">/ComponentTypes/CtApController/CtApController_InternalBehavior/OIT_CBReadData_DID_0x2_Current_ReadData_CBReadData_DID_0x2_Current_ReadData</SD>
+                                    <SD GID="6599565D-27D9-4341-B7DF-92FBA44D63C6">/ComponentTypes/CtApController/CtApController_InternalBehavior/OIT_DataServices_Fan_Current_Power_Current_ConditionCheckRead_DataServices_Fan_Current_Power_Current_ConditionCheckRead</SD>
+                                    <SD GID="6CB737F7-8D4D-4EF6-8C8B-CF1A0946608D">/ComponentTypes/CtApController/CtApController_InternalBehavior/OIT_DataServices_Fan_Current_Power_Current_ReadData_DataServices_Fan_Current_Power_Current_ReadData</SD>
+                                    <SD GID="FA1D8170-1B7D-48F5-8CF3-0C8D0C631749">/ComponentTypes/CtApController/CtApController_InternalBehavior/SnNvMPimFanCurrentDid</SD>
+                                    <SD GID="ED406D67-E5F0-4456-AE29-C6D679E14528">/ComponentTypes/CtApController/CtApController_InternalBehavior/TMT_ActuationControl</SD>
+                                    <SD GID="7D8E2569-D4AF-48C6-8396-DA183641EA0E">/ComponentTypes/CtApController/CtApController_InternalBehavior/TMT_CtApController_ErrorDetection</SD>
+                                    <SD GID="6C5E5AC6-78E4-48FB-B815-80E3ECF9D559">/ComponentTypes/CtApController/CtApController_InternalBehavior/TMT_RCtApController_ReadSpeed</SD>
+                                    <SD GID="0C9BEC9E-D5A5-41E8-AA65-40DF2B645F95">/ComponentTypes/CtApController/DataServices_Fan_Current_Power_Current</SD>
+                                    <SD GID="109A2AD4-C97E-4CAA-88A1-969A78E28B5C">/ComponentTypes/CtApController/Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="90684478-F7C6-4CAC-9BF7-9AE72B51080D">/ComponentTypes/CtApController/Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="882039C4-B0C3-4F64-9839-B7A6E29CBC0B">/ComponentTypes/CtApController/Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="5DD88329-2BB4-4BC0-8E90-805053DFE2D6">/ComponentTypes/CtApController/Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="110CF915-40BC-4867-9FD6-3222196D07C5">/ComponentTypes/CtApController/OpCycle_OBD_driving_cycle</SD>
+                                    <SD GID="654D45D2-8D8F-42AA-B985-7CBCDB73AA7F">/ComponentTypes/CtApController/PpAdcReadIoHwAb</SD>
+                                    <SD GID="D30F6DF6-6EA5-42A9-B549-BC39A4BD9795">/ComponentTypes/CtApController/PpBswMPostRunRequestCtApController</SD>
+                                    <SD GID="9EA10637-8DB1-4025-A7AA-6C5DB07A74AC">/ComponentTypes/CtApController/PpBswMRunRequestCtApController</SD>
+                                    <SD GID="6D2CEBE5-7F44-4207-B89B-1B2AB83194CC">/ComponentTypes/CtApController/PpComMUserRequestCtApController</SD>
+                                    <SD GID="3F6ED135-26CC-4247-8570-D58DCC25FBD6">/ComponentTypes/CtApController/PpFault</SD>
+                                    <SD GID="A6A7413F-AA00-4D24-B323-D717BCA21FFD">/ComponentTypes/CtApController/PpOBDdrivingCycle</SD>
+                                    <SD GID="10D664EA-B504-4BFE-AEC9-943154121A47">/ComponentTypes/CtApController/PpPwmDcIoHwAb</SD>
+                                    <SD GID="EEB0CF13-EB45-4B67-99BF-2A6298EFF274">/ComponentTypes/CtApController/PpPwmDeInitIoHwAb</SD>
+                                    <SD GID="FCAFB5BE-994F-4E70-8DDA-10924EDF711A">/ComponentTypes/CtApController/PpPwmInitIoHwAb</SD>
+                                    <SD GID="EAD9A381-4349-4A5E-BE40-A64568A553B5">/ComponentTypes/CtApController/PpSpeed</SD>
+                                    <SD GID="C1658343-BC15-43F4-8447-1B5F627AFDCA">/ComponentTypes/CtApController_Implementation</SD>
+                                    <SD GID="38D4C976-30CC-4A79-A122-0A00186455AA">/ComponentTypes/CtCddIoHwAb</SD>
+                                    <SD GID="F3C56D0B-D284-46F2-9F85-9770007C5ECC">/ComponentTypes/CtCddIoHwAb/CtCddIoHwAb_InternalBehavior/CtCddIoHwAb_InitEvent</SD>
+                                    <SD GID="EBC34642-57EC-4DA1-9F7B-DA1F1AD4CA5B">/ComponentTypes/CtCddIoHwAb/CtCddIoHwAb_InternalBehavior/OIT_RCtCddIoHwAb_PpAdcReadGroup_ReadGroup_PpAdcReadGroup_ReadGroup</SD>
+                                    <SD GID="02A380AE-B6C2-4E72-9F06-AB9B011C5741">/ComponentTypes/CtCddIoHwAb/CtCddIoHwAb_InternalBehavior/OIT_RCtCddIoHwAb_PpPwmDcIoHwAb_SetDutyCycle_PpPwmDcIoHwAb_SetDutyCycle</SD>
+                                    <SD GID="990D06B4-5611-4DDE-AF86-44D1C07CEB25">/ComponentTypes/CtCddIoHwAb/CtCddIoHwAb_InternalBehavior/OIT_RCtCddIoHwAb_PpPwmDeInitIoHwAb_Pwm_DeInit_PpPwmDeInitIoHwAb_Pwm_DeInit</SD>
+                                    <SD GID="01AC834A-4C43-4DB9-93C3-AE05D28E3309">/ComponentTypes/CtCddIoHwAb/CtCddIoHwAb_InternalBehavior/OIT_RCtCddIoHwAb_PpPwmInitIoHwAb_Pwm_Init_PpPwmInitIoHwAb_Pwm_Init</SD>
+                                    <SD GID="D1E4F9DE-E3A7-4C2D-AE89-26B842AEE364">/ComponentTypes/CtCddIoHwAb/PpAdcReadIoHwAb</SD>
+                                    <SD GID="E59817A7-B074-419A-A7DB-C9371B9DC13B">/ComponentTypes/CtCddIoHwAb/PpPwmDcIoHwAb</SD>
+                                    <SD GID="74B66719-CF3D-4CC2-A9F9-6F73D8EC3CED">/ComponentTypes/CtCddIoHwAb/PpPwmDeInitIoHwAb</SD>
+                                    <SD GID="1CC2C3FA-5C18-4B4D-A8A9-0DF97FEFAFCE">/ComponentTypes/CtCddIoHwAb/PpPwmInitIoHwAb</SD>
+                                    <SD GID="F5ACD6FC-9248-49CB-AFF1-26338833D1FC">/ComponentTypes/CtCddIoHwAb_Implementation</SD>
+                                    <SD GID="9E3D1FD1-C314-40A9-8DDD-D4E3BE350EEA">/DataTypes/DataConstrs/DC_Power</SD>
+                                    <SD GID="D4912708-FEAD-4BC7-A835-C7ECA0B79B58">/ECUCompositionTypes/ECU_Composition</SD>
+                                    <SD GID="6D5E0B1C-7A9F-49EA-8D87-7EF0EFF7271F">/ECUCompositionTypes/ECU_Composition/CpApController</SD>
+                                    <SD GID="E6602D16-C716-4FF1-8682-9504C7C51EFA">/ECUCompositionTypes/ECU_Composition/CpCddIoHwAb</SD>
+                                    <SD GID="CA2BD4FD-F2F7-4A49-A4F5-51407515CC31">/ECUCompositionTypes/ECU_Composition/PpFault</SD>
+                                    <SD GID="CCB40B8E-AABC-44C1-84CD-E89186A61866">/ECUCompositionTypes/ECU_Composition/PpOBDdrivingCycle</SD>
+                                    <SD GID="62D8BB96-6583-4AC6-A242-13B3205E66BB">/ECUCompositionTypes/ECU_Composition/PpSpeed</SD>
+                                    <SD GID="71306097-8441-4353-b795-5258d7d190e1">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
+                                    <SD GID="80d51c74-b9b5-46c1-99a8-f559d0f557c4">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BSWM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="c723bac1-adfc-4b72-a121-ef6bb6743dde">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunction</SD>
+                                    <SD GID="9fba8cd8-db6d-42de-a17e-04a820e70e99">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="32448e01-fa40-4049-bbbb-825c679b196a">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM_MainFunction</SD>
+                                    <SD GID="53d29a3e-e007-4f0e-a1fa-dd7b4a4ce623">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM_Virtual</SD>
+                                    <SD GID="cf69eef1-9390-41c9-9483-317f8bfc70b0">/MICROSAR/BswM_swc/BswMMappingSet</SD>
+                                    <SD GID="8edb147e-c067-48de-b744-ebc409a32205">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior</SD>
+                                    <SD GID="de02a65d-dabd-4c14-a27b-50124bae6e34">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction</SD>
+                                    <SD GID="9e180332-2593-4ad0-bc85-ecc3f50bc465">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/Timer_BswM_MainFunction</SD>
+                                    <SD GID="998c2dfb-ee67-4f60-a306-95a35f8acd93">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_ESH_ModeNotification</SD>
+                                    <SD GID="b622887b-51a4-41ac-9be6-06abdf42d752">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_PostRunRequest_0</SD>
+                                    <SD GID="e62b7093-111a-48a9-b0e8-0337fcf69298">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_RunRequest_0</SD>
+                                    <SD GID="60777d80-1f0a-44c3-ac91-fb4000552c45">/MICROSAR/BswM_swc/ComponentTypes/BswM/Switch_ESH_ModeSwitch</SD>
+                                    <SD GID="91007d7d-0c04-4a3f-a3d6-9a16d49184c9">/MICROSAR/BswM_swc/DataTypes/BswM_ESH_Mode</SD>
+                                    <SD GID="73a0177b-61a4-4f96-9dfd-16a966e9df0f">/MICROSAR/BswM_swc/DataTypes/BswM_ESH_RunRequest</SD>
+                                    <SD GID="15e932cc-1c23-4c00-a401-67e8e5c06b15">/MICROSAR/BswM_swc/DataTypes/CompuMethods/BswM_ESH_Mode</SD>
+                                    <SD GID="2c9e9a7b-95dd-4f29-8439-dea113f4c758">/MICROSAR/BswM_swc/DataTypes/CompuMethods/BswM_ESH_RunRequest</SD>
+                                    <SD GID="33d686d2-60c5-49d5-ab30-d96098b109ec">/MICROSAR/BswM_swc/DataTypes/DataConstrs/BswM_ESH_Mode_Constr</SD>
+                                    <SD GID="819356fb-c2ee-439f-ac7e-d519fb39a08d">/MICROSAR/BswM_swc/DataTypes/DataConstrs/BswM_ESH_RunRequest_Constr</SD>
+                                    <SD GID="4a8b20b4-73d8-4f38-b170-fb343d42588e">/MICROSAR/BswM_swc/ESH_Mode</SD>
+                                    <SD GID="e151bba3-7ded-4389-93d6-9b0fd7a22a92">/MICROSAR/BswM_swc/ESH_Mode/POSTRUN</SD>
+                                    <SD GID="6ede71ed-536b-40d9-a5c6-7bc44fa492ba">/MICROSAR/BswM_swc/ESH_Mode/RUN</SD>
+                                    <SD GID="6f010703-13a1-4dbf-8543-e574085e4f19">/MICROSAR/BswM_swc/ESH_Mode/SHUTDOWN</SD>
+                                    <SD GID="4fc87207-641e-462d-819d-ba0b35430017">/MICROSAR/BswM_swc/ESH_Mode/STARTUP</SD>
+                                    <SD GID="795ff3f7-cb56-4d6a-92b1-8a4f89cc96e2">/MICROSAR/BswM_swc/ESH_Mode/WAKEUP</SD>
+                                    <SD GID="baacdeda-ecdb-45d5-b8d8-2b109fdca7c8">/MICROSAR/BswM_swc/ESH_RunRequest</SD>
+                                    <SD GID="aacd8d9c-0ced-4a7c-9f55-0c36c899be35">/MICROSAR/BswM_swc/ESH_RunRequest/RELEASED</SD>
+                                    <SD GID="e3250a76-6900-46f5-b843-7794228d478a">/MICROSAR/BswM_swc/ESH_RunRequest/REQUESTED</SD>
+                                    <SD GID="a7583d8e-9556-418a-a6f1-2c72c7500edb">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode</SD>
+                                    <SD GID="00b3b252-1b89-4783-9ddc-5eb8dd5b754c">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode/BswM_MDGP_ESH_Mode</SD>
+                                    <SD GID="b1c917e6-8d83-4646-b184-be13822351b8">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_RunRequest/BswM_MDGP_ESH_RunRequest</SD>
+                                    <SD GID="3563dc3b-acea-409c-aede-cf5bdfc36b1e">/MICROSAR/BswM_swc/Interfaces/BswM_SRI_BswM_MSI_ESH_RunRequest_BswM_MDGP_ESH_RunRequest</SD>
+                                    <SD GID="4c6e8b4b-892f-4243-9600-9857b7f422dc">/MICROSAR/BswM_swc/Interfaces/BswM_SRI_BswM_MSI_ESH_RunRequest_BswM_MDGP_ESH_RunRequest/requestedMode</SD>
+                                    <SD GID="fb783a85-5378-437f-bd8a-b61dd90126ed">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior</SD>
+                                    <SD GID="2dd54ebe-bb0e-4ee2-bb00-265102fe9bc3">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="259f267f-004a-420a-8fa1-652caf832e8a">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="9d5b99ef-4ad9-4383-a0e6-ac1a04bf60d7">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="c2b61ede-5478-4257-ac69-cef5ec7216b8">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="d20e2332-aced-41b3-bd2c-1ae9e22a3168">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="905407d3-e3c7-4518-a1bf-92824448a24f">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="9dfc10d7-826a-4126-bd35-76f6989b4389">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="33059cdd-2d16-4904-a646-3e81d77e37aa">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_7</SD>
+                                    <SD GID="5d7490c7-2f71-4f84-a21d-24b4f2060a62">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf_Virtual</SD>
+                                    <SD GID="a828933d-dee0-4f9d-a101-d508d0c02c38">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior</SD>
+                                    <SD GID="52418093-95e6-41d3-a929-7a846929310c">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="9cd0d116-1c77-4086-b9bc-357933aa4533">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="b9eb114d-0a32-43b9-b85d-47491cec1dd4">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="5e5b99cc-4d75-4815-b69c-9a3fc34aa58e">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="a53dafd8-763b-4b68-8f72-ca143609dc84">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="63d9fadb-8dbe-48eb-b2dc-8eefb3f0de8e">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="c4cd0c49-a8a1-4b4d-9a5d-2466da6473da">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="edbe1bd2-4de8-43cc-a041-2c54218732ae">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_7</SD>
+                                    <SD GID="70635c82-f236-449e-9c68-d29a189c7ca7">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CanNm_MainFunction</SD>
+                                    <SD GID="5dbfd343-83d9-4d2f-bcb0-5c0ac6546126">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CanNm_MainFunctionTimingEvent0</SD>
+                                    <SD GID="014c6b6c-565d-4a65-9b8a-2c3e35e0e86e">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm_MainFunction</SD>
+                                    <SD GID="e18a71dc-e898-4236-981c-e28cb559b598">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior</SD>
+                                    <SD GID="5e5f6b1c-f6e1-45fb-ac6f-5e7ae3c50253">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="af3613d3-ca4a-4efe-98d2-41ef3d84fc05">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="b219e22a-cd96-4741-b636-e6ef0e43f1ab">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="86bc3d6d-6748-44df-a5a2-1549f8a47d7a">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="f116d48d-6d3a-4b4a-90fd-6b7535c747a2">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="b9fb4e91-0057-4ece-b78c-7f8668ef9274">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="9de005a4-b331-4f65-babb-03b87aed1f2e">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CanSM_MainFunction</SD>
+                                    <SD GID="7b4986a5-802b-4f56-8ebc-5d4da9ae6bfb">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CanSM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="4d6029a7-f957-4eb3-955f-cfb394264c33">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM_MainFunction</SD>
+                                    <SD GID="e26acb7f-ef45-48f4-9170-97df33a2060b">/MICROSAR/CanTp_ib_bswmd/BswModuleDescriptions/CanTp/CanTpBehavior</SD>
+                                    <SD GID="9ae3db64-a2f2-4c17-9749-f9646e4f3fbe">/MICROSAR/CanTp_ib_bswmd/BswModuleDescriptions/CanTp/CanTpBehavior/CANTP_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="da5db34a-47eb-4b2b-a1e7-90d5929c6038">/MICROSAR/CanTp_ib_bswmd/BswModuleDescriptions/CanTp/CanTpBehavior/CanTp_MainFunction</SD>
+                                    <SD GID="941f5973-ad3f-4517-80ed-9e50fcf6d852">/MICROSAR/CanTp_ib_bswmd/BswModuleDescriptions/CanTp/CanTpBehavior/CanTp_MainFunctionTimingEvent0</SD>
+                                    <SD GID="b24b988e-d003-401b-93cc-2fd818792bf4">/MICROSAR/CanTp_ib_bswmd/BswModuleDescriptions/CanTp_MainFunction</SD>
+                                    <SD GID="c28ad518-f84d-4da1-b721-1d14db7cf7b2">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior</SD>
+                                    <SD GID="a2588fee-e20c-428b-9e33-afa9de553350">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/CAN_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="d9b4a801-4b62-4966-af56-92890a439d5e">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/CAN_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="bb0607d9-a11b-49d0-a5da-2be81477c9ff">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/CAN_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="403f310e-44c8-404f-a67c-e35b040103f4">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/CAN_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="83ff99ff-fa7a-413c-8d51-428337a99b66">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/CAN_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="193fdaee-ad78-4c68-bcc4-d6415e5bf9cb">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/CAN_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="9dbf004e-7e8b-4fa0-97af-07615a63b19c">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/CAN_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="b8d95e42-a8bf-4685-a985-44411d61ebbb">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/CAN_EXCLUSIVE_AREA_7</SD>
+                                    <SD GID="486366e3-bc03-4b83-bfca-824b15d084c5">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/Can_MainFunction_BusOff</SD>
+                                    <SD GID="87f51c2a-8e92-4ed7-bdd9-2f0966b607a3">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/Can_MainFunction_BusOffTimingEvent0</SD>
+                                    <SD GID="59fa81ef-bc1c-4bdd-a310-1b2f44145d74">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/Can_MainFunction_Mode</SD>
+                                    <SD GID="80ac8f54-6f5c-4624-9ae8-5dfc5dbe4129">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/Can_MainFunction_ModeTimingEvent0</SD>
+                                    <SD GID="782274ec-b389-42b6-80c7-ffe5335f28ea">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/Can_MainFunction_Wakeup</SD>
+                                    <SD GID="ccdfe5af-6f82-46f9-a1e4-b93869eb97ea">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can/Can_CanoeemuCanoeBehavior/Can_MainFunction_WakeupTimingEvent0</SD>
+                                    <SD GID="2d4ef97f-1c24-4d35-b068-7e9891f09f27">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can_MainFunction_BusOff</SD>
+                                    <SD GID="18a4d8ec-bcb5-4108-8e56-5a6272bfc320">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can_MainFunction_Mode</SD>
+                                    <SD GID="6535be85-a404-4e3c-b3b1-8324a9115d35">/MICROSAR/Can_CanoeemuCanoe_ib_bswmd/BswModuleDescriptions/Can_MainFunction_Wakeup</SD>
+                                    <SD GID="f90cc346-ffe1-419a-8a5c-5022ceb6e865">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior</SD>
+                                    <SD GID="f45e7a12-c386-443a-aedc-a094ec78d764">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="977a8d40-8012-4129-95bc-78eb17246b44">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="d0153da7-beea-4c78-a410-fe1e963113e0">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="cb1fb0a7-edd8-4102-90ac-a0f975bc9ae3">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="7a157e27-4a83-4ea1-a091-21b16846d9e6">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="2358ee7e-47f9-46d5-9dc3-147e713df43f">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="763de860-f486-401b-9dd3-fe7de5267386">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="8eef6bea-4345-4e04-b980-41b3213559a8">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_7</SD>
+                                    <SD GID="bac01e68-4683-490f-a0c4-e221bc005650">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/ComM_MainFunction_0</SD>
+                                    <SD GID="b690a3f1-1323-4778-9114-9dc2d4f45a5d">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/ComM_MainFunction_0TimingEvent0</SD>
+                                    <SD GID="01345759-43d7-44f2-a967-aa4ab1ddc5dd">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM_MainFunction_0</SD>
+                                    <SD GID="9f23f329-9f49-4564-ab9e-db0a34a25646">/MICROSAR/ComM_swc/ComMMode</SD>
+                                    <SD GID="5c43e14e-2330-4230-b119-eaa001d0a673">/MICROSAR/ComM_swc/ComMMode/COMM_NO_COMMUNICATION</SD>
+                                    <SD GID="a2ad1044-c7ce-4abd-b64c-1dc3a747a87f">/MICROSAR/ComM_swc/ComMMode_DataTypeMappingSet</SD>
+                                    <SD GID="6eb6e61b-7035-4acb-ac5c-a838311d4a29">/MICROSAR/ComM_swc/ComponentTypes/ComM</SD>
+                                    <SD GID="244434ed-4594-45eb-8806-e258baacb86e">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior</SD>
+                                    <SD GID="9723d354-8d8e-41d2-9931-ab638485c141">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/ComM_MainFunction_0</SD>
+                                    <SD GID="62316a79-0ac7-4bb6-b7f0-58de235f9156">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetCurrentComMode</SD>
+                                    <SD GID="c6cc2341-9ee0-42a4-8d01-4f12258f10ae">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetInhibitionStatus</SD>
+                                    <SD GID="6bb04af2-1ee4-4a19-afbc-3628eea02512">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetMaxComMode</SD>
+                                    <SD GID="0166a48f-7d7a-4179-ae0b-93b6b5829e63">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetRequestedComMode</SD>
+                                    <SD GID="40617743-f67a-4612-b124-38517d437372">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/LimitChannelToNoComMode</SD>
+                                    <SD GID="566dc190-e3ef-4254-bd93-aeb48b77ffd1">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/LimitECUToNoComMode</SD>
+                                    <SD GID="b2d766e5-9544-479d-bbcb-5bd5d5da4119">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetCurrentComMode_GetCurrentComMode_UR_Connector_Fan_ECU_fbc5880ce1a0cdea_1e36b570</SD>
+                                    <SD GID="4eb87907-abd9-4889-8b8d-d8ec448044e6">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetInhibitionStatus_GetInhibitionStatus_CL_Connector_Fan_ECU_fbc5880ce1a0cdea_90249745</SD>
+                                    <SD GID="7dc3ac71-a0ab-4c86-8efa-b8189294e898">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetInhibitionStatus_GetInhibitionStatus_CW_Connector_Fan_ECU_fbc5880ce1a0cdea_90249745</SD>
+                                    <SD GID="19e68b5c-7d9c-4ea7-a890-af96166ae6d3">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetMaxComMode_GetMaxComMode_UR_Connector_Fan_ECU_fbc5880ce1a0cdea_1e36b570</SD>
+                                    <SD GID="94cd28d1-8a38-4907-be85-a13aff2666d2">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetRequestedComMode_GetRequestedComMode_UR_Connector_Fan_ECU_fbc5880ce1a0cdea_1e36b570</SD>
+                                    <SD GID="b01e672d-6547-463a-93a6-f45621e0c273">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventLimitChannelToNoComMode_LimitChannelToNoComMode_CL_Connector_Fan_ECU_fbc5880ce1a0cdea_90249745</SD>
+                                    <SD GID="b3c871d3-90a7-403e-8d21-f7f3b5727622">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventLimitECUToNoComMode_LimitECUToNoComMode_modeLimitation</SD>
+                                    <SD GID="625d5068-a068-4260-af38-ffcceb396f47">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventPreventWakeUp_PreventWakeUp_CW_Connector_Fan_ECU_fbc5880ce1a0cdea_90249745</SD>
+                                    <SD GID="a338596b-ed85-4a42-ab28-c3c2f229aec9">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventReadInhibitCounter_ReadInhibitCounter_modeLimitation</SD>
+                                    <SD GID="476d5661-b5a4-4d14-bbf8-b43c6c037efc">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventRequestComMode_RequestComMode_UR_Connector_Fan_ECU_fbc5880ce1a0cdea_1e36b570</SD>
+                                    <SD GID="75d87278-b15c-4bad-8430-f3cedbbf6efe">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventResetInhibitCounter_ResetInhibitCounter_modeLimitation</SD>
+                                    <SD GID="96295a3c-78e1-403b-9b95-a33441fdaa2b">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventSetECUGroupClassification_SetECUGroupClassification_modeLimitation</SD>
+                                    <SD GID="6507c40c-474e-4b73-9d67-07897829f9a4">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/PreventWakeUp</SD>
+                                    <SD GID="b85fd498-2b7e-4c72-a2e2-c6b4beea3bcc">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/ReadInhibitCounter</SD>
+                                    <SD GID="a7e2acd6-7ffc-4052-aad8-0046204b3a89">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/RequestComMode</SD>
+                                    <SD GID="0a01bab8-4cc3-45d0-bf10-e3cb387598b8">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/ResetInhibitCounter</SD>
+                                    <SD GID="2e848634-886c-4d50-9d1e-acecbacb7913">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/SetECUGroupClassification</SD>
+                                    <SD GID="9d969c05-ea52-4bac-9af4-1ae25209dc81">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/Timer_ComM_MainFunction_0</SD>
+                                    <SD GID="beb54c94-4453-4983-abf6-2af51e8613de">/MICROSAR/ComM_swc/ComponentTypes/ComM/UR_Connector_Fan_ECU_fbc5880ce1a0cdea_1e36b570</SD>
+                                    <SD GID="233ab7b3-a332-43c4-b909-173ea2117826">/MICROSAR/ComM_swc/ComponentTypes/ComM/modeLimitation</SD>
+                                    <SD GID="34fa9cc7-e42f-4c52-bbf9-ebbfc0cd675f">/MICROSAR/ComM_swc/DataTypes/ComM_InhibitionStatusType</SD>
+                                    <SD GID="b99006ef-2c2c-4a7c-ae17-a12db529c089">/MICROSAR/ComM_swc/DataTypes/ComM_ModeType</SD>
+                                    <SD GID="856c5770-5a7b-44eb-8ceb-539e5e9c12d0">/MICROSAR/ComM_swc/DataTypes/ComM_UserHandleType</SD>
+                                    <SD GID="2141f078-9ca9-4bb4-a6a0-5a12de00bf62">/MICROSAR/ComM_swc/DataTypes/CompuMethods/ComM_ModeType</SD>
+                                    <SD GID="49751f2e-319d-4dbf-b331-acf62f56ce1c">/MICROSAR/ComM_swc/DataTypes/DataConstrs/ComM_InhibitionStatusType_Constr</SD>
+                                    <SD GID="6640bb01-a4ee-466c-8414-19592be79e4f">/MICROSAR/ComM_swc/DataTypes/DataConstrs/ComM_ModeType_Constr</SD>
+                                    <SD GID="29d6aecc-2214-4a37-971a-4db70350713d">/MICROSAR/ComM_swc/DataTypes/DataConstrs/ComM_UserHandleType_Constr</SD>
+                                    <SD GID="1b8825d6-2820-4796-830a-a9276d8ca4c4">/MICROSAR/ComM_swc/DataTypes/DataConstrs/NetworkHandleType_Constr</SD>
+                                    <SD GID="79c7d5d6-0aa8-4288-8330-3efa28038978">/MICROSAR/ComM_swc/DataTypes/NetworkHandleType</SD>
+                                    <SD GID="1002a7ff-fb3d-4660-8a6c-62dc98ec3c9e">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation</SD>
+                                    <SD GID="1986b3c9-182e-4a94-8307-71271723b711">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation/E_NOT_OK</SD>
+                                    <SD GID="8b72e3f8-e4ff-4e82-8863-6b5181826392">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation/GetInhibitionStatus</SD>
+                                    <SD GID="3ad89b00-babf-4a32-bafb-18b37d4e3188">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation/LimitChannelToNoComMode</SD>
+                                    <SD GID="1c5a5864-e009-4aac-9407-fc95e3d6373a">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp</SD>
+                                    <SD GID="53409b57-33f6-4144-8fde-ce9cd278e988">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp/E_NOT_OK</SD>
+                                    <SD GID="e1ac5c48-c462-4c2e-baac-813827e069b7">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp/GetInhibitionStatus</SD>
+                                    <SD GID="8a7ec9c2-3cfa-45cd-aff1-d4b3986d4531">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp/PreventWakeUp</SD>
+                                    <SD GID="16135c43-3139-4fbc-a74d-326424c2efa8">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation</SD>
+                                    <SD GID="b035e113-1698-49bc-878c-b581c2f54f53">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/E_NOT_OK</SD>
+                                    <SD GID="e24e2d9f-7377-44b2-b013-426bf1f70eee">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/LimitECUToNoComMode</SD>
+                                    <SD GID="2337651a-36e1-48fa-927b-b58e0de2e51c">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/ReadInhibitCounter</SD>
+                                    <SD GID="789f80df-eb7a-4cbe-9894-42c27fec3d6b">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/ResetInhibitCounter</SD>
+                                    <SD GID="bfb016f9-d62b-49f5-85f9-438fb3f2eaaa">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/SetECUGroupClassification</SD>
+                                    <SD GID="42b6268d-c956-4bce-96e9-4231b9314e6a">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest</SD>
+                                    <SD GID="7a61faf6-70b5-4c4b-8d23-e22684e36e8c">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/E_MODE_LIMITATION</SD>
+                                    <SD GID="84ba6a07-948c-4f23-90bb-de8f76489e27">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/E_NOT_OK</SD>
+                                    <SD GID="51a8deb5-0aa2-4180-bbf9-d38ab0f6db7d">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetCurrentComMode</SD>
+                                    <SD GID="2046a795-f452-42e1-a075-dbb5e389be1c">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetMaxComMode</SD>
+                                    <SD GID="18250846-d24b-49cb-943c-f6aa421017d7">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetRequestedComMode</SD>
+                                    <SD GID="1a457cf4-ad5f-4a02-a222-6a213c95e572">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/RequestComMode</SD>
+                                    <SD GID="27256fe7-8dff-48ca-a0db-46e0e70433e0">/MICROSAR/ComXf_ib_bswmd/BswModuleDescriptions/ComXf/ComXfBehavior</SD>
+                                    <SD GID="efcd6dda-42e6-46db-9ca7-ecf6fcd9a7f0">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior</SD>
+                                    <SD GID="36659ee8-19a1-4725-9172-049bd6580622">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/COM_EXCLUSIVE_AREA_BOTH</SD>
+                                    <SD GID="99bf2056-bd3a-47f4-9844-f33ac6ca4f1e">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/COM_EXCLUSIVE_AREA_RX</SD>
+                                    <SD GID="1fd424fd-4251-49ff-ab3d-15e8c5ab7c31">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/COM_EXCLUSIVE_AREA_TX</SD>
+                                    <SD GID="4efacbb3-9cf3-42ba-8e65-8fd3d9344877">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionRx_ComMainFunctionRx</SD>
+                                    <SD GID="403a7065-8148-40aa-bf76-9baa430e91e8">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionRx_ComMainFunctionRxTimingEvent0</SD>
+                                    <SD GID="141cc67f-9cd2-4477-96af-078324a2e68e">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionTx_ComMainFunctionTx</SD>
+                                    <SD GID="5bfaaa37-d170-4184-8cdf-2df118166967">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionTx_ComMainFunctionTxTimingEvent0</SD>
+                                    <SD GID="cf5cdfd5-a240-426d-8e01-c287b7b58935">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com_MainFunctionRx_ComMainFunctionRx</SD>
+                                    <SD GID="35bb5a4e-a328-4c27-ad47-f06c40abfd80">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com_MainFunctionTx_ComMainFunctionTx</SD>
+                                    <SD GID="4693423d-0225-42aa-8985-320089f40f9d">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com_Virtual</SD>
+                                    <SD GID="1cb736fa-8b56-4acf-8589-2a7e560c41ca">/MICROSAR/Dcm_ib_bswmd/BswModuleDescriptions/Dcm/DcmBehavior</SD>
+                                    <SD GID="bb872efe-fcab-4c3d-92bd-323e4e6c4e5d">/MICROSAR/Dcm_ib_bswmd/BswModuleDescriptions/Dcm/DcmBehavior/DCM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="bfca6687-2363-42f6-bc03-a61fe8834bec">/MICROSAR/Dcm_ib_bswmd/BswModuleDescriptions/Dcm/DcmBehavior/Dcm_MainFunction</SD>
+                                    <SD GID="78497ecf-76bd-481d-9f66-5e91a4366e58">/MICROSAR/Dcm_ib_bswmd/BswModuleDescriptions/Dcm/DcmBehavior/Dcm_MainFunctionTimingEvent0</SD>
+                                    <SD GID="ec5a3e36-b8d6-401f-80a9-deea00145bf7">/MICROSAR/Dcm_ib_bswmd/BswModuleDescriptions/Dcm_MainFunction</SD>
+                                    <SD GID="39f502e6-0570-4746-9297-999c089f944d">/MICROSAR/Dcm_swc/ComponentTypes/Dcm</SD>
+                                    <SD GID="7fd9e904-c348-480e-8878-61eb3d5adfce">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DCMServices</SD>
+                                    <SD GID="c5b2f147-0300-4ffb-855c-c628e42c710a">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Boot_Software_Boot_Software_Identification</SD>
+                                    <SD GID="55ad70b6-3e6a-42b6-915f-f0f319b248d6">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Boot_Software_NumberOfModules</SD>
+                                    <SD GID="e6e5e6b3-b3b5-4fe2-89f0-1de1323e0447">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_EcuIdentification_Part_Number</SD>
+                                    <SD GID="6226fbe8-7e43-4c25-aaa9-edc7a5410811">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Example_DevelopmentData_CanDriverVersion</SD>
+                                    <SD GID="1327c552-f553-469f-8de7-9a8ad8b8136b">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Example_DevelopmentData_DiagnosticModuleVersion</SD>
+                                    <SD GID="a28b01b3-7bf0-44d9-bce2-67f46403f3bf">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Example_DevelopmentData_NmVersion</SD>
+                                    <SD GID="421735bc-f1a2-4b0a-8305-e42eacb9243b">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Example_DevelopmentData_OperatingSystemVersion</SD>
+                                    <SD GID="0effe861-5abd-4806-b109-7948edf8e134">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Example_DevelopmentData_TransportLayerVersion</SD>
+                                    <SD GID="04ad4fb6-6f85-4bb3-8106-0c313d94e476">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Fan_Current_Power_Current</SD>
+                                    <SD GID="7e956869-8499-45ee-bddf-0845ba86d16a">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Hardware_Version_Hardware_Version_Number</SD>
+                                    <SD GID="44afc911-e28f-4711-a823-d0f23a7b6560">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_SerialNumber_SerialNumber</SD>
+                                    <SD GID="3240606b-6264-466b-b57b-37e0c96c82de">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Spare_Part_Number_Spare_Part_Number</SD>
+                                    <SD GID="bb4c2d91-8105-4b8f-b0bd-b64782086e47">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Vehicle_Identification_VIN</SD>
+                                    <SD GID="e00f1017-6b7e-4b01-b89d-481803c0880e">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmCommunicationControl_ComMConf_ComMChannel_Connector_Fan_ECU_fbc5880ce1a0cdea_90249745</SD>
+                                    <SD GID="94e2c953-5192-4870-8212-23b428f5a353">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmControlDtcSetting</SD>
+                                    <SD GID="b701a2a5-0f91-45d1-b949-d38039445c4e">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmDiagnosticSessionControl</SD>
+                                    <SD GID="a8071526-4eac-4937-b4f5-fe38e4f73dc3">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmEcuReset</SD>
+                                    <SD GID="0068fbba-db92-4d6d-beed-45dfc611c8a6">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior</SD>
+                                    <SD GID="413e99e7-1f12-4f82-a643-a8bd922be11c">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction</SD>
+                                    <SD GID="89677781-7360-4a08-9c27-f79bb71b3e2d">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/GetActiveProtocol</SD>
+                                    <SD GID="0ef024c5-e909-40ce-a877-23b9c9d9105d">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/GetRequestKind</SD>
+                                    <SD GID="89fe91b1-7682-4c61-97bb-848d2d64d81d">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/GetSecurityLevel</SD>
+                                    <SD GID="4d2a4a7e-02a8-48fa-bdd4-5aced287baf7">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/GetSesCtrlType</SD>
+                                    <SD GID="1ab1631b-4aaf-4f5b-8db8-096da1625ce6">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventGetActiveProtocol_GetActiveProtocol_DCMServices</SD>
+                                    <SD GID="5377cb3f-56d1-40ab-8f4e-cfbca2e00acd">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventGetRequestKind_GetRequestKind_DCMServices</SD>
+                                    <SD GID="d9457357-7d36-41c5-9151-2f3d3ae97aca">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventGetSecurityLevel_GetSecurityLevel_DCMServices</SD>
+                                    <SD GID="cbaa3139-de16-4013-84c9-619cf1c3bc7d">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventGetSesCtrlType_GetSesCtrlType_DCMServices</SD>
+                                    <SD GID="7a297a26-bc8d-4f20-a18d-8bf50832ba34">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventResetToDefaultSession_ResetToDefaultSession_DCMServices</SD>
+                                    <SD GID="b6c996f5-2b09-4a86-ad60-834aaaa873a9">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventSetActiveDiagnostic_SetActiveDiagnostic_DCMServices</SD>
+                                    <SD GID="8a702c53-a3a3-4e8e-bef8-905525ff79da">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/ResetToDefaultSession</SD>
+                                    <SD GID="1347b66a-9791-4974-9c6a-03c4313afce1">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/SetActiveDiagnostic</SD>
+                                    <SD GID="2d3a748f-20cf-40d5-8f02-fa2d963e3039">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Timer_Dcm_MainFunction</SD>
+                                    <SD GID="d918a311-3485-4080-815c-095d843f5813">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/RoutineServices_Example_New_Routine_Control</SD>
+                                    <SD GID="f429c2ef-f382-44f3-9e30-1201a8ddffe5">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/SecurityAccess_UnlockedL1</SD>
+                                    <SD GID="8655a2da-6466-4404-b7fc-3b8ee3bdf8b3">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_CommunicationModeType</SD>
+                                    <SD GID="5055f42c-7614-4b0d-9fea-dafbcb947d8d">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_ConfirmationStatusType</SD>
+                                    <SD GID="cf3115cb-4f47-470c-819c-d884ac519fff">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_ControlDtcSettingType</SD>
+                                    <SD GID="56fb960c-80f9-4ef5-be9a-36b63584e244">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_DiagnosticSessionControlType</SD>
+                                    <SD GID="2a8ae5fa-7992-4cde-a4c2-35fdf799297b">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_EcuResetType</SD>
+                                    <SD GID="5d202033-11d4-4f94-afd4-6771879dbd08">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_NegativeResponseCodeType</SD>
+                                    <SD GID="de2f4a00-6b1c-49c7-be57-18fad26089bc">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_OpStatusType</SD>
+                                    <SD GID="8dcdf4d4-3f09-4c87-b2e2-265fcd25e23a">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_ProtocolType</SD>
+                                    <SD GID="d80d0703-397d-4374-907d-7a09f1477748">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_RequestKindType</SD>
+                                    <SD GID="8122bb79-9be4-4a61-85a7-e3764860c3ec">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_SecLevelType</SD>
+                                    <SD GID="fc4ebdc6-cdeb-499e-af62-a775b885f9d1">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_SesCtrlType</SD>
+                                    <SD GID="bcc71d4d-285d-4d7b-8070-27486bc5b45b">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_CommunicationModeType_Constr</SD>
+                                    <SD GID="b4b64859-fed1-4715-a1a0-a5047ac64a18">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_ConfirmationStatusType_Constr</SD>
+                                    <SD GID="dc04c65c-43d8-4a8f-8acf-bef3f06a1a16">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_ControlDtcSettingType_Constr</SD>
+                                    <SD GID="d1fada4c-ee6b-42c4-9254-69a7247d7d3b">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_DiagnosticSessionControlType_Constr</SD>
+                                    <SD GID="7bef4826-56a2-477e-8202-efd5bc33e245">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_EcuResetType_Constr</SD>
+                                    <SD GID="e3c9707c-8f97-4a1e-85da-6c7528d653fb">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_NegativeResponseCodeType_Constr</SD>
+                                    <SD GID="8e4818fc-b7c6-4e87-ba10-8f0c09b06340">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_OpStatusType_Constr</SD>
+                                    <SD GID="f5bade05-5241-4ab5-b482-dc01d4a6ba65">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_ProtocolType_Constr</SD>
+                                    <SD GID="47adc1ed-35db-4f45-9929-d7b081218326">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_RequestKindType_Constr</SD>
+                                    <SD GID="c293c58d-9fb1-4f11-85de-d961ccd219c1">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_SecLevelType_Constr</SD>
+                                    <SD GID="2092cbcc-7c96-4c62-9964-184d1f184363">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_SesCtrlType_Constr</SD>
+                                    <SD GID="5022f537-93b3-4292-8cb7-7df6c96b8d53">/MICROSAR/Dcm_swc/DataTypes/Dcm_CommunicationModeType</SD>
+                                    <SD GID="4e23225a-eaf5-4508-9b00-fb3b7f1fa025">/MICROSAR/Dcm_swc/DataTypes/Dcm_ConfirmationStatusType</SD>
+                                    <SD GID="144160af-b57e-4b90-9dd7-d8806afd71ed">/MICROSAR/Dcm_swc/DataTypes/Dcm_ControlDtcSettingType</SD>
+                                    <SD GID="97de611b-ec77-4589-adb2-f30e0fbbec7d">/MICROSAR/Dcm_swc/DataTypes/Dcm_Data13ByteType</SD>
+                                    <SD GID="2dc07dde-ee50-4163-af61-e4f369f8bc4d">/MICROSAR/Dcm_swc/DataTypes/Dcm_Data17ByteType</SD>
+                                    <SD GID="4300bc56-e09a-4504-a513-93d2739eecec">/MICROSAR/Dcm_swc/DataTypes/Dcm_Data1ByteType</SD>
+                                    <SD GID="8105e387-9dad-4793-8f6a-8d8d815ef51e">/MICROSAR/Dcm_swc/DataTypes/Dcm_Data2ByteType</SD>
+                                    <SD GID="acd546b5-1bd5-4101-bb81-a0ae94cd04b8">/MICROSAR/Dcm_swc/DataTypes/Dcm_Data4ByteType</SD>
+                                    <SD GID="a3268c4f-81f0-4217-97bf-f06e8685bfe4">/MICROSAR/Dcm_swc/DataTypes/Dcm_DiagnosticSessionControlType</SD>
+                                    <SD GID="7016a685-b714-4b5b-88dd-e1ea090c8654">/MICROSAR/Dcm_swc/DataTypes/Dcm_EcuResetType</SD>
+                                    <SD GID="a76aeccd-9401-41f7-9d07-72bdb0e8a117">/MICROSAR/Dcm_swc/DataTypes/Dcm_NegativeResponseCodeType</SD>
+                                    <SD GID="23fe63fa-e6c8-4a8e-bbea-610e73e19f79">/MICROSAR/Dcm_swc/DataTypes/Dcm_OpStatusType</SD>
+                                    <SD GID="1424ad80-f01d-4bc3-b6aa-f30ea477cba7">/MICROSAR/Dcm_swc/DataTypes/Dcm_ProtocolType</SD>
+                                    <SD GID="b109acb7-a714-49df-b388-b4cb9e8b1d33">/MICROSAR/Dcm_swc/DataTypes/Dcm_RequestKindType</SD>
+                                    <SD GID="eb20cc82-8c5b-4eec-ad12-596c40c7d000">/MICROSAR/Dcm_swc/DataTypes/Dcm_SecLevelType</SD>
+                                    <SD GID="236f55ec-9bff-405b-ab78-6883923b6558">/MICROSAR/Dcm_swc/DataTypes/Dcm_SesCtrlType</SD>
+                                    <SD GID="6a6782a6-7611-4a55-94f6-55378577bcf2">/MICROSAR/Dcm_swc/DcmCommunicationControl</SD>
+                                    <SD GID="74933a3b-af91-4495-a3f4-9bbd1012b192">/MICROSAR/Dcm_swc/DcmCommunicationControl/DCM_ENABLE_RX_TX_NORM</SD>
+                                    <SD GID="8297a782-b97d-433d-a1bf-b2e0b02dba96">/MICROSAR/Dcm_swc/DcmControlDtcSetting</SD>
+                                    <SD GID="0be90e41-6c65-43ba-9af7-4338575f19db">/MICROSAR/Dcm_swc/DcmControlDtcSetting/ENABLEDTCSETTING</SD>
+                                    <SD GID="633de82c-0911-495d-bf96-0d82ac404be9">/MICROSAR/Dcm_swc/DcmDiagnosticSessionControl</SD>
+                                    <SD GID="05c8cedd-8233-4f38-9fc9-dbe8f7c74bd9">/MICROSAR/Dcm_swc/DcmDiagnosticSessionControl/DEFAULT_SESSION</SD>
+                                    <SD GID="07c2e931-031a-4001-b7aa-36fd0ebb309d">/MICROSAR/Dcm_swc/DcmEcuReset</SD>
+                                    <SD GID="844aeb7b-9e4b-4ae3-815a-b20bf7c08713">/MICROSAR/Dcm_swc/DcmEcuReset/NONE</SD>
+                                    <SD GID="2edb052a-d0d5-43c6-b38c-d992cf8d2785">/MICROSAR/Dcm_swc/DcmMappingSet</SD>
+                                    <SD GID="6063678f-5ab4-4f3e-91d2-b1d0237a2f62">/MICROSAR/Dcm_swc/Interfaces/DCMServices</SD>
+                                    <SD GID="5d31bb35-8848-4307-9807-74c9e398129b">/MICROSAR/Dcm_swc/Interfaces/DCMServices/E_NOT_OK</SD>
+                                    <SD GID="f0c93daa-71a2-4271-8fe7-75dfaa0ec45a">/MICROSAR/Dcm_swc/Interfaces/DCMServices/E_OK</SD>
+                                    <SD GID="aad702bb-b4f9-4d31-96ec-29df01c0a511">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetActiveProtocol</SD>
+                                    <SD GID="fa5192b9-24fd-4d7c-a3cc-f30d45480cbd">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetRequestKind</SD>
+                                    <SD GID="33281525-98d5-4383-8bf7-b0245847a4da">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetSecurityLevel</SD>
+                                    <SD GID="51367a77-ed64-41c2-83ce-3c49a61074d2">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetSesCtrlType</SD>
+                                    <SD GID="f1d8bdc9-cba1-4f17-93d3-00b198275b8b">/MICROSAR/Dcm_swc/Interfaces/DCMServices/ResetToDefaultSession</SD>
+                                    <SD GID="c8acd97a-8f4d-40f7-8f53-d3998dc1e182">/MICROSAR/Dcm_swc/Interfaces/DCMServices/SetActiveDiagnostic</SD>
+                                    <SD GID="085c9777-7180-4a32-8813-7e39dbd64e2c">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification</SD>
+                                    <SD GID="00f303a5-12e2-4f23-b99c-fe921b000a38">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/ConditionCheckRead</SD>
+                                    <SD GID="53a32d05-88a5-4fd4-a5d4-3985ff0718f6">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/DCM_E_PENDING</SD>
+                                    <SD GID="7f910ba8-ecf9-476c-8ecb-311c61ea0bb7">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/E_NOT_OK</SD>
+                                    <SD GID="19afd1c6-dd3e-42fe-a541-917fa42d9ca2">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/ReadData</SD>
+                                    <SD GID="14f4e371-8800-470c-9741-b597828dfad4">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/WriteData</SD>
+                                    <SD GID="ab97cdcb-e40f-48cf-8f1e-c10786272e19">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules</SD>
+                                    <SD GID="35dc909f-16a1-4f32-881f-e8a3cb6ce70d">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/ConditionCheckRead</SD>
+                                    <SD GID="102410ca-1240-4a2b-890d-eb6d259adb35">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/DCM_E_PENDING</SD>
+                                    <SD GID="4c41528e-75b0-47ae-b205-c7b923c7af3b">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/E_NOT_OK</SD>
+                                    <SD GID="87fe5c44-7ad5-4fbd-ac58-c69eec4b4cb4">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/ReadData</SD>
+                                    <SD GID="76a23965-3f18-467b-bf05-055b3df22bfe">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/WriteData</SD>
+                                    <SD GID="b7d190df-c245-40e3-b08f-e4d7799ab7a2">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number</SD>
+                                    <SD GID="f51f7240-874d-4bbf-b44f-3f58b46303f3">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/ConditionCheckRead</SD>
+                                    <SD GID="30812326-5e15-46a0-bbe0-d58f9364ba96">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/DCM_E_PENDING</SD>
+                                    <SD GID="6faf8ba1-611f-4ffd-b47a-a73e8eb87218">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/E_NOT_OK</SD>
+                                    <SD GID="a617683a-4329-4b11-9b25-b813d571bb9b">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/ReadData</SD>
+                                    <SD GID="15a7fdf7-2a35-46cb-8b67-fce82cad96a8">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/WriteData</SD>
+                                    <SD GID="ec392efa-2141-425d-812e-793eca8d7566">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_CanDriverVersion</SD>
+                                    <SD GID="347bb56f-0767-4fb3-a222-6699d98d0a7a">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_CanDriverVersion/ConditionCheckRead</SD>
+                                    <SD GID="e5ca4d7d-1fe5-474d-a9d2-aec52ae37c15">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_CanDriverVersion/DCM_E_PENDING</SD>
+                                    <SD GID="52f163ed-9aa7-4d50-8e09-07cde58d02e0">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_CanDriverVersion/E_NOT_OK</SD>
+                                    <SD GID="935a55d9-be1c-4ef1-a0bd-d0b6d8ad7e48">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_CanDriverVersion/ReadData</SD>
+                                    <SD GID="6ff17fd0-94c1-46a2-938c-4a70759f79cd">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_CanDriverVersion/WriteData</SD>
+                                    <SD GID="c805f056-2db0-4cdb-a902-8817bba6603f">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_DiagnosticModuleVersion</SD>
+                                    <SD GID="f88d6ca2-a4b3-4faa-8846-bfc99348d44c">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_DiagnosticModuleVersion/ConditionCheckRead</SD>
+                                    <SD GID="869d9505-e160-4788-952a-e01385b660cf">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_DiagnosticModuleVersion/DCM_E_PENDING</SD>
+                                    <SD GID="e6b3b3ff-31d4-41b5-844b-6103452fef9e">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_DiagnosticModuleVersion/E_NOT_OK</SD>
+                                    <SD GID="0bd58aca-f63e-45e4-8802-193ccb47ec49">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_DiagnosticModuleVersion/ReadData</SD>
+                                    <SD GID="c00e1458-0631-4db8-96e6-7610338b4be4">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_DiagnosticModuleVersion/WriteData</SD>
+                                    <SD GID="725480a9-fd42-4217-8e88-0487ac0b6d7a">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_NmVersion</SD>
+                                    <SD GID="b0f7b6f9-fd52-419f-87c0-d2d06a5e72a1">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_NmVersion/ConditionCheckRead</SD>
+                                    <SD GID="f5da9d3b-06b5-4b14-9e88-6a911413ad1a">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_NmVersion/DCM_E_PENDING</SD>
+                                    <SD GID="06d0ce04-6991-4b1b-a83a-d42674be6c9d">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_NmVersion/E_NOT_OK</SD>
+                                    <SD GID="c46a76a3-b71b-4c85-aeec-e1dce3fea21c">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_NmVersion/ReadData</SD>
+                                    <SD GID="bc929652-8c63-47d9-80e9-07ef9e210bfc">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_NmVersion/WriteData</SD>
+                                    <SD GID="50e87c16-432e-4340-bc05-391c0d68b5a7">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_OperatingSystemVersion</SD>
+                                    <SD GID="d7216d2e-8365-413e-9eef-e66a2e85a3d3">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_OperatingSystemVersion/ConditionCheckRead</SD>
+                                    <SD GID="fcb0cc5a-898f-42f1-b886-5c1f1853cb0b">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_OperatingSystemVersion/DCM_E_PENDING</SD>
+                                    <SD GID="8e6409ea-b52a-4b97-9b74-f683ab9448c5">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_OperatingSystemVersion/E_NOT_OK</SD>
+                                    <SD GID="2e2a1aec-f015-49fe-b7a8-502e369d6712">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_OperatingSystemVersion/ReadData</SD>
+                                    <SD GID="82711942-7cb2-4bcc-ae32-6102ac2569c9">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_OperatingSystemVersion/WriteData</SD>
+                                    <SD GID="245166f5-b6f5-4bc2-a502-be144711406b">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_TransportLayerVersion</SD>
+                                    <SD GID="b6e0eb27-a389-4c25-94c5-5bc10658aeb5">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_TransportLayerVersion/ConditionCheckRead</SD>
+                                    <SD GID="2a394de3-11a5-4f5f-a811-dfeb3e3cf06e">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_TransportLayerVersion/DCM_E_PENDING</SD>
+                                    <SD GID="9eda9be0-8f17-4dfe-b2e8-5bfdeff8c1ef">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_TransportLayerVersion/E_NOT_OK</SD>
+                                    <SD GID="76080585-af7a-4b06-801a-670b8af5e4e2">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_TransportLayerVersion/ReadData</SD>
+                                    <SD GID="60536c70-3164-4afd-9446-998908d19cb9">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_DevelopmentData_TransportLayerVersion/WriteData</SD>
+                                    <SD GID="c3472329-6f86-488f-84c7-36317695d188">/MICROSAR/Dcm_swc/Interfaces/DataServices_Fan_Current_Power_Current</SD>
+                                    <SD GID="66289575-3d72-4867-8e86-14d53054580b">/MICROSAR/Dcm_swc/Interfaces/DataServices_Fan_Current_Power_Current/ConditionCheckRead</SD>
+                                    <SD GID="31a9d9f3-20bf-4ad8-9f53-93a4c30a536e">/MICROSAR/Dcm_swc/Interfaces/DataServices_Fan_Current_Power_Current/DCM_E_PENDING</SD>
+                                    <SD GID="eeefb2f3-2b0b-4f8c-95a6-b9ccd0a2d8cc">/MICROSAR/Dcm_swc/Interfaces/DataServices_Fan_Current_Power_Current/E_NOT_OK</SD>
+                                    <SD GID="5a61b261-7860-445f-aaf4-d69c7141a032">/MICROSAR/Dcm_swc/Interfaces/DataServices_Fan_Current_Power_Current/ReadData</SD>
+                                    <SD GID="be2e85ea-92a7-476c-9b42-e3d77b7bf8e1">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number</SD>
+                                    <SD GID="68bb206a-7851-470d-a098-8ec78fe85d01">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number/ConditionCheckRead</SD>
+                                    <SD GID="f092f3b4-3cb1-46cd-af98-22fb77a5c77a">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number/DCM_E_PENDING</SD>
+                                    <SD GID="805f46f6-47ba-46a5-9a19-aca63829d110">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number/E_NOT_OK</SD>
+                                    <SD GID="62d3cba3-ec10-458d-890e-5ad1e37a4f34">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number/ReadData</SD>
+                                    <SD GID="18d6103b-eebb-48e4-ae3d-a916caad9bb1">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number/WriteData</SD>
+                                    <SD GID="17b912ac-f139-44a3-abab-f116d25f30e5">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber</SD>
+                                    <SD GID="e31ec683-66fa-4ffc-9d85-801ab35dcc54">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber/ConditionCheckRead</SD>
+                                    <SD GID="2ebb4308-cc58-427c-b9e3-9c9e9a5e7a7d">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber/DCM_E_PENDING</SD>
+                                    <SD GID="e73a5f01-4ba7-49df-a932-402f39d2ebbe">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber/E_NOT_OK</SD>
+                                    <SD GID="5704f237-4a94-4ff6-96b1-c1d914d7400d">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber/ReadData</SD>
+                                    <SD GID="a2151698-43b5-4cfd-96ea-33dd96c5fec6">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber/WriteData</SD>
+                                    <SD GID="1b776299-67d7-4fba-a582-947305f0801e">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number</SD>
+                                    <SD GID="4291a77d-dd24-4875-8e43-a13bd51d7b47">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number/ConditionCheckRead</SD>
+                                    <SD GID="82f78868-2428-4c96-8539-fcad33c97af5">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number/DCM_E_PENDING</SD>
+                                    <SD GID="403d68ca-ac64-4345-9a88-1b5842dad8b4">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number/E_NOT_OK</SD>
+                                    <SD GID="e7b9c82d-c015-4f6e-8ad2-2369252c5f89">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number/ReadData</SD>
+                                    <SD GID="c2f865f7-91ff-4c64-85b6-8877854a8175">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number/WriteData</SD>
+                                    <SD GID="df1936a1-d22c-4a65-8629-6ba42d9f98e3">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN</SD>
+                                    <SD GID="928f806e-aeb0-4a9d-966e-1be4dee82c39">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN/ConditionCheckRead</SD>
+                                    <SD GID="50d62f6c-7744-447d-856b-f16d691a8677">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN/DCM_E_PENDING</SD>
+                                    <SD GID="b2c690ff-81e5-4940-b4ca-a9c44a280888">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN/E_NOT_OK</SD>
+                                    <SD GID="84a78c9b-6f55-4c7b-8f06-8e13ceb2a573">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN/ReadData</SD>
+                                    <SD GID="d6732641-e15f-4dc9-816d-7b0c3f6235c9">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN/WriteData</SD>
+                                    <SD GID="afc6148f-c9d2-4fcf-9a75-3a8dce5b49a6">/MICROSAR/Dcm_swc/Interfaces/DcmCommunicationControl_ComMConf_ComMChannel_Connector_Fan_ECU_fbc5880ce1a0cdea_90249745</SD>
+                                    <SD GID="4e88899b-1e29-4c17-9cfe-eb7339781fbb">/MICROSAR/Dcm_swc/Interfaces/DcmCommunicationControl_ComMConf_ComMChannel_Connector_Fan_ECU_fbc5880ce1a0cdea_90249745/DcmCommunicationControl_ComMConf_ComMChannel_Connector_Fan_ECU_fbc5880ce1a0cdea_90249745</SD>
+                                    <SD GID="0c095292-f90b-46fe-97a4-6298a4539206">/MICROSAR/Dcm_swc/Interfaces/DcmControlDtcSetting</SD>
+                                    <SD GID="bf18a858-9bed-4e17-a916-ac3514c1b8ed">/MICROSAR/Dcm_swc/Interfaces/DcmControlDtcSetting/DcmControlDtcSetting</SD>
+                                    <SD GID="6b4b5ed3-ab72-4c35-99d1-8373037a937e">/MICROSAR/Dcm_swc/Interfaces/DcmDiagnosticSessionControl</SD>
+                                    <SD GID="32467485-cee1-4bbe-851c-e93e633d6413">/MICROSAR/Dcm_swc/Interfaces/DcmDiagnosticSessionControl/DcmDiagnosticSessionControl</SD>
+                                    <SD GID="2a490f38-c197-4985-b94c-431d3dee86c9">/MICROSAR/Dcm_swc/Interfaces/DcmEcuReset</SD>
+                                    <SD GID="983ab091-8f03-4557-ac2d-a2bc703eea57">/MICROSAR/Dcm_swc/Interfaces/DcmEcuReset/DcmEcuReset</SD>
+                                    <SD GID="43a97961-024b-442d-b2f1-a60c58c43de8">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_Example_New_Routine_Control</SD>
+                                    <SD GID="1e6d3084-5c26-4977-8a78-a7bb7f3e98a2">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_Example_New_Routine_Control/DCM_E_FORCE_RCRRP</SD>
+                                    <SD GID="35e9da1f-40f0-431e-b888-d69e8138558b">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_Example_New_Routine_Control/DCM_E_PENDING</SD>
+                                    <SD GID="9cdd32ee-86c7-460c-80df-2c117e71460f">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_Example_New_Routine_Control/E_NOT_OK</SD>
+                                    <SD GID="09d0b8d5-5ecc-40fa-beac-ebb50b675c3a">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_Example_New_Routine_Control/Start</SD>
+                                    <SD GID="b9b3a058-c244-45b0-bc6b-685dcbd20085">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1</SD>
+                                    <SD GID="0a1cd2cd-c4bc-4c70-b316-1dcfe4835778">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1/CompareKey</SD>
+                                    <SD GID="2a2f4341-42a8-431c-96c9-aa86991db57b">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1/DCM_E_COMPARE_KEY_FAILED</SD>
+                                    <SD GID="c473f7a4-5982-44d8-8da3-776e365269ef">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1/DCM_E_PENDING</SD>
+                                    <SD GID="b7b6a03a-3533-4d8b-8994-e6a9bac60b73">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1/E_NOT_OK</SD>
+                                    <SD GID="6d37c742-fec5-4534-b3de-56288d9c08df">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1/GetSeed</SD>
+                                    <SD GID="690696a5-703c-48dd-b082-2df972c94f09">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior</SD>
+                                    <SD GID="7290f0f1-6baf-44c7-b3f5-68cb0247686b">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior/DEM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="d9acc566-f780-4782-a371-2de886b27c26">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior/DEM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="8febb5ef-39a5-41ba-8f4e-c06475edeab7">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior/DEM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="27d91ae4-068d-455e-bd70-4da7a63b9f02">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior/DEM_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="874e15f4-f058-42c4-957c-8db0ab8ead80">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior/DEM_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="95764f26-82fa-433a-9a25-e0597238e8b7">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior/Dem_MasterMainFunction</SD>
+                                    <SD GID="01807f5d-1eb9-40d7-8ac0-65aced89251e">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior/Dem_MasterMainFunctionTimingEvent0</SD>
+                                    <SD GID="83e9b3f3-71fe-4b0b-9f8c-570f7fac0510">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior/Dem_SatelliteMainFunction</SD>
+                                    <SD GID="d07ddb4f-9966-4143-885e-96c505aad242">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem/DemBehavior/Dem_SatelliteMainFunctionTimingEvent0</SD>
+                                    <SD GID="3b1ce37b-b1dc-4667-b374-4a2e9e55005c">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem_MasterMainFunction</SD>
+                                    <SD GID="d0e5bdeb-54ef-45f9-aa78-1b45e8f3a5f0">/MICROSAR/Dem_ib_bswmd/BswModuleDescriptions/Dem_SatelliteMainFunction</SD>
+                                    <SD GID="ad36b121-73fd-463b-995b-79afe3856f25">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/CBReadData_DID_0x2_Current</SD>
+                                    <SD GID="e55aa711-2809-432f-8325-aec949a89ba2">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventClearDTC_ClearDTC_ClearDTC_DemClient</SD>
+                                    <SD GID="e7f143dc-f0d9-4279-b8e0-caec6190db4d">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_GeneralEvtInfo</SD>
+                                    <SD GID="728b9169-0de3-4861-bc02-ba9c131a6933">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetDTCStatusAvailabilityMask_GetDTCStatusAvailabilityMask_DemServices</SD>
+                                    <SD GID="3def3dd4-58fc-43f7-bcd0-9b12830cbb94">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetDebouncingOfEvent_GetDebouncingOfEvent_GeneralEvtInfo</SD>
+                                    <SD GID="1cc5b431-f17d-49be-a7c9-4a5b6389c74d">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventEnableCondition_GetEventEnableCondition_GeneralEvtInfo</SD>
+                                    <SD GID="eb329dca-1797-4f77-8c60-2ec0ca21476f">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_GeneralEvtInfo</SD>
+                                    <SD GID="f4dd14d7-070d-4ead-9b28-3440b08d09e4">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_GeneralEvtInfo</SD>
+                                    <SD GID="3e653934-4b98-43b5-ba84-fd9a44cc3688">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_GeneralEvtInfo</SD>
+                                    <SD GID="6b89b6fd-b458-49d4-8d23-a7401f23e412">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventMemoryOverflow_GetEventMemoryOverflow_OverflowIndPrimaryMemory_DemClient</SD>
+                                    <SD GID="d3c9df02-0803-4e72-80c6-031b9b507a39">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_GeneralEvtInfo</SD>
+                                    <SD GID="ae204e29-f049-456b-a7c7-e13a29a560ff">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventTested_GetEventTested_GeneralEvtInfo</SD>
+                                    <SD GID="b7a4da3c-2f93-4b4e-a276-0516cfa0e7a3">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_GeneralEvtInfo</SD>
+                                    <SD GID="48a0ecb9-b532-4fdd-b243-06b5d50bd81c">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_GeneralEvtInfo</SD>
+                                    <SD GID="e6fa511a-94c7-47da-85a9-bca8f5937ac3">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetMonitorStatus_GetMonitorStatus_GeneralEvtInfo</SD>
+                                    <SD GID="413d96e7-2a67-4990-a24b-d3380a9c699f">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetNumberOfEventMemoryEntries_GetNumberOfEventMemoryEntries_OverflowIndPrimaryMemory_DemClient</SD>
+                                    <SD GID="ea11b730-d3d1-4401-beac-3c4b609685bf">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetOperationCycleState_GetOperationCycleState_OpCycle_OBD_driving_cycle</SD>
+                                    <SD GID="618b5562-00de-4f39-815f-057ed48c114c">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventPostRunRequested_GetPostRunRequested_DemServices</SD>
+                                    <SD GID="f9f3d7e6-78d3-4d86-9ab0-1316194e8edc">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventSelectDTC_SelectDTC_ClearDTC_DemClient</SD>
+                                    <SD GID="626a5771-2823-4ed2-9870-a9b1b0a6ed67">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventSetOperationCycleState_SetOperationCycleState_OpCycle_OBD_driving_cycle</SD>
+                                    <SD GID="1d199292-65c2-4ef7-8a97-575ec5e0318e">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/Timer_Dem_MasterMainFunction</SD>
+                                    <SD GID="3f853cfc-f9a5-4e50-bde3-4322712c0ef2">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/OpCycle_OBD_driving_cycle</SD>
+                                    <SD GID="49a8f657-2bb0-433c-8922-6b6e3c1bbbd5">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="a1beb6ae-f70b-45bc-ae67-d1e4437e4691">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="5c47aa3e-e5b3-45d0-9d47-4c4d2069b0c2">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="a4458e79-42f1-4e26-8dbe-ecefda45c48e">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="bcb20d4d-b142-4248-a57c-ddc077175dc5">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="2d5b867d-2001-4ae5-b3d0-a45ba3705f1c">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="16083fba-4579-4e28-8622-baf51441e9e6">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_EvtInfo_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="075863e0-072a-4be4-bfc6-391e21f4f8c4">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_EvtInfo_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="2648e446-ebcb-405b-9084-52a87bad38d4">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_GeneralEvtInfo</SD>
+                                    <SD GID="c46b48da-48dd-4000-bed5-5408ba6f0dbf">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDebouncingOfEvent_GetDebouncingOfEvent_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="964a9e83-0d1c-49ad-9dbc-ab3a33cd725a">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDebouncingOfEvent_GetDebouncingOfEvent_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="2e52c116-86ad-4d1b-978a-bcf3f81ac7a0">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDebouncingOfEvent_GetDebouncingOfEvent_EvtInfo_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="3e0a40c3-6ca7-4aa2-8b25-71bb77c73f89">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDebouncingOfEvent_GetDebouncingOfEvent_EvtInfo_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="a1fbd275-5697-4094-93ba-a607459cdcf6">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDebouncingOfEvent_GetDebouncingOfEvent_GeneralEvtInfo</SD>
+                                    <SD GID="6b7ae525-e10c-4308-9b03-e8c903a8ccd9">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventEnableCondition_GetEventEnableCondition_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="b40614ff-fa5c-49eb-981f-23f729091e2d">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventEnableCondition_GetEventEnableCondition_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="2bcdf931-90a5-4511-949e-a35119ffa604">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventEnableCondition_GetEventEnableCondition_EvtInfo_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="bdd88d65-2bc6-49dd-bc66-38aa4bc5c2eb">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventEnableCondition_GetEventEnableCondition_EvtInfo_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="f8facb7a-9edf-4819-8087-e0738981f7b5">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventEnableCondition_GetEventEnableCondition_GeneralEvtInfo</SD>
+                                    <SD GID="c8ddef3c-1c1c-40ff-9d78-da0392b6f642">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="5199a959-7ce7-4e21-ab19-dae09a514ebb">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="1507f7b0-c9e2-44f3-bf1c-798abba42c88">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="ee2cca47-a1f5-49e0-90bb-9f72fdbd74be">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="df600929-c05d-4862-ad14-7ba81979e4eb">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="a3c023ff-ce76-493c-a102-d7732cfda25f">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="0e228b44-6523-4119-b498-b0f7ad974898">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_EvtInfo_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="78d840f2-5779-487f-9011-b5367b19850d">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_EvtInfo_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="f93d68c9-6343-4804-99b8-ea75c37b4d62">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_GeneralEvtInfo</SD>
+                                    <SD GID="c352540e-e311-4b2e-997f-f4b9c4ccf084">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="76d99bcd-4fba-4fd4-b1e0-e93653f03ebd">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="7d64e1d0-eb24-429a-b22f-194261c13e1c">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="86f5fae3-842d-4517-8b84-b7da5f36d7e0">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="f2c3d82a-a093-4963-bd93-f21f633b99be">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="86d1e40e-408d-45c2-9a2d-3532bf8e5521">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="7f978ca2-1c00-4539-a8d4-38eec6f5cf77">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_EvtInfo_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="dbf2485c-ed65-44be-bf56-39dbfe2901fd">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_EvtInfo_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="fdfbbf58-7c1e-460f-b9dc-e08b19fce76c">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_GeneralEvtInfo</SD>
+                                    <SD GID="fbf5f1c9-971b-4327-a444-690a87f11384">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="8c6540de-c694-412e-bef2-807d73355f66">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="35b64c68-39b9-4f68-b3b3-b1ea466d3793">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="c56739b3-304d-4454-8684-e769c8664a1a">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="c3eddb97-0608-4e50-9323-dbb49be5a4cf">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="9e920df8-c76a-47c2-8930-e8501b077b8b">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="f5620b96-3c38-44a3-9aa1-f5964399b7d2">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_EvtInfo_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="ac2f089f-7553-41b3-bfad-e713f304f3ad">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_EvtInfo_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="4a1dc317-7622-4565-accb-e72175e96894">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_GeneralEvtInfo</SD>
+                                    <SD GID="656197d9-3fbc-4643-ae07-8ff701719dc6">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="4098e5e4-9428-4b8e-9d7b-317dbc5960ed">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="72fdd22a-916a-45e1-81ba-ac4827576c62">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="2765b7b8-a4d8-49e6-a67b-34212c1610bf">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="a545344e-46a5-4256-b58e-d904deac53a4">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="aa35b814-ad81-43ab-ba21-709813718e73">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="f487db98-c28b-4a17-9682-3ea5f4aa9855">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_EvtInfo_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="76c77d96-aa33-4659-9448-d3346935fa92">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_EvtInfo_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="4de84232-ec98-4343-a7eb-1f39f0be4cd9">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_GeneralEvtInfo</SD>
+                                    <SD GID="f3f9b91b-1d7c-4409-8654-56e3aae350d2">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="9ee56fcf-eafa-4414-bcdb-dfb6a8d37522">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="661bfc89-b2cd-42ff-800d-13e8fbb73500">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="8c675185-558f-4a57-b404-d01348fa69d8">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="e3e25439-3690-496e-ac8a-5b088cf9c8b2">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="46f89706-3f55-4a75-bc63-ca062611d30f">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="5023bfd5-3dfd-4545-a048-fc708c9d8d48">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_EvtInfo_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="b8ab25a8-50ec-40c9-b7da-f00db5391ac4">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_EvtInfo_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="764560b3-b2a3-41b2-89da-22cb2df4a29b">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_GeneralEvtInfo</SD>
+                                    <SD GID="a85ed385-674f-4bcb-b7a8-308fad5105f7">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="45863275-5fee-434e-9e1a-697ae84cd0a5">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="bf9631d2-19e1-4a0f-9003-572e9d3855d4">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="61ce86b2-3139-41e1-a199-6a1430010e96">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="eaa0da7b-eb1b-47f7-a205-3fc2b4106771">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="e8c87328-bf3a-4a0c-8831-61e6c3ccb823">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="d469d28c-da4e-4dbb-9634-e8f7cf8a10ff">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_EvtInfo_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="0b0aea66-7553-4dd0-9d8b-5b13c89c9567">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_EvtInfo_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="25794065-4042-45f0-876a-feec05a9d695">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_GeneralEvtInfo</SD>
+                                    <SD GID="bb771a30-0bca-4209-9113-ddf391dcc637">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="5027db45-4cb0-4ffb-8c1c-e4354dccefc0">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="c0ac06b9-1bd0-4505-a202-51c3e8a46a40">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="73cd7031-7d4f-47d1-9b2e-af6420cf3c81">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="8309040e-6d7e-4d8f-a99b-73111479d7a6">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="9b90079a-8724-4253-97c5-27ebb3f54321">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="96f6fd1a-564b-42e5-8992-0209e4fbf8ce">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_EvtInfo_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="39407972-8771-4934-9003-3fe99d812e91">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_EvtInfo_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="7873466b-9690-4f48-b4a9-b621f78a41ba">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_GeneralEvtInfo</SD>
+                                    <SD GID="fd3ae9d9-60b3-4f8d-9896-f012d8e4712f">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetMonitorStatus_GetMonitorStatus_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="cbc847e2-00a3-4609-bfed-ac1466a9ddee">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetMonitorStatus_GetMonitorStatus_EvtInfo_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="4a3cc22d-f857-410f-88f4-8189277f94d9">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetMonitorStatus_GetMonitorStatus_EvtInfo_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="2717450d-4f80-427c-9369-241a364c2089">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetMonitorStatus_GetMonitorStatus_EvtInfo_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="d6657d7c-142a-440e-9b40-27ad5f32bb38">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetMonitorStatus_GetMonitorStatus_GeneralEvtInfo</SD>
+                                    <SD GID="7e13a669-5720-490e-a069-101c4d57a99b">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventResetEventDebounceStatus_ResetEventDebounceStatus_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="c2cbd604-be20-49ec-831c-6e569ed086f0">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventResetEventDebounceStatus_ResetEventDebounceStatus_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="cdd10c21-3fc2-4efe-aac6-f7b9b382d0f1">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventResetEventDebounceStatus_ResetEventDebounceStatus_Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="b23c3228-7ce6-4a70-9dbe-24d1503df102">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventResetEventDebounceStatus_ResetEventDebounceStatus_Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="7b33133d-50c0-415c-835b-4c85063786a2">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventResetEventStatus_ResetEventStatus_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="4b4d091e-81c7-4ad7-8681-1f80e98f6a9d">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventResetEventStatus_ResetEventStatus_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="6425d833-a25b-4ae5-b112-68f4337189b7">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventResetEventStatus_ResetEventStatus_Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="ab3b5562-9d31-4168-917d-c7c7598085ea">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventResetEventStatus_ResetEventStatus_Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="e035aafc-f706-4966-8a9a-a5c5a296d135">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventSetEventStatus_SetEventStatus_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="3b8609ab-aa95-4589-bee3-0d161ed31180">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventSetEventStatus_SetEventStatus_Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="36d5fdc2-f608-4860-9b4f-57176dfcc947">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventSetEventStatus_SetEventStatus_Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="aa04cd13-263e-4414-a255-518ec908db24">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventSetEventStatus_SetEventStatus_Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="1bceccd3-801d-4e6b-992c-81f973e123c9">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/Timer_Dem_SatelliteMainFunction</SD>
+                                    <SD GID="edf12504-5451-4c76-a51e-025cec576f47">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/Event_Electrical_Fault_Fan_Motor_Control_Circuit_Open</SD>
+                                    <SD GID="b54886b2-8414-4864-b28b-e1d292defeb4">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/Event_Electrical_Fault_Fan_Motor_Control_Circuit_Short</SD>
+                                    <SD GID="4d25f9e6-e6ee-42f7-9537-bbd6a9a38331">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/Event_Mechanical_Fault_Unexpected_High_Current</SD>
+                                    <SD GID="9aa81eba-d370-4a5c-8ed2-2c90f180c514">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/Event_Mechanical_Fault_Unexpected_Low_Current</SD>
+                                    <SD GID="ca4db06b-7d2a-4085-859c-62c79a8ebb34">/MICROSAR/Det_ib_bswmd/BswModuleDescriptions/Det/DetBehavior</SD>
+                                    <SD GID="ffd3ab45-f54e-4aa1-b533-73f44424c6f0">/MICROSAR/Det_ib_bswmd/BswModuleDescriptions/Det/DetBehavior/DET_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="7c1f1852-8c43-4f40-a68c-bc655f30cbc7">/MICROSAR/Det_ib_bswmd/BswModuleDescriptions/Det_Virtual</SD>
+                                    <SD GID="1875b9fb-b30c-4c64-aa37-4cfb3592a777">/MICROSAR/Det_swc/ComponentTypes/Det</SD>
+                                    <SD GID="6e5be331-b131-495a-81d1-6389cb17c37f">/MICROSAR/Det_swc/ComponentTypes/Det/DetInternalBehavior</SD>
+                                    <SD GID="1f313ca6-d67e-4d3a-babb-a6e778963f3a">/MICROSAR/Det_swc/Interfaces/DETService/E_OK</SD>
+                                    <SD GID="1c659adc-c2a0-431c-97ba-cd92ed3f94ad">/MICROSAR/Det_swc/Interfaces/DETServiceLegacy/E_OK</SD>
+                                    <SD GID="27f555fa-2c83-44ac-8414-ffe8982028b1">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior</SD>
+                                    <SD GID="37c69a4f-829f-4a08-916a-27c187d07729">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="30754646-aaae-497f-8077-d72989b15a28">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="3c96459f-87e4-464a-9b64-0ea9419818cd">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="42c14349-9578-4cef-aa71-94fccccd30fa">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="175fee37-0b24-45f8-a827-c9ca1fad5824">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunction</SD>
+                                    <SD GID="3ef71a0d-cd73-4483-b97e-2c21c540129c">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="56e5cac2-a8b6-4a23-81ca-f8652f3a7e80">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM_MainFunction</SD>
+                                    <SD GID="3c08aae9-6230-468a-9b6c-96d25156342b">/MICROSAR/EcuM_swc/ComponentTypes/EcuM</SD>
+                                    <SD GID="128deba4-30d6-4995-a579-cf84607c83b8">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior</SD>
+                                    <SD GID="199af8a3-b79a-482c-bd61-9026ab7cd953">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/EcuM_MainFunction</SD>
+                                    <SD GID="0c57584b-4b6a-466f-be2c-8835647fd0a1">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetBootTarget</SD>
+                                    <SD GID="925ba93e-72a2-41f7-841f-507fafe91b58">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetLastShutdownTarget</SD>
+                                    <SD GID="6fdfbfb8-de14-4052-8ea6-c60eff0c7620">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetShutdownCause</SD>
+                                    <SD GID="1a9dda90-6b47-4b1b-87e1-4a175c1a0894">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetShutdownTarget</SD>
+                                    <SD GID="ef0dcc45-7c80-4e35-b319-f625a2424750">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetBootTarget_GetBootTarget_EcuM_BootTarget</SD>
+                                    <SD GID="34f92b74-74da-488c-9178-d67437c3a505">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetLastShutdownTarget_GetLastShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="5ea589cb-ae25-4abd-9fd6-46ad912a8d60">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetShutdownCause_GetShutdownCause_EcuM_ShutdownTarget</SD>
+                                    <SD GID="86823615-d9d9-44b3-ab31-dcaf1ae159b7">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetShutdownTarget_GetShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="0c5a7d06-83c9-4f96-985e-02e3bf6cf763">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectBootTarget_SelectBootTarget_EcuM_BootTarget</SD>
+                                    <SD GID="5abdcaa1-cc30-456a-bfe7-58c7499ed2fb">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectShutdownCause_SelectShutdownCause_EcuM_ShutdownTarget</SD>
+                                    <SD GID="814c483f-60c2-4b99-85bc-d23e5af400cb">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectShutdownTarget_SelectShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="88aecc28-b9d3-4347-bddf-fe7c8285259a">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectBootTarget</SD>
+                                    <SD GID="9148ef74-0818-4e14-bbde-34760ea08af4">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectShutdownCause</SD>
+                                    <SD GID="eb9c3b48-5bcc-46ec-9122-42e5bf83c2e1">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectShutdownTarget</SD>
+                                    <SD GID="3db8a58a-225f-489e-a7f9-5d7d22cd9536">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/Timer_EcuM_MainFunction</SD>
+                                    <SD GID="0c7256e8-7080-4f91-a8db-05de8857390c">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuM_BootTarget</SD>
+                                    <SD GID="11d4d669-a035-4151-a050-7d400575694d">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuM_ShutdownTarget</SD>
+                                    <SD GID="d234dcae-7d8a-4db5-85a6-f2ee897fec25">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_BootTargetType</SD>
+                                    <SD GID="d93603a5-b6d0-49c5-af36-7b6c4a586a92">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_ModeType</SD>
+                                    <SD GID="1dd25d19-a6f6-4e9b-9077-2faf65f698b6">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_ShutdownCauseType</SD>
+                                    <SD GID="d883d5d0-c8cd-468d-9182-3b99b1b34e50">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_StateType</SD>
+                                    <SD GID="6b7cadc7-e769-4789-9159-061f1f50e03d">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_BootTargetType_Constr</SD>
+                                    <SD GID="cfc4d745-26b1-434a-a967-10a36b01409c">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_ModeType_Constr</SD>
+                                    <SD GID="89dfc727-5adb-4d45-b1a7-d5ff995ca2eb">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_ShutdownCauseType_Constr</SD>
+                                    <SD GID="78a0a358-117b-4a57-b513-0019ff1150f1">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_StateType_Constr</SD>
+                                    <SD GID="737cfdc1-3006-479a-b5dd-279b46df22a3">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_TimeType_Constr</SD>
+                                    <SD GID="8134f9e0-dac5-4d3b-bc83-92e1017f7600">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_UserType_Constr</SD>
+                                    <SD GID="e96a52fc-5eab-467b-b739-abd8b5e8f55c">/MICROSAR/EcuM_swc/DataTypes/EcuM_BootTargetType</SD>
+                                    <SD GID="951a1687-b332-4b10-8e70-5cab145524eb">/MICROSAR/EcuM_swc/DataTypes/EcuM_ShutdownCauseType</SD>
+                                    <SD GID="a187a5e9-cbd9-4b9c-92f4-065643d9bde4">/MICROSAR/EcuM_swc/DataTypes/EcuM_StateType</SD>
+                                    <SD GID="30812505-07e5-47a2-981d-0367b236dbbd">/MICROSAR/EcuM_swc/DataTypes/EcuM_TimeType</SD>
+                                    <SD GID="d4705f89-bb69-4b5f-aa61-3fcb04d7946e">/MICROSAR/EcuM_swc/DataTypes/EcuM_UserType</SD>
+                                    <SD GID="751b1fad-c776-45d6-a8e1-760b078566f9">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget</SD>
+                                    <SD GID="970f1776-8f8e-4c80-8d80-8dba4419bd90">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/E_NOT_OK</SD>
+                                    <SD GID="c9d7c112-b6c1-4be8-a8ea-6b1f41b25235">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/GetBootTarget</SD>
+                                    <SD GID="fbaaa25f-6588-4d30-9b9a-88f2c46d02f4">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/SelectBootTarget</SD>
+                                    <SD GID="c0d87216-56f4-47b4-9c30-6170226581d5">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget</SD>
+                                    <SD GID="b815f673-8824-4df6-80dc-dca54eed4d52">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/E_NOT_OK</SD>
+                                    <SD GID="ebd6795b-4e70-47b2-ba46-c7d0b832e93c">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetLastShutdownTarget</SD>
+                                    <SD GID="c23e4d6e-3d32-461c-8c21-09868083fb56">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownCause</SD>
+                                    <SD GID="b12e2bcd-5b6f-41d6-8501-5c55135953d4">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownTarget</SD>
+                                    <SD GID="1d333f71-0fc0-4372-b6d7-aed7a982870a">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownCause</SD>
+                                    <SD GID="3bc28bd3-93a2-415a-8435-b5091b136766">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownTarget</SD>
+                                    <SD GID="9af231e0-4e51-478c-8d48-8e896f117b67">/MICROSAR/Fee_ib_bswmd/BswModuleDescriptions/Fee/FeeBehavior</SD>
+                                    <SD GID="dc7f76ac-b9ba-4b86-ac79-97405fa3cc63">/MICROSAR/Fee_ib_bswmd/BswModuleDescriptions/Fee/FeeBehavior/FEE_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="13a96021-414d-44bd-84ff-53c5bd1c0cbc">/MICROSAR/Fee_ib_bswmd/BswModuleDescriptions/Fee/FeeBehavior/Fee_MainFunction</SD>
+                                    <SD GID="703d6375-6601-4f25-b73f-770e9c8f9888">/MICROSAR/Fee_ib_bswmd/BswModuleDescriptions/Fee/FeeBehavior/Fee_MainFunctionTimingEvent0</SD>
+                                    <SD GID="81e9af1c-1065-489e-a47e-6d4459c27ef1">/MICROSAR/Fee_ib_bswmd/BswModuleDescriptions/Fee_MainFunction</SD>
+                                    <SD GID="682073bc-f65b-4141-92af-f7f52c662eea">/MICROSAR/Fls_ib_bswmd/BswModuleDescriptions/Fls/FlsBehavior</SD>
+                                    <SD GID="dea2d9a9-a033-4ede-a1a0-3a5ec4c01ee3">/MICROSAR/Fls_ib_bswmd/BswModuleDescriptions/Fls/FlsBehavior/Fls_MainFunction</SD>
+                                    <SD GID="b937ebec-ddcb-4377-b96b-91447ef042bf">/MICROSAR/Fls_ib_bswmd/BswModuleDescriptions/Fls/FlsBehavior/Fls_MainFunctionTimingEvent0</SD>
+                                    <SD GID="1b87405d-3e71-4e11-8796-0c8c4c5ea9d7">/MICROSAR/Fls_ib_bswmd/BswModuleDescriptions/Fls_MainFunction</SD>
+                                    <SD GID="c82f2d13-821f-4285-81e5-be38a1ab609c">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm/NmBehavior</SD>
+                                    <SD GID="fdb835f0-faa2-4b31-a556-8f4aa73a2871">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm/NmBehavior/NM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="194d5dfd-62b2-4bcd-9332-6fd2dd3010ef">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm/NmBehavior/NM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="829dc7d6-9a34-4496-a46f-7495c7f0c292">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm/NmBehavior/NM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="863ab190-c8ca-4b79-8d8b-e3e9db65bb12">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm/NmBehavior/NM_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="7ba7f628-da9c-4e78-9a6a-ff40fa26e30d">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm_Virtual</SD>
+                                    <SD GID="ffcd45dd-af71-45bf-bd27-155a4a1c897e">/MICROSAR/NvM_ib_bswmd/BswModuleDescriptions/NvM/NvMBehavior</SD>
+                                    <SD GID="40a75463-22ff-41c7-af8f-097fda4f3f06">/MICROSAR/NvM_ib_bswmd/BswModuleDescriptions/NvM/NvMBehavior/NVM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="cb7f854f-ade3-43f3-8bf9-48519ef5e31a">/MICROSAR/NvM_ib_bswmd/BswModuleDescriptions/NvM/NvMBehavior/NvM_MainFunction</SD>
+                                    <SD GID="21335aad-24ab-48df-9882-be206dfbb96c">/MICROSAR/NvM_ib_bswmd/BswModuleDescriptions/NvM/NvMBehavior/NvM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="d95d5b66-b434-4bbb-840a-56259b98b1d0">/MICROSAR/NvM_ib_bswmd/BswModuleDescriptions/NvM_MainFunction</SD>
+                                    <SD GID="05adf690-b62b-4c93-8f39-56e55f197076">/MICROSAR/NvM_swc/ComponentTypes/NvM/NvMInternalBehavior/Timer_NvM_MainFunction</SD>
+                                    <SD GID="d572e567-dbac-463f-9d5e-039cfedbb83f">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_CONST</SD>
+                                    <SD GID="06990a40-6913-4893-9bb7-b02786167425">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_CONST_FAST</SD>
+                                    <SD GID="0854a637-ec1c-4d6e-84ca-edec01b86bf2">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_CLEARED</SD>
+                                    <SD GID="39394832-c05a-4567-b1c1-00c8ac680eae">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_FAST_CLEARED</SD>
+                                    <SD GID="953b2438-8d6f-4ba9-b975-23470e46a790">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_FAST_INIT</SD>
+                                    <SD GID="aafa322a-9f2c-44a0-a008-a91b37f8be7a">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_FAST_NO_INIT</SD>
+                                    <SD GID="0867ba80-9c7f-46e9-af28-13fc69a0bad5">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_INIT</SD>
+                                    <SD GID="a950ec62-65d6-49b3-8a9e-155e8c86a149">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_NOCACHE_CLEARED</SD>
+                                    <SD GID="5ce24d85-682a-4ca5-b03d-43dd0851ccd1">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_NOCACHE_INIT</SD>
+                                    <SD GID="ec78261f-f651-4568-92ae-b7b33b89ebcb">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_NOCACHE_NO_INIT</SD>
+                                    <SD GID="b7cd7a23-2f0f-436c-a273-c74f15e1e6d1">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_NO_INIT</SD>
+                                    <SD GID="815328f9-5e25-4bfc-a26e-c51ca51c43e5">/MICROSAR/Os_ib_bswmd/SwAddrMethods/GLOBALSHARED_VAR_SAVED_ZONE</SD>
+                                    <SD GID="09ca8da9-e92f-4fa6-b0aa-6e133922d737">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_CONST</SD>
+                                    <SD GID="3932133b-6684-4083-9872-9b7b135a459d">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_CONST_FAST</SD>
+                                    <SD GID="72fcf324-12f6-4434-9d1c-cf1e5cca3cc9">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_CLEARED</SD>
+                                    <SD GID="cd40deaf-3cc4-4a89-9636-c1165eed773a">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_FAST_CLEARED</SD>
+                                    <SD GID="b01d798d-c1ea-404a-a6ce-7d592a74f92d">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_FAST_INIT</SD>
+                                    <SD GID="d960b03f-b042-455a-a342-69fe0db3bae3">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_FAST_NO_INIT</SD>
+                                    <SD GID="dfe4c39d-8ee3-4694-8ea2-f1b93f4cadc7">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_INIT</SD>
+                                    <SD GID="a611f284-a1ff-4257-a46f-93f3dda94507">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NOCACHE_CLEARED</SD>
+                                    <SD GID="2886093b-cc79-43a9-8cba-d6a41c842f8f">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NOCACHE_INIT</SD>
+                                    <SD GID="bd04e1f1-6b43-4a33-a773-1ef0f1c2fd2d">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NOCACHE_NO_INIT</SD>
+                                    <SD GID="3ca12f27-8f09-4524-a971-974b79ea0cc4">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_NO_INIT</SD>
+                                    <SD GID="3b647259-4f24-4a75-88fd-19c5ae00be13">/MICROSAR/Os_ib_bswmd/SwAddrMethods/SystemApplication_OsCore0_VAR_SAVED_ZONE</SD>
+                                    <SD GID="fcb0dc91-4834-46bc-8875-103c4242c339">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR/PduRBehavior</SD>
+                                    <SD GID="214e8762-490c-4db9-a636-7692d6d9bbd5">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR/PduRBehavior/PDUR_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="7ef42250-d594-4887-84f1-a5b04820c084">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR_Virtual</SD>
+                                    <SD GID="2ea3c344-5aaa-4dca-83be-f4ff2f6c05dc">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior</SD>
+                                    <SD GID="877D4B51-DDFD-4376-B581-BDEF33011F79">/PortInterfaces/PiFault</SD>
+                                    <SD GID="FB653220-CA5F-4BD9-B682-410437CA03A0">/PortInterfaces/PiFault/DeFault</SD>
+                                    <SD GID="96C3F738-6A44-424D-AF96-E6E17B63C00D">/PortInterfaces/PiOBDdrivingCycle</SD>
+                                    <SD GID="3A57A909-1CE0-4BE5-A925-F425F4F976AE">/PortInterfaces/PiOBDdrivingCycle/DeOBDdrivingCycle</SD>
+                                    <SD GID="DC15EF0D-3103-44CC-B705-4C44BA26BA95">/PortInterfaces/PiSpeed</SD>
+                                    <SD GID="3EB58786-301B-400B-8781-61827F39E755">/PortInterfaces/PiSpeed/DeSpeed</SD>
+                                    <SD GID="F2570AA0-D6E5-4217-80F7-5F60B8778133">/Predefined_DEV/CompuMethods/NvM_RequestResultType</SD>
+                                    <SD GID="007B24D3-5C46-4986-B3CA-31D71FEDD510">/Predefined_DEV/CompuMethods/NvM_ServiceIdType</SD>
+                                    <SD GID="91037BEA-8260-4D81-AF92-D77F36795EEF">/Predefined_DEV/ImplementationDataTypes/NvM_RequestResultType</SD>
+                                    <SD GID="E8567FAC-3DF7-4B9A-AE12-961DD3DAE8F3">/Predefined_DEV/ImplementationDataTypes/NvM_ServiceIdType</SD>
+                                    <SD GID="74CED587-616F-4D06-917E-3F53B5BEEA2D">/Predefined_DEV/PortInterfaces/NvMAdministration/E_NOT_OK</SD>
+                                    <SD GID="A7AFD599-1333-460B-8602-E5B8D38BC232">/Predefined_DEV/PortInterfaces/NvMService/E_NOT_OK</SD>
+                                    <SD GID="955CA27E-4944-411C-BAAE-69B1FC02E735">/Predefined_DEV/PortInterfaces/NvMService_AC2/E_NOT_OK</SD>
+                                    <SD GID="AE7C0F3C-1FF2-4885-AC24-720F2C4803CC">/Predefined_DEV/PortInterfaces/NvMService_AC2_DS/E_NOT_OK</SD>
+                                    <SD GID="6972E423-93E3-412A-B274-623A39FD4885">/Predefined_DEV/PortInterfaces/NvMService_AC2_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="F57D208E-3B24-44B1-85E2-6DE677CE2E4C">/Predefined_DEV/PortInterfaces/NvMService_AC2_Defs/E_NOT_OK</SD>
+                                    <SD GID="AC97B486-472E-4E26-9095-534043BD6059">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS/E_NOT_OK</SD>
+                                    <SD GID="DD49315B-E90D-42DE-84EB-9038C40AC0F4">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="35C3D373-0A95-48FB-A7E8-C6547D847643">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="3A6380A3-5689-4BF4-8130-4077BF42A783">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="411B4EE7-B370-4551-84C5-F2CBA01BEF63">/Predefined_DEV/PortInterfaces/NvMService_AC3/E_NOT_OK</SD>
+                                    <SD GID="E970E446-1330-433C-92DD-02B1B320873E">/Predefined_DEV/PortInterfaces/NvMService_AC3_DS/E_NOT_OK</SD>
+                                    <SD GID="37C797B4-27EB-423F-A6B1-ACFC4F2468BA">/Predefined_DEV/PortInterfaces/NvMService_AC3_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="3A6983A4-9F58-4C23-856C-E88B9E309311">/Predefined_DEV/PortInterfaces/NvMService_AC3_Defs/E_NOT_OK</SD>
+                                    <SD GID="0FB784A8-81A7-4D73-A273-2637B6C95B77">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS/E_NOT_OK</SD>
+                                    <SD GID="85EB2C6E-0E4E-4FD7-81B6-0A478E1FDCE9">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="B317254F-A1D4-4ABA-B790-A9B56185F29F">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="5D147234-5CAA-49EC-92C2-8599A89FC2ED">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="C25D8A75-6B98-417F-AE89-B977A098FAE3">/Predefined_DEV/PortInterfaces/NvMService_SRBS/E_NOT_OK</SD>
+                                    <SD GID="6B9A70AB-B127-4BE0-815D-B29710D5293F">/Predefined_DEV/PortInterfaces/NvSWC_NvMAdministration/E_NOT_OK</SD>
+                                    <SD GID="7E3CE6B8-1997-44D8-B698-F6983653F390">/Predefined_DEV/PortInterfaces/NvSWC_NvMService/E_NOT_OK</SD>
+                                    <SD GID="87E31B18-FBF9-45FB-AE02-54D03CC44410">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2/E_NOT_OK</SD>
+                                    <SD GID="86679F7A-9112-41EA-8CE9-7B0B64F8F10E">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_DS/E_NOT_OK</SD>
+                                    <SD GID="2CD9C18B-1508-4E06-AE5B-55EB6ED4AE1E">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="38196A38-C113-403E-8710-D9A4DB2DCB7C">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_Defs/E_NOT_OK</SD>
+                                    <SD GID="212FF34E-F98B-4B8F-A93C-806D768CCA6B">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS/E_NOT_OK</SD>
+                                    <SD GID="4B0CB611-845A-46B4-8804-A72E3DDBC280">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="F8510316-D4F5-4099-8C4B-8B535F0DC637">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="8D4913EF-2DCA-499E-B61F-7A0C820299B6">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="C3F8628D-F73F-4A7A-839D-42D24BF6C335">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3/E_NOT_OK</SD>
+                                    <SD GID="A406FAE2-1978-4E73-835D-ACE055CE3276">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_DS/E_NOT_OK</SD>
+                                    <SD GID="F6CF58F3-F332-4C16-8B77-3B3431B7291B">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="91D780B3-A8A2-4E9B-842F-B5946B451CCC">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_Defs/E_NOT_OK</SD>
+                                    <SD GID="419091BB-CC3F-4518-9B87-F2C428DE884F">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS/E_NOT_OK</SD>
+                                    <SD GID="E2B7EDDF-443E-4066-8CC0-428C08FE9932">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="29D8C45D-AD65-4ADB-A8C0-9051D3BA8EB3">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="B0DF499C-5446-40C9-BA84-69FE6BBA9AFA">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="6C11D3FD-1F97-4F18-9F28-AEBD06095420">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_SRBS/E_NOT_OK</SD>
+                                    <SD GID="64CDF6F5-5C32-42B0-861F-5E1E4C48B961">/VectorAutosarExplorerGeneratedObjects/SYSTEM/System/EcuSwComposition</SD>
+                                  </SDG>
+                                </SDGS>
+                              </ADMIN-DATA>
+                            </AR-PACKAGE>
+                          </AR-PACKAGES>
+                        </AR-PACKAGE>
+                      </AR-PACKAGES>
+                    </AR-PACKAGE>
+                  </AR-PACKAGES>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

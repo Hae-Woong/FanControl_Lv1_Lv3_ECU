@@ -1,0 +1,58 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{  
+  float referenceVoltage = 5.0;
+  const float transientValue = 0.25;
+  float dutyCycle = 0.0;
+  float outputVoltage = 0.0;
+}
+
+on value_update (Fan.pwmDutyCycle | 
+                 Fan.pwmInputState |
+                 Fan.powerSupplyCurrent)
+{  
+  switch ($Fan.pwmInputState)
+  {
+    case Fan::eConnectorState::Normal:
+      dutyCycle = $Fan.pwmDutyCycle;
+      //write("Time : %f ms, Fan.pwmDutyCycle: %f",timeNow()/100.0, $Fan::Fan.pwmDutyCycle);
+      outputVoltage = getVoltageFromPwm($Fan.powerSupplyCurrent.phys, dutyCycle);
+      break;
+    case Fan::eConnectorState::ShortCircuit:
+      outputVoltage = referenceVoltage - 0.2;
+      break;
+    case Fan::eConnectorState::OpenCircuit:
+      outputVoltage = 0.2;
+      break;
+    default:
+      break;
+  }
+  
+  $Fan.voltageOutput = outputVoltage;
+}
+
+float getVoltageFromPwm(enum Fan::eCurrentLevel supplyCurrentLevel, float dutyCycle)
+{
+  switch(supplyCurrentLevel)
+  {
+    case Fan::eCurrentLevel::Normal:
+      return computeAdcPower(dutyCycle);
+    case Fan::eCurrentLevel::High:
+      return computeAdcPower(dutyCycle) + 2*transientValue;
+    case Fan::eCurrentLevel::Low:
+      return computeAdcPower(dutyCycle) - 2*transientValue;
+    default:
+      break;
+  }
+  return 0.0;
+}
+
+float computeAdcPower(float dutyCycle) 
+{
+  return ((dutyCycle / 100) * (referenceVoltage - 2*transientValue)) + transientValue;
+}

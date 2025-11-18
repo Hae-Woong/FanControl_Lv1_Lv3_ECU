@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Vector Test Table Editor-->
+<ttroot version="31" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0" minRequiredVersion="22" minRequiredCANoeVersion="CANoe 14.0">
+  <tt>
+    <tc>
+      <title>Check PWM Output Open Circuit Fault</title>
+      <tcid>45477411-ffba-49c1-8791-aa268cdaede1</tcid>
+      <preparation>
+        <title>Reset Test Variables and Restart Driving Cycle</title>
+        <ttfunction>
+          <title>Set Initial State</title>
+          <name>ttc_SetInitialState</name>
+        </ttfunction>
+        <ttfunction>
+          <title>Restart Driving Cycle</title>
+          <name>ttc_RestartDrivingCycle</name>
+        </ttfunction>
+      </preparation>
+      <set>
+        <title>Set target Fan Speed to another value</title>
+        <in>
+          <assignment>
+            <sink>
+              <dbobject>VE_BEGIN_OF_OBJECT|1|AbstractEnvironment::FanControl.FanSpeed|END_OF_OBJECT_VE|</dbobject>
+            </sink>
+            <source>
+              <const>875</const>
+            </source>
+          </assignment>
+        </in>
+      </set>
+      <wait>
+        <title>Wait</title>
+        <time>
+          <value>
+            <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|sourceCodeIterationTime|END_OF_OBJECT_ChParScalar|</dbobject>
+          </value>
+          <unit>ms</unit>
+        </time>
+      </wait>
+      <set>
+        <title>Trigger Fault</title>
+        <in>
+          <assignment>
+            <sink>
+              <dbobject>VE_BEGIN_OF_OBJECT|1|Fan::Fan.pwmInputState|END_OF_OBJECT_VE|</dbobject>
+            </sink>
+            <source>
+              <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|ConnectorState::cOpenCircuit|END_OF_OBJECT_ChParScalar|</dbobject>
+            </source>
+          </assignment>
+          <assignment>
+            <sink>
+              <dbobject>VE_BEGIN_OF_OBJECT|1|Fan::Fan.powerSupplyCurrent|END_OF_OBJECT_VE|</dbobject>
+            </sink>
+            <source>
+              <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|PsuCurrentSupplyLevel::cNormalCurrentLevel|END_OF_OBJECT_ChParScalar|</dbobject>
+            </source>
+          </assignment>
+        </in>
+      </set>
+      <awaitvaluematch>
+        <title>Wait for Fault to be set</title>
+        <timeout>
+          <value>
+            <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|sourceCodeIterationTime|END_OF_OBJECT_ChParScalar|</dbobject>
+          </value>
+          <unit>ms</unit>
+        </timeout>
+        <compare>
+          <dbobject>VE_BEGIN_OF_OBJECT|1|AbstractEnvironment::FanControl.Fault|END_OF_OBJECT_VE|</dbobject>
+          <eq>
+            <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|FailureStates::cFault|END_OF_OBJECT_ChParScalar|</dbobject>
+          </eq>
+        </compare>
+      </awaitvaluematch>
+      <if>
+        <title>If Fault is set, check if it can be removed</title>
+        <compare>
+          <value>
+            <dbobject>VE_BEGIN_OF_OBJECT|1|AbstractEnvironment::FanControl.Fault|END_OF_OBJECT_VE|</dbobject>
+          </value>
+          <eq>
+            <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|FailureStates::cFault|END_OF_OBJECT_ChParScalar|</dbobject>
+          </eq>
+        </compare>
+        <ttfunction>
+          <title>Set conditions to remove Fault</title>
+          <name>ttc_SetInitialState</name>
+        </ttfunction>
+        <ttfunction>
+          <title>Restart Driving Cycle</title>
+          <name>ttc_RestartDrivingCycle</name>
+        </ttfunction>
+        <awaitvaluematch>
+          <title>Check if Fault is removed</title>
+          <timeout>
+            <value>
+              <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|sourceCodeIterationTime|END_OF_OBJECT_ChParScalar|</dbobject>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>VE_BEGIN_OF_OBJECT|1|AbstractEnvironment::FanControl.Fault|END_OF_OBJECT_VE|</dbobject>
+            <eq>
+              <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|FailureStates::cNormalOperation|END_OF_OBJECT_ChParScalar|</dbobject>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+      </if>
+      <completion>
+        <title>Log some additional information in the Test Report</title>
+        <report>
+          <text>Read PWM Duty Cycle and measured Fan Output Voltage</text>
+          <object>
+            <dbobject>VE_BEGIN_OF_OBJECT|1|Fan::Fan.pwmDutyCycle|END_OF_OBJECT_VE|</dbobject>
+          </object>
+          <object>
+            <dbobject>VE_BEGIN_OF_OBJECT|1|Fan::Fan.voltageOutput|END_OF_OBJECT_VE|</dbobject>
+          </object>
+        </report>
+      </completion>
+    </tc>
+  </tt>
+  <ttlib>
+    <ts_definitions />
+    <tc_definitions />
+    <function_definitions>
+      <function_definition navid="628939db-902e-4211-a5ad-6bdb290f2873">
+        <name>ttc_ResetDrivingCycle</name>
+        <parameters />
+        <set>
+          <title>Turn Off</title>
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>VE_BEGIN_OF_OBJECT|1|AbstractEnvironment::FanControl.DrivingCycle|END_OF_OBJECT_VE|</dbobject>
+              </sink>
+              <source>
+                <const>0</const>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title>Wait</title>
+          <time>
+            <value>
+              <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|sourceCodeIterationTime|END_OF_OBJECT_ChParScalar|</dbobject>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+        <set>
+          <title>Turn On</title>
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>VE_BEGIN_OF_OBJECT|1|AbstractEnvironment::FanControl.DrivingCycle|END_OF_OBJECT_VE|</dbobject>
+              </sink>
+              <source>
+                <const>1</const>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title>Wait</title>
+          <time>
+            <value>
+              <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|sourceCodeIterationTime|END_OF_OBJECT_ChParScalar|</dbobject>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+        <set>
+          <title>Turn Off Again</title>
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>VE_BEGIN_OF_OBJECT|1|AbstractEnvironment::FanControl.DrivingCycle|END_OF_OBJECT_VE|</dbobject>
+              </sink>
+              <source>
+                <const>0</const>
+              </source>
+            </assignment>
+          </in>
+        </set>
+      </function_definition>
+      <function_definition navid="d96dd8c1-2db5-4da3-ad10-21e41830533d">
+        <name>ttc_SetInitialState</name>
+        <parameters />
+        <set>
+          <title>Set to Initial State</title>
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>VE_BEGIN_OF_OBJECT|1|AbstractEnvironment::FanControl.FanSpeed|END_OF_OBJECT_VE|</dbobject>
+              </sink>
+              <source>
+                <const>1750</const>
+              </source>
+            </assignment>
+            <assignment>
+              <sink>
+                <dbobject>VE_BEGIN_OF_OBJECT|1|Fan::Fan.powerSupplyCurrent|END_OF_OBJECT_VE|</dbobject>
+              </sink>
+              <source>
+                <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|PsuCurrentSupplyLevel::cNormalCurrentLevel|END_OF_OBJECT_ChParScalar|</dbobject>
+              </source>
+            </assignment>
+            <assignment>
+              <sink>
+                <dbobject>VE_BEGIN_OF_OBJECT|1|Fan::Fan.pwmInputState|END_OF_OBJECT_VE|</dbobject>
+              </sink>
+              <source>
+                <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|ConnectorState::cCorrectState|END_OF_OBJECT_ChParScalar|</dbobject>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title>Wait for reset</title>
+          <time>
+            <value>
+              <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|sourceCodeIterationTime|END_OF_OBJECT_ChParScalar|</dbobject>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+      </function_definition>
+      <function_definition navid="44fcbc8e-5d99-4bc3-999a-036ced445762">
+        <name>ttc_RestartDrivingCycle</name>
+        <parameters />
+        <set>
+          <title>Turn Off</title>
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>VE_BEGIN_OF_OBJECT|1|AbstractEnvironment::FanControl.DrivingCycle|END_OF_OBJECT_VE|</dbobject>
+              </sink>
+              <source>
+                <const>0</const>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title>Wait</title>
+          <time>
+            <value>
+              <dbobject>ChParScalar_BEGIN_OF_OBJECT|1|sourceCodeIterationTime|END_OF_OBJECT_ChParScalar|</dbobject>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+        <set>
+          <title>Turn On</title>
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>VE_BEGIN_OF_OBJECT|1|AbstractEnvironment::FanControl.DrivingCycle|END_OF_OBJECT_VE|</dbobject>
+              </sink>
+              <source>
+                <const>1</const>
+              </source>
+            </assignment>
+          </in>
+        </set>
+      </function_definition>
+    </function_definitions>
+  </ttlib>
+</ttroot>

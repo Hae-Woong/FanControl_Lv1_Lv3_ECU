@@ -1,0 +1,43 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  msTimer sdTimer;
+}
+
+on start
+{
+  $AbstractEnvironment::FanControl.PowerSupply = AbstractEnvironment::ePowerSupplyState::`On;
+  $AbstractEnvironment::FanControl.DrivingCycle = 0;
+}
+
+on sysvar_update sysvar::TestEnvironment::TriggerReset 
+{
+  if (@sysvar::TestEnvironment::TriggerReset == 1)
+  {
+    enableControl("", "Group_Provided", 0);
+    enableControl("", "Group_Consumed", 0);
+    enableControl("", "Group_Fault", 0);
+    enableControl("", "ResetButton", 0);
+    
+    $AbstractEnvironment::FanControl.PowerSupply = 0;
+    $Fan::Fan.powerSupplyCurrent = Fan::eCurrentLevel::Normal;
+    $Fan::Fan.pwmInputState = Fan::eCurrentLevel::Normal;
+    
+    setTimer(sdTimer, 2000);
+  }
+}
+
+on timer sdTimer 
+{
+  $AbstractEnvironment::FanControl.PowerSupply = 1;
+  @sysvar::TestEnvironment::TriggerReset = 0;
+  enableControl("", "Group_Provided", 1);
+  enableControl("", "Group_Consumed", 1);
+  enableControl("", "Group_Fault", 1);
+  enableControl("", "ResetButton", 1);
+}

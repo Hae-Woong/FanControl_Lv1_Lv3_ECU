@@ -1,0 +1,152 @@
+# VS Code
+.vs
+
+# Vector Extensions
+.vector
+# Visual Studio
+.vscode
+
+# DaVinci Configurator
+DVCfgCmd.log
+**/GenDataVtt/**
+**/GenData/**
+**/McData/**
+!Master.a2l
+*.~lock
+*_workingCopy.*
+*.dcusr
+
+# Davinci Developer Files
+*.xsd
+ProfileSettings.xml
+
+# VTT Files
+MakeParameters.xml
+**/Log
+**/Appl/GenDataVtt
+!Vtt_CustomVars_Cfg.h
+SUT
+Solution
+*.stcfg 
+*.ini
+!FanControl.ini
+*.xsd
+**/*_workingCopy*
+*.VCODM
+**/cache/*
+
+# Canoe Files
+**/*_COData_*/**
+*.sttse
+*.stcfg 
+*.settings
+
+**/DiVa/**
+
+# CANoe Compilation Temporary Files
+**/.run
+*.vCODM
+# CANoe Output Files
+Report_*.html
+Report_*.xml
+**/*.rename
+*.xpa
+*.vtesettings
+
+# vTESTStudio Temporary and local files
+**/*.lastbuild
+**/obj_*
+*.vtuexe
+*.settings
+**/_COData_VTESTstudio*/*.VCODM
+
+## Test execution
+*.vtestreport*
+*.vtesettings
+TestReports/*.xml
+
+# CANoe4SW SE Compilation Temporary Files
+*.vtestunit
+*.venvironment
+
+# CANoe4SW SE Runtime files
+canoe4sw-se-runtime
+nodelayer
+*.wlog
+
+# CAPL
+*.cbf
+
+# Backup Files
+*.bak
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.dll.gen
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.log
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Microsar SIP
+VTT.SIP.*
+
+# zip folder
+*.zip
+
+# Don't delete folders with gitkeep
+!.gitkeep
+
+*.template.vttpm
+level*-test-results/canoe4sw-se_*_*.txt
+Diagnostic/*.cbk
+*.dbg
+
+!TestSuites/Application/FanControl_vTESTstudio/bin/tu_FanControlFaults.vtuexe

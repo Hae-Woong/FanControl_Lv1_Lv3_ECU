@@ -1,0 +1,11 @@
+version: 2.0.0
+test-unit-information:
+  caption: Fan Control Fault Hanling
+  description: This Test Suite tests the Fan Control Fault Handling logic
+  version: v1.0
+test-unit-implementation:
+  - source-file-path: tt_ElectricalFaults.vtesttree.yaml
+  - source-file-path: ca_FaultHandlingTests.can
+  - source-file-path: ../../SharedResources/CAPL/ca_assert.can
+  - source-file-path: ../../SharedResources/CAPL/ca_Initialization.can
+
