@@ -34,7 +34,7 @@ jobs:
       - name: Run vVIRTUALtarget
         if: steps.cache-sut.outputs.cache-hit != 'true'
         run: |
-          &"$env:vVIRTUALtarget_InstallDir\VttMake.exe" make "$PWD/SystemUnderTest/L3_Integration/FanControl.vttmake"
+          &"$env:vVIRTUALtarget_InstallDir\VttMake.exe" make ./SystemUnderTest/L3_Integration/FanControl.vttmake;
           if(-Not $?)
           {
             Write-Host "VttMake step failed." -ForegroundColor red
