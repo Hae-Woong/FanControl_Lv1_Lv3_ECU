@@ -1042,7 +1042,4 @@ void ClearMessageCycleLog() {
    MD_Rte_3206:  MISRA rule: Rule2.7
      Reason:     The parameter are not used by the code in all possible code variants.
      Risk:       No functional risk.
-     Prevention: Not required.
-
-*/
-/**/
+     Prevention: Not required.*/

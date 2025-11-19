@@ -20,5 +20,3 @@ boolean Appl_DetEntryCallout(uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uin
 {
   return FALSE;
 }
-
-/**/
