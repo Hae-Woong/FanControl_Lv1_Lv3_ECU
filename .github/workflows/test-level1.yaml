@@ -80,11 +80,11 @@ jobs:
       matrix:
         TESTNAME: [tu_FanControl, tu_FanControlFaults]
       fail-fast: false
-    steps:    
-      - name: Run CANoe Server Edition
-        run : |
-          & "$env:CANoeSE_InstallDir64\canoe-se.exe" ./.vector/build/SUT_L1.venvironment -d .\simulation --win32 --port-rtk-api none --test-unit ./.vector/build/${{ matrix.TESTNAME }}.vtestunit --test-progress-endpoint http://localhost:8092/system-service/v1.0;
 
+    steps:
+      - name: Run CANoe Server Edition
+        run: |
+          & "$env:CANoeSE_InstallDir64\canoe-se.exe" ./.vector/build/SUT_L1.venvironment -d .\simulation --win32 --port-rtk-api none --test-unit ./.vector/build/${{ matrix.TESTNAME }}.vtestunit --test-progress-endpoint http://localhost:8092/system-service/v1.0;
           Write-Host "CANoe Server Edition returned exit code $LASTEXITCODE"
 
       - name: Export test reports
@@ -98,56 +98,52 @@ jobs:
 
       - name: Upload log files
         if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v4       
+        uses: actions/upload-artifact@v4
         with:
           name: Log Files ${{ matrix.TESTNAME }}
           path: ./simulation/*.txt
 
-display-test-report:
-  name: Display test report
-  if: ${{ !cancelled() }}
-  needs: run-tests-simulation
-  runs-on: lvl1
+  display-test-report:
+    name: Display test report
+    if: ${{ !cancelled() }}
+    needs: run-tests-simulation
+    runs-on: lvl1
 
-  steps:
-    - name: Convert all test reports to XUnit format
-      working-directory: ./simulation/TestReports/
-      shell: pwsh
-      env:
-        TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
-      run: |
-        Write-Host "Found .vtestreport files:"
-        Get-ChildItem . -Filter *.vtestreport | ForEach-Object {
-          Write-Host $_.FullName
-        }
-
-        Get-ChildItem . -Filter *.vtestreport | ForEach-Object {
-          $reportName = "$($_.BaseName)_L1_xunit.xml"
-          Write-Host "Converting $($_.Name) -> $reportName"
-
-          $result = & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" `
-            -r $_.FullName -xu -o $reportName
-
-          Write-Host "ReportViewerCli output:"
-          Write-Host $result
-
-          if (Test-Path $reportName) {
-            Write-Host "✔ Successfully created: $reportName"
-          } else {
-            Write-Host "✘ Failed to create: $reportName"
+    steps:
+      - name: Convert all test reports to XUnit format
+        working-directory: ./simulation/TestReports/
+        shell: pwsh
+        env:
+          TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
+        run: |
+          Write-Host "Found .vtestreport files:"
+          Get-ChildItem . -Filter *.vtestreport | ForEach-Object {
+            Write-Host $_.FullName
           }
-        }
 
-        Write-Host "All generated _L1_xunit.xml files:"
-        Get-ChildItem . -Filter *_L1_xunit.xml | ForEach-Object {
-          Write-Host $_.FullName
-        }
+          Get-ChildItem . -Filter *.vtestreport | ForEach-Object {
+            $reportName = "$($_.BaseName)_L1_xunit.xml"
+            Write-Host "Converting $($_.Name) -> $reportName"
 
-    - name: Display L1 test results
-      uses: dorny/test-reporter@v1.9.1
-      with:
-        name: L1 Test results
-        path: "./simulation/TestReports/*_L1_xunit.xml"
-        reporter: java-junit
-        fail-on-error: false
+            $result = & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" `
+              -r $_.FullName -xu -o $reportName
+
+            Write-Host "ReportViewerCli output:"
+            Write-Host $result
+
+            if (Test-Path $reportName) {
+              Write-Host "✔ Successfully created: $reportName"
+            } else {
+              Write-Host "✘ Failed to create: $reportName"
+            }
+          }
+
+          Write-Host "All generated _L1_xunit.xml files:"
+          Get-ChildItem . -Filter *_L1_xunit.xml | ForEach-Object {
+            Write-Host $_.FullName
+          }
+
+      - name: Display L1 test results
+        uses: dorny/test-reporter
+
 
