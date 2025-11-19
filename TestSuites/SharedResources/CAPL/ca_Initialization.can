@@ -16,8 +16,8 @@ export void cf_InitState()
   /* reset test variables */
   $Fan::Fan.powerSupplyCurrent = Fan::eCurrentLevel::Normal;
   $Fan::Fan.pwmInputState = Fan::eConnectorState::Normal;
-  
 
+  
   testWaitForTimeout(_TIME_SOURCECODE_ITERATION + 1000); /* Give ECU more time to return to valid state */
 }
 

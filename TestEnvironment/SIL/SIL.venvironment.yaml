@@ -73,6 +73,3 @@ simulation-nodes:
     modeling-libraries:
       - "ASRPDUIL.vmodule"
     when: SCENARIO_NAME == "SUT_L3"
-    
-    
-   
