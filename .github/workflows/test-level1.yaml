@@ -34,6 +34,13 @@ jobs:
       - name: Run vVIRTUALtarget
         if: steps.cache-sut.outputs.cache-hit != 'true'
         run: |
+          &"$env:vVIRTUALtarget_InstallDir\vttproj2vttmake" -i ./SystemUnderTest/L1_BswEmulation/FanControl.vttproj -o ./SystemUnderTest/L1_BswEmulation/FanControl.vttmake;
+          if(-Not $?)
+          {
+            Write-Host "vttproj2vttmake step failed." -ForegroundColor red
+            Exit -1
+          } 
+
           &"$env:vVIRTUALtarget_InstallDir\VttMake.exe" make ./SystemUnderTest/L1_BswEmulation/FanControl.vttmake;
           if(-Not $?)
           {
@@ -121,7 +128,7 @@ jobs:
       - name: Prepare test results for test-reporter
         run: |
           mkdir test-results-for-reporter
-          cp ./simulation/TestReports/*_xunit.xml test-results-for-reporter/
+          mv ./simulation/TestReports/*_xunit.xml test-results-for-reporter/
 
       - name: Display test results
         uses: dorny/test-reporter@v1.9.1
