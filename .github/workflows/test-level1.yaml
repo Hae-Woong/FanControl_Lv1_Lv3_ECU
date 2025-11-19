@@ -103,24 +103,24 @@ jobs:
           name: Log Files ${{ matrix.TESTNAME }}
           path: ./simulation/*.txt
 
-display-test-report:
-  name: Display test report
-  if: ${{ !cancelled() }}
-  needs: run-tests-simulation
-  runs-on: lvl1
-  steps:
-    - name: Convert all test reports to XUnit format
-      working-directory: ./simulation/TestReports/
-      shell: pwsh
-      env:
+  display-test-report:
+    name: Display test report
+    if: ${{ !cancelled() }}
+    needs: run-tests-simulation
+    runs-on: lvl1
+    steps:
+      - name: Convert all test reports to XUnit format
+        working-directory: ./simulation/TestReports/
+        shell: pwsh
+        env:
         TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
-      run: |
-        Write-Host "Found .vtestreport files:"
-        Get-ChildItem . -Filter *.vtestreport | ForEach-Object {
+        run: |
+          Write-Host "Found .vtestreport files:"
+          Get-ChildItem . -Filter *.vtestreport | ForEach-Object {
           Write-Host $_.FullName
-        }
+          }
 
-        Get-ChildItem . -Filter *.vtestreport | ForEach-Object {
+          Get-ChildItem . -Filter *.vtestreport | ForEach-Object {
           $reportName = "$($_.BaseName)_L1_xunit.xml"
           Write-Host "Converting $($_.Name) -> $reportName"
 
@@ -135,17 +135,17 @@ display-test-report:
           } else {
             Write-Host "✘ Failed to create: $reportName"
           }
-        }
+          }
 
-        Write-Host "All generated _L1_xunit.xml files:"
-        Get-ChildItem . -Filter *_L1_xunit.xml | ForEach-Object {
+          Write-Host "All generated _L1_xunit.xml files:"
+          Get-ChildItem . -Filter *_L1_xunit.xml | ForEach-Object {
           Write-Host $_.FullName
-        }
+          }
 
-    - name: Display L1 test results
-      uses: dorny/test-reporter@v1.9.1
-      with:
-        name: L1 Test results
-        path: "./simulation/TestReports/*_L1_xunit.xml"
-        reporter: java-junit
-        fail-on-error: false
+      - name: Display L1 test results
+        uses: dorny/test-reporter@v1.9.1
+        with:
+          name: L1 Test results
+          path: "./simulation/TestReports/*_L1_xunit.xml"
+          reporter: java-junit
+          fail-on-error: false
