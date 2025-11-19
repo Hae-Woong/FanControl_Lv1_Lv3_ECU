@@ -25,7 +25,6 @@ global-settings:
     time-scaling-factor: ${Scalingfactor}
     default-network-mapping: internal-simulator
 
-
 variables:
   - name: AbstractEnv_DIR
     type: path
@@ -74,3 +73,6 @@ simulation-nodes:
     modeling-libraries:
       - "ASRPDUIL.vmodule"
     when: SCENARIO_NAME == "SUT_L3"
+    
+    
+   
