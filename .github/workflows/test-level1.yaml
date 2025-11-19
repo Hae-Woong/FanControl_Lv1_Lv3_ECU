@@ -115,8 +115,16 @@ jobs:
         env:
           TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
         run: |
-          get-childitem . -Filter *.vtestreport | foreach {
-            & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $_.FullName -xu -o "$($_.BaseName)_L1_xunit.xml"
+         Get-ChildItem . -Filter *.vtestreport | ForEach-Object { 
+            $reportName = "$($_.BaseName)_L1_xunit.xml"
+            Write-Host "Converting $($_.Name) -> $reportName"
+            & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $_.FullName -xu -o $reportName
+
+            if (Test-Path $reportName) {
+              Write-Host "Successfully created: $reportName"
+            } else {
+              Write-Host "Failed to create: $reportName"
+            }
           }
 
       - name: Display L1 test results

@@ -115,8 +115,16 @@ jobs:
         env:
           TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
         run: |
-          get-childitem . -Filter *.vtestreport | foreach {
-            & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $_.FullName -xu -o "$($_.BaseName)_L3_xunit.xml"
+          Get-ChildItem . -Filter *.vtestreport | ForEach-Object { 
+            $reportName = "$($_.BaseName)_L3_xunit.xml"
+            Write-Host "Converting $($_.Name) -> $reportName"
+            & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $_.FullName -xu -o $reportName
+
+            if (Test-Path $reportName) {
+              Write-Host "Successfully created: $reportName"
+            } else {
+              Write-Host "Failed to create: $reportName"
+            }
           }
 
       - name: Display L3 test results
@@ -125,6 +133,6 @@ jobs:
           name: L3 Test results                             # Name of the check run which will be created
           path: "./simulation/TestReports/*_L3_xunit.xml"   # Path to test results
           reporter: java-junit                              # Format of test results
-          fail-on-error: 'false'                            # Don't mark as failing job if test
+          fail-on-error: false                            # Don't mark as failing job if test
 
 
