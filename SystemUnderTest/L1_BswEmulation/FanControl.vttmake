@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BuildSpecification xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="6.1">
+  <Settings>
+    <ProjectName>FanControl</ProjectName>
+  </Settings>
+  <BuildBswEmulatedSut>
+    <EcuName>FanControlECU</EcuName>
+    <EcuOutputDir>FanControlECU</EcuOutputDir>
+    <SystemDescriptionFiles>
+      <File>..\Software\DeveloperConfig\Emulation\FanControl.arxml</File>
+      <File>..\..\SharedResources\Diagnostics\FanControl_ECU.cdd</File>
+    </SystemDescriptionFiles>
+    <DiagnosticVariantName>Base_Variant</DiagnosticVariantName>
+    <Configuration>
+      <ComM>
+        <ChannelsAndUsers>
+          <Channel Name="ComM_Channel" />
+          <User Name="PpComMUserRequestCtApController">
+            <MappedToAllChannels />
+          </User>
+        </ChannelsAndUsers>
+        <TminFullComModeDuration>5</TminFullComModeDuration>
+        <NmLightTimeout>10</NmLightTimeout>
+        <RequestProcessingTime>0.01</RequestProcessingTime>
+      </ComM>
+      <Diagnostics />
+      <EcuM>
+        <RunMinDuration>INF</RunMinDuration>
+        <DefaultShutdownTarget>Sleep</DefaultShutdownTarget>
+      </EcuM>
+      <ServiceMappings>
+        <ServiceMapping ServiceInterfaceType="DiagnosticMonitor">
+          <Port>ECU_Composition::CpApController::DiagnosticMonitor_P_DTC_0x700006</Port>
+          <Value>DTC_0x700006</Value>
+        </ServiceMapping>
+      </ServiceMappings>
+      <TaskMappings>
+        <Task Name="Task">
+          <MappedRunnable SwcPath="ECU_Composition::CpCddIoHwAb" RunnableName="RCtCddIoHwAb_Init" />
+        </Task>
+        <Task Name="Task_0" Priority="1">
+          <MappedRunnable SwcPath="ECU_Composition::CpApController" RunnableName="RCtApController_Init" />
+          <MappedRunnable SwcPath="ECU_Composition::CpApController" RunnableName="RCtApController_ErrorDetection" />
+          <MappedRunnable SwcPath="ECU_Composition::CpApController" RunnableName="RCtApController_ActuationControl" />
+          <MappedRunnable SwcPath="ECU_Composition::CpCddIoHwAb" RunnableName="RCtCddIoHwAb_PpPwmInitIoHwAb_Pwm_Init" />
+          <MappedRunnable SwcPath="ECU_Composition::CpApController" RunnableName="DataServices_Fan_Current_Power_Current_ReadData" />
+          <MappedRunnable SwcPath="ECU_Composition::CpApController" RunnableName="DataServices_Fan_Current_Power_Current_ConditionCheckRead" />
+          <MappedRunnable SwcPath="ECU_Composition::CpApController" RunnableName="CBReadData_DID_0x2_Current_ReadData" />
+        </Task>
+        <Task Name="Task_1" Priority="2">
+          <MappedRunnable SwcPath="ECU_Composition::CpApController" RunnableName="RCtApController_ReadSpeed" />
+        </Task>
+      </TaskMappings>
+    </Configuration>
+    <VsSolutionPath>Solution\FanControl.sln</VsSolutionPath>
+    <ExecutionEnvironment>
+      <CommunicationInterface>DistributedObjects</CommunicationInterface>
+      <DataTypesNamespace>$(PROJECTNAME)_Types</DataTypesNamespace>
+      <DataObjectsNamespace>$(PROJECTNAME)</DataObjectsNamespace>
+    </ExecutionEnvironment>
+    <BuildSettings>
+      <VerboseLevel>High</VerboseLevel>
+      <SutOutputDir>SUT</SutOutputDir>
+    </BuildSettings>
+    <RuntimeSettings>
+      <AutostartEcu>true</AutostartEcu>
+    </RuntimeSettings>
+    <GenerateVcxProject>
+      <VsSolutionGuid>44D61D36-ECAB-4D4E-A99F-39E2C79B5362</VsSolutionGuid>
+      <TargetPlatform>Windows_x86</TargetPlatform>
+      <VcxProjectGuid>21183E8A-B197-4239-AB0B-CCA239FD9DC5</VcxProjectGuid>
+      <SourceFiles>
+        <File>..\Software\Source\CtApController.c</File>
+        <File>..\Software\Source\CtCddIoHwAb.c</File>
+        <File>D:\__action-runner_FanControl\VTT.SIP.ASR4.R29\Components\VStdLib\Implementation\vstdlib.c</File>
+      </SourceFiles>
+      <IncludeFolders>
+        <IncludeFolder Configuration="All">D:\__action-runner_FanControl\VTT.SIP.ASR4.R29\Components\VStdLib\Implementation</IncludeFolder>
+        <IncludeFolder Configuration="All">FanControlECU\Appl\Include</IncludeFolder>
+      </IncludeFolders>
+      <PreprocessorDefinitions>
+        <PreprocessorDefinition Configuration="Release">VTT_BSW_EMULATION</PreprocessorDefinition>
+        <PreprocessorDefinition Configuration="Release">VTT_ENABLE_CUSTOMVARS</PreprocessorDefinition>
+        <PreprocessorDefinition Configuration="Debug">VTT_BSW_EMULATION</PreprocessorDefinition>
+        <PreprocessorDefinition Configuration="Debug">VTT_ENABLE_CUSTOMVARS</PreprocessorDefinition>
+      </PreprocessorDefinitions>
+    </GenerateVcxProject>
+    <BuildVsSolution>
+      <VsConfiguration>Debug</VsConfiguration>
+    </BuildVsSolution>
+    <GenerateZip />
+  </BuildBswEmulatedSut>
+</BuildSpecification>
