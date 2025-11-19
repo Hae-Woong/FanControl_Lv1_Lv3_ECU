@@ -103,20 +103,18 @@ jobs:
           name: Log Files ${{ matrix.TESTNAME }}
           path: ./simulation/*.txt
 
-display-test-report:
-  name: Display test report
-  if: ${{ !cancelled() }}
-  needs: run-tests-simulation
-  runs-on: lvl1
-  steps:
+  display-test-report:
+    name: Display test report
+    if: ${{ !cancelled() }}
+    needs: run-tests-simulation
+    runs-on: lvl1
+    steps:
     - name: Convert all test reports to XUnit format
       shell: pwsh
       env:
         TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
       run: |
-
         Set-Location "./simulation/TestReports/"
-
         Get-ChildItem -Filter *.vtestreport | ForEach-Object 
         {
           Write-Host "Converting $_"
