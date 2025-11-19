@@ -115,9 +115,7 @@ jobs:
         TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
       run: |
         Set-Location "./simulation/TestReports/"
-        Get-ChildItem -Filter *.vtestreport | ForEach-Object 
-        {
-          Write-Host "Converting $_"
+        Get-ChildItem -Filter *.vtestreport | ForEach-Object {
           & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $_ -xu
         }
 
