@@ -125,7 +125,7 @@ jobs:
     - name: Display test results
       uses: dorny/test-reporter@v1.9.1
       with:
-        name: Test results
+        name: CANoe Test results
         path: "./simulation/TestReports/*_xunit.xml"
         reporter: java-junit
         fail-on-error: 'false'
