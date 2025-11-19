@@ -109,23 +109,27 @@ jobs:
     needs: run-tests-simulation
     runs-on: lvl1
     steps:
-      - name: Convert all test reports to XUnit format
-        working-directory: ./simulation/TestReports/
-        shell: pwsh
-        env:
-          TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
-        run: |
-          get-childitem . -Filter *.vtestreport | foreach {
-            & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $_ -xu
-          }
+    - name: Convert all test reports to XUnit format
+      shell: pwsh
+      env:
+        TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
+      run: |
+        Set-Location "./simulation/TestReports/"
+        Get-ChildItem -Filter *.vtestreport | ForEach-Object {
+          & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $_ -xu
+        }
 
-      - name: Display test results
-        uses: dorny/test-reporter@v1.9.1
-        with:
-          name: Test results                             # Name of the check run which will be created
-          path: "./simulation/TestReports/*_xunit.xml"   # Path to test results
-          reporter: java-junit                           # Format of test results
-          fail-on-error: 'false'                         # Don't mark as failing job if test
+        Write-Host "XUnit files:"
+        Get-ChildItem -Filter *_xunit.xml
+
+    - name: Display test results
+      uses: dorny/test-reporter@v1.9.1
+      with:
+        name: Test results
+        path: "./simulation/TestReports/*_xunit.xml"
+        reporter: java-junit
+        fail-on-error: 'false'
+
 
 
 
