@@ -104,7 +104,7 @@ jobs:
           path: ./simulation/*.txt
 
   display-test-report:
-    name: Display test report
+    name: Display Level1 test report
     if: ${{ !cancelled() }}
     needs: run-tests-simulation
     runs-on: lvl1
@@ -130,6 +130,7 @@ jobs:
       - name: Display L1 test results
         uses: dorny/test-reporter@v1.9.1
         with:
+          check-name: L1
           name: L1 Test results                             # Name of the check run which will be created
           path: "./simulation/TestReports/*_L1_xunit.xml"   # Path to test results
           reporter: java-junit                              # Format of test results
