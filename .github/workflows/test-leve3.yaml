@@ -124,7 +124,7 @@ jobs:
         env:
           TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
         run: |
-          $reportDir = "./simulation/TestReports/${{ matrix.TESTNAME }}"
+          $reportDir = "."
           Get-ChildItem $reportDir -Filter *.vtestreport | ForEach-Object { 
             $reportName = "${{ matrix.TESTNAME }}_L3_xunit.xml"
             Write-Host "Converting $($_.Name) -> $reportName"

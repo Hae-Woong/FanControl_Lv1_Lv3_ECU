@@ -124,7 +124,7 @@ jobs:
         env:
           TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
         run: |
-          $reportDir = "./simulation/TestReports/${{ matrix.TESTNAME }}"
+          $reportDir = "."
           Get-ChildItem $reportDir -Filter *.vtestreport | ForEach-Object { 
             $reportName = "${{ matrix.TESTNAME }}_L1_xunit.xml"
             Write-Host "Converting $($_.Name) -> $reportName"
@@ -137,7 +137,7 @@ jobs:
             Exit 1
             }
           }
-          
+
       - name: Display L1 test results
         uses: dorny/test-reporter@v1.9.1
         with:
