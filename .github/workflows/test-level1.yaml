@@ -141,10 +141,10 @@ jobs:
       - name: Display L1 test results
         uses: dorny/test-reporter@v1.9.1
         with:
-          name: L1 Test results - ${{ matrix.TESTNAME }}                          # Name of the check run which will be created
+          name: L1 Test results - ${{ matrix.TESTNAME }}                                               # Name of the check run which will be created
           artifact: test-results-lvl1-${{ matrix.TESTNAME }}                  
-          path: "./simulation/TestReports/${{ matrix.TESTNAME }}/*_L1_xunit.xml"  # Path to test results
-          reporter: java-junit                                                    # Format of test results
-          fail-on-error: 'false'                                                  # Don't mark as failing job if test 
+          path: "./simulation/TestReports/${{ matrix.TESTNAME }}/${{ matrix.TESTNAME }}_L1_xunit.xml"  # Path to test results
+          reporter: java-junit                                                                         # Format of test results
+          fail-on-error: 'false'                                                                       # Don't mark as failing job if test 
 
 
