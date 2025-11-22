@@ -124,7 +124,7 @@ jobs:
           TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
         run: |
          Get-ChildItem . -Filter *.vtestreport | ForEach-Object { 
-            $reportName = "$($_.BaseName)_${{ matrix.TESTNAME }}_L1_xunit.xml"
+            $reportName = "${{ matrix.TESTNAME }}_L1_xunit.xml"
             Write-Host "Converting $($_.Name) -> $reportName"
             & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $_.FullName -xu="$reportName"
 
@@ -140,7 +140,7 @@ jobs:
         with:
           name: L1 Test results - ${{ matrix.TESTNAME }}                          # Name of the check run which will be created
           artifact: test-results-lvl1-${{ matrix.TESTNAME }}                  
-          path: "./simulation/TestReports/*_${{ matrix.TESTNAME }}_L1_xunit.xml"  # Path to test results
+          path: "./simulation/TestReports/*_L1_xunit.xml"  # Path to test results
           reporter: java-junit                                                    # Format of test results
           fail-on-error: 'false'                                                  # Don't mark as failing job if test 
 
