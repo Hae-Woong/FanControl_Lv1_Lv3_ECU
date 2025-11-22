@@ -108,11 +108,14 @@ jobs:
     if: ${{ !cancelled() }}
     needs: run-tests-simulation
     runs-on: lvl3
+    strategy:
+    matrix:
+      TESTNAME: [tu_FanControl, tu_FanControlFaults]
     steps:
       - name: Download test results artifact
         uses: actions/download-artifact@v4
         with:
-          name: test-results-lvl3-*
+          name: test-results-lvl3-${{ matrix.TESTNAME }}
 
       - name: Convert all test reports to XUnit format
         working-directory: ./simulation/TestReports/
@@ -121,7 +124,7 @@ jobs:
           TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
         run: |
           Get-ChildItem . -Filter *.vtestreport | ForEach-Object { 
-            $reportName = "$($_.BaseName)_L3_xunit.xml"
+            $reportName = "$($_.BaseName)_${{ matrix.TESTNAME }}_L3_xunit.xml"
             Write-Host "Converting $($_.Name) -> $reportName"
             & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $_.FullName -xu="$reportName"
 
@@ -136,7 +139,7 @@ jobs:
         uses: dorny/test-reporter@v1.9.1
         with:
           name: L3 Test results                             # Name of the check run which will be created
-          artifact: test-results-lvl3-*                         
+          artifact: test-results-lvl3-${{ matrix.TESTNAME }}                     
           path: "./simulation/TestReports/*_L3_xunit.xml"   # Path to test results
           reporter: java-junit                              # Format of test results
           fail-on-error: false                              # Don't mark as failing job if test

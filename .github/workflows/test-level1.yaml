@@ -108,11 +108,14 @@ jobs:
     if: ${{ !cancelled() }}
     needs: run-tests-simulation
     runs-on: lvl1
+    strategy:
+    matrix:
+      TESTNAME: [tu_FanControl, tu_FanControlFaults]
     steps:
       - name: Download test results artifact
         uses: actions/download-artifact@v4
         with:
-          name: test-results-lvl1-*
+          name: test-results-lvl1-${{ matrix.TESTNAME }}
 
       - name: Convert all test reports to XUnit format
         working-directory: ./simulation/TestReports/
@@ -121,7 +124,7 @@ jobs:
           TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
         run: |
          Get-ChildItem . -Filter *.vtestreport | ForEach-Object { 
-            $reportName = "$($_.BaseName)_L1_xunit.xml"
+            $reportName = "$($_.BaseName)_${{ matrix.TESTNAME }}_L1_xunit.xml"
             Write-Host "Converting $($_.Name) -> $reportName"
             & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $_.FullName -xu="$reportName"
 
@@ -135,10 +138,10 @@ jobs:
       - name: Display L1 test results
         uses: dorny/test-reporter@v1.9.1
         with:
-          name: L1 Test results                             # Name of the check run which will be created
-          artifact: test-results-lvl1-*                     
-          path: "./simulation/TestReports/*_L1_xunit.xml"   # Path to test results
-          reporter: java-junit                              # Format of test results
-          fail-on-error: 'false'                            # Don't mark as failing job if test 
+          name: L1 Test results - ${{ matrix.TESTNAME }}                          # Name of the check run which will be created
+          artifact: test-results-lvl1-${{ matrix.TESTNAME }}                  
+          path: "./simulation/TestReports/*_${{ matrix.TESTNAME }}_L1_xunit.xml"  # Path to test results
+          reporter: java-junit                                                    # Format of test results
+          fail-on-error: 'false'                                                  # Don't mark as failing job if test 
 
 
