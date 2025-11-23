@@ -111,21 +111,6 @@ jobs:
     runs-on: lvl3
     steps:
 
-      - name: Clean previous L3 workspace
-        shell: pwsh
-        run: |
-          if (Test-Path "./simulation/TestReports") {
-          Write-Host "Cleaning ./simulation/TestReports"
-          Remove-Item "./simulation/TestReports" -Recurse -Force
-          }
-          New-Item -ItemType Directory -Path "./simulation/TestReports" | Out-Null
-          
-      - uses: actions/download-artifact@v4
-        with:
-          pattern: "Test Reports * - lvl3"   
-          path: ./simulation/TestReports
-          merge-multiple: true
-
       - name: Convert all test reports to XUnit format
         working-directory: ./simulation/TestReports
         shell: pwsh
@@ -161,5 +146,3 @@ jobs:
           path: "./simulation/TestReports/*_L3_xunit.xml"
           reporter: java-junit
           fail-on-error: false
-
-#

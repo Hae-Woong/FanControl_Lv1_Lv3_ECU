@@ -110,21 +110,6 @@ jobs:
     runs-on: lvl1
     steps:
     
-    - name: Clean previous L1 workspace
-      shell: pwsh
-      run: |
-        if (Test-Path "./simulation/TestReports") {
-          Write-Host "Cleaning ./simulation/TestReports"
-          Remove-Item "./simulation/TestReports" -Recurse -Force
-        }
-        New-Item -ItemType Directory -Path "./simulation/TestReports" | Out-Null
-
-    - uses: actions/download-artifact@v4
-      with:
-        pattern: "Test Reports * - lvl1"   
-        path: ./simulation/TestReports
-        merge-multiple: true
-
     - name: Convert all test reports to XUnit format
       shell: pwsh
       working-directory: ./simulation/TestReports
