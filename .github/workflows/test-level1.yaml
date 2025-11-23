@@ -104,41 +104,41 @@ jobs:
           path: ./simulation/*.txt
 
   display-test-report-level1:
-  name: Display test report (L1)
-  if: ${{ !cancelled() }}
-  needs: run-tests-simulation
-  runs-on: lvl1
-  steps:
+    name: Display test report (L1)
+    if: ${{ !cancelled() }}
+    needs: run-tests-simulation
+    runs-on: lvl1
+    steps:
 
-    - name: Clean previous L1 workspace
-      shell: pwsh
-      run: |
-        if (Test-Path "./simulation/TestReports") {
+      - name: Clean previous L1 workspace
+        shell: pwsh
+        run: |
+          if (Test-Path "./simulation/TestReports") {
           Write-Host "Cleaning ./simulation/TestReports"
           Remove-Item "./simulation/TestReports" -Recurse -Force
-        }
-        New-Item -ItemType Directory -Path "./simulation/TestReports" | Out-Null
+          }
+          New-Item -ItemType Directory -Path "./simulation/TestReports" | Out-Null
 
-    - name: Download test report artifacts
-      uses: actions/download-artifact@v4
-      with:
-        pattern: "Test Reports * - lvl1"   
-        path: ./simulation/TestReports
-        merge-multiple: false   
+      - name: Download test report artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: "Test Reports * - lvl1"   
+          path: ./simulation/TestReports
+          merge-multiple: false   
 
-    - name: Convert all test reports to XUnit format
-      shell: pwsh
-      working-directory: ./simulation/TestReports
-      env:
-        TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
-      run: |
-        $reports = Get-ChildItem . -Filter *.vtestreport -Recurse
-        if ($reports.Count -eq 0) {
+      - name: Convert all test reports to XUnit format
+        shell: pwsh
+        working-directory: ./simulation/TestReports
+        env:
+          TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
+        run: |
+          $reports = Get-ChildItem . -Filter *.vtestreport -Recurse
+          if ($reports.Count -eq 0) {
           Write-Host "No .vtestreport files found. Skipping conversion."
           Exit 0
-        }
+          }
 
-        foreach ($r in $reports) {
+          foreach ($r in $reports) {
           $tempFile = Join-Path $r.DirectoryName ("$($r.BaseName)_xunit.xml")
           $finalFile = Join-Path $r.DirectoryName ("$($r.BaseName)_L1_xunit.xml")
 
@@ -151,23 +151,23 @@ jobs:
           } else {
             Write-Host "Failed to create: $finalFile"
             Exit 1
+            }
           }
-        }
 
-    - name: Display L1 test results summary
-      shell: pwsh
-      run: |
-        $results = Get-ChildItem ./simulation/TestReports -Filter "*_L1_xunit.xml" -Recurse
-        if ($results.Count -eq 0) {
+      - name: Display L1 test results summary
+        shell: pwsh
+        run: |
+          $results = Get-ChildItem ./simulation/TestReports -Filter "*_L1_xunit.xml" -Recurse
+          if ($results.Count -eq 0) {
           Write-Host "No converted test reports found."
           Exit 0
-        }
+          }
 
-        Write-Host "Test result files:"
-        $results | ForEach-Object { Write-Host $_.FullName }
+          Write-Host "Test result files:"
+          $results | ForEach-Object { Write-Host $_.FullName }
 
-        Write-Host "`n==== Test Summary (Runner-specific) ===="
-        foreach ($file in $results) {
+          Write-Host "`n==== Test Summary (Runner-specific) ===="
+          foreach ($file in $results) {
           Write-Host "Summary for $($file.Name):"
           $xml = [xml](Get-Content $file.FullName)
           $total = $xml.testsuite.tests
@@ -175,7 +175,4 @@ jobs:
           $errors = $xml.testsuite.errors
           $skipped = $xml.testsuite.skipped
           Write-Host "Total: $total, Failures: $failures, Errors: $errors, Skipped: $skipped"
-        }
-
-
-
+          }
