@@ -83,7 +83,7 @@ jobs:
     steps:    
       - name: Run CANoe Server Edition
         run : |
-          & "$env:CANoeSE_InstallDir64\canoe-se.exe" ./.vector/build/SUT_L3.venvironment -d ./simulation --win32 --timeout 30 --port-rtk-api none --test-unit ./.vector/build/${{ matrix.TESTNAME }}.vtestunit --test-progress-endpoint http://localhost:8092/system-service/v1.0;
+          & "$env:CANoeSE_InstallDir64\canoe-se.exe" ./.vector/build/SUT_L3.venvironment -d .\simulation --win32 --timeout 30 --port-rtk-api none --test-unit ./.vector/build/${{ matrix.TESTNAME }}.vtestunit --test-progress-endpoint http://localhost:8092/system-service/v1.0;
 
           Write-Host "CANoe Server Edition returned exit code $LASTEXITCODE"
 
@@ -91,9 +91,9 @@ jobs:
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v4
         with:
-          name: test-results-lvl3-${{ matrix.TESTNAME }}
+          name: Test Reports ${{ matrix.TESTNAME }}
           path: |
-            ./simulation/TestReports
+            ./simulation/TestReports/
           retention-days: 7
 
       - name: Upload log files
@@ -103,47 +103,36 @@ jobs:
           name: Log Files ${{ matrix.TESTNAME }}
           path: ./simulation/*.txt
 
-  display-test-report-Level3:
-    name: Display Level3 test report
+  display-test-report:
+    name: Display test report
     if: ${{ !cancelled() }}
     needs: run-tests-simulation
     runs-on: lvl3
-    strategy:
-      matrix:
-        TESTNAME: [tu_FanControl, tu_FanControlFaults]
     steps:
-      - name: Download test results artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: test-results-lvl3-${{ matrix.TESTNAME }}
-          path: ./simulation/TestReports
-
       - name: Convert all test reports to XUnit format
-        working-directory: ./simulation/TestReports
+        working-directory: ./simulation/TestReports/
         shell: pwsh
         env:
           TestReportViewer_InstallDir: 'C:\Program Files\Vector CANoe Server Edition 19\Exec64'
         run: |
           Get-ChildItem . -Filter *.vtestreport | ForEach-Object { 
-            $reportName = "${{ matrix.TESTNAME }}_L3_xunit.xml"
+            $reportName = "$($_.BaseName)_L3_xunit.xml"
             Write-Host "Converting $($_.Name) -> $reportName"
-            & "$env:TestReportViewer_InstallDir/ReportViewerCli.exe" -r $_.FullName -xu="./$reportName"
+            & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $_.FullName -xu="$reportName"
 
-            if (Test-Path "./$reportName") {
-            Write-Host "Successfully created: $reportName"
+            if (Test-Path $reportName) {
+              Write-Host "Successfully created: $reportName"
             } else {
-             Write-Host "Failed to create: $reportName" -ForegroundColor Red
-            Exit 1
+              Write-Host "Failed to create: $reportName"
             }
           }
 
       - name: Display L3 test results
         uses: dorny/test-reporter@v1.9.1
         with:
-          name: L3 Test results - ${{ matrix.TESTNAME }}                                                 # Name of the check run which will be created
-          artifact: test-results-lvl3-${{ matrix.TESTNAME }}                     
-          path: "./simulation/TestReports/*_L3_xunit.xml"                           # Path to test results
-          reporter: java-junit                                                                           # Format of test results
-          fail-on-error: false                                                                           # Don't mark as failing job if test
+          name: L3 Test results                             # Name of the check run which will be created
+          path: "./simulation/TestReports/*_L3_xunit.xml"   # Path to test results
+          reporter: java-junit                              # Format of test results
+          fail-on-error: false                            # Don't mark as failing job if test
 
 
