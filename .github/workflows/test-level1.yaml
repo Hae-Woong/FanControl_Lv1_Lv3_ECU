@@ -43,7 +43,7 @@ jobs:
 
       - name: Export ECU Logs
         uses: actions/upload-artifact@v4
-        if: always()
+        if: steps.cache-sut.outputs.cache-hit != 'true'
         with:
           name: ECU_Logs
           path: ./SystemUnderTest/L1_BswEmulation/FanControlECU/Log
@@ -116,6 +116,9 @@ jobs:
       shell: pwsh
       run: |
         git config --global --add safe.directory "$env:GITHUB_WORKSPACE"
+        git config --global --add safe.directory "D:\__action-runner_FanControl\LEVEL1_Runner_Package_2.329.0\_work"
+        git submodule foreach --recursive "git config --global --add safe.directory $toplevel/$sm_path"
+
 
     - name: Download all test reports
       uses: actions/download-artifact@v4
@@ -145,7 +148,7 @@ jobs:
           Exit 0
         }
         foreach ($r in $reports) {
-          $reportName = "$($r.BaseName)_L1_xunit.xml"
+          $reportName = "./simulation/TestReports/$($r.BaseName)_L1_xunit.xml"
           Write-Host ("Converting $($r.Name) -> $reportName")
           & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $r.FullName -xu "$reportName"
 
