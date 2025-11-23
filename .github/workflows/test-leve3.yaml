@@ -115,11 +115,9 @@ jobs:
 
       - name: Allow this repo path for git (safe.directory)
         shell: pwsh
-        run: |
-          git --version
-          git config --global --add safe.directory "$env:GITHUB_WORKSPACE"
-          git config --global --add safe.directory "D:\__action-runner_FanControl\LEVEL3_Runner_Package_2.329.0\_work"
-          git submodule foreach --recursive "git config --global --add safe.directory $toplevel/$sm_path"
+        run: | 
+          $workspace = (Resolve-Path $env:GITHUB_WORKSPACE).Path
+          git config --global --add safe.directory "$workspace"
 
       - name: Download all test reports
         uses: actions/download-artifact@v4
@@ -145,26 +143,24 @@ jobs:
         run: |
           $reports = Get-ChildItem . -Filter *.vtestreport -Recurse
           if ($reports.Count -eq 0) {
-          Write-Host "No .vtestreport files found. Skipping conversion."
-          Exit 0
+            Write-Host "No .vtestreport files found. Skipping conversion."
+            Exit 0
           }
-
           foreach ($r in $reports) {
-            $tempFile = Join-Path $r.DirectoryName ("$($r.BaseName)_temp_xunit.xml")
-            $finalFile = Join-Path $r.DirectoryName ("$($r.BaseName)_L1_xunit.xml")
+            $tempFile = Join-Path $r.DirectoryName ("$($r.BaseName)_xunit.xml")
+            $finalFile = Join-Path $r.DirectoryName ("$($r.BaseName)_L3_xunit.xml")
 
             Write-Host ("Converting $($r.Name) -> $finalFile")
+            & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $r.FullName -xu $tempFile
 
-           & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $r.FullName -xu $tempFile
-
-          if (Test-Path $tempFile) {
-           Rename-Item -Path $tempFile -NewName $finalFile -Force
-           Write-Host "Successfully created: $finalFile"
-           } else {
-           Write-Host "Failed to create: $finalFile"
-          Exit 1
-            }
-          }
+            if (Test-Path $tempFile) {
+              Rename-Item -Path $tempFile -NewName $finalFile -Force
+              Write-Host "Successfully created: $finalFile"
+              } else {
+              Write-Host "Failed to create: $finalFile"
+            Exit 1
+              }
+            } 
       
       - name: Display L3 test results
         uses: dorny/test-reporter@v1.9.1
