@@ -148,7 +148,9 @@ jobs:
           }
           foreach ($r in $reports) {
           $reportName = "$($r.BaseName)_L3_xunit.xml"
-          Write-Host "Converting $($r.Name) -> $reportName" & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $r.FullName -xu="$reportName"
+          Write-Host ("Converting $($r.Name) -> $reportName")
+          & "$env:TestReportViewer_InstallDir\ReportViewerCli.exe" -r $r.FullName -xu "$reportName"
+
           if (Test-Path $reportName) {
             Write-Host "Successfully created: $reportName"
           } else {
