@@ -109,31 +109,6 @@ jobs:
     needs: run-tests-simulation
     runs-on: lvl1
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
-    - name: Allow this repo path for git (safe.directory)
-      shell: pwsh
-      run: |
-       $workspace = (Resolve-Path $env:GITHUB_WORKSPACE).Path
-       git config --global --add safe.directory "$workspace"
-
-    - name: Download all test reports
-      uses: actions/download-artifact@v4
-      with:
-        pattern: "Test Reports * - lvl1"
-        path: ./simulation/TestReports
-        merge-multiple: true
-
-    - name: Unzip test results if ZIP exists
-      shell: pwsh
-      run: |
-        Get-ChildItem "./simulation/TestReports" -Filter "*.zip" | ForEach-Object {
-          Write-Host "Found ZIP: $($_.FullName) -> expanding..."
-          Expand-Archive -Path $_.FullName -DestinationPath "./simulation/TestReports" -Force
-          Remove-Item $_.FullName -Force
-        }
-
     - name: Convert all test reports to XUnit format
       working-directory: ./simulation/TestReports
       shell: pwsh
