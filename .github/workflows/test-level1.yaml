@@ -21,7 +21,11 @@ jobs:
     steps:
     
       - name: Checkout repository
-        uses: actions/checkout@v4         
+        uses: actions/checkout@v4        
+
+      - name: Fix safe directory for Git
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE" 
 
       - name: Cache SUT
         id: cache-sut
